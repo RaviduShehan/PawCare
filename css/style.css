@@ -3,7 +3,7 @@ style { margin: 0 auto; font-family: sans-serif; }
 
 body { margin: 0 auto; }
 
-header {
+ui-header {
 	height: 70px;
 	background-color: #2ab7b7;
 	border-bottom: 1px solid #2ab7b7;
