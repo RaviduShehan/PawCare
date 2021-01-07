@@ -33,6 +33,16 @@ h3{
   text-align: center;
 }
 
+h2{
+  font-family:  sans-serif;
+  font-style: normal;
+  font-weight: 650;
+  color: #EEA243;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
 #collapseMenu a {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -64,6 +74,16 @@ h3{
   background-color: #aaf3f3;
   background-size: cover;
   height: 140px;
+}
+
+#intro-face3 {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  align-items: center;
+  background-size: cover;
+  height: 80px;
 }
 
 #quiz-img {
@@ -99,14 +119,14 @@ h3{
 
 #description-landing {
   text-align: center;
-  padding: 50px 20px;
+  padding: 10px 20px;
 }
 
 #intro-body {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0.01em;
   text-align: justify;
 }
@@ -280,7 +300,7 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 30px;
     letter-spacing: 0.01em;
     text-align: justify;
   }
@@ -321,8 +341,18 @@ h3{
     align-items: center;
     background-color: #aaf3f3;
     background-size: cover;
-    height: 240px;
+    height: 180px;
   }
+
+  #intro-face3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    align-items: center;
+    background-size: cover;
+    height: 140px;
+  }
+
 
   #logo-text {
     font-family: Arial, Helvetica, sans-serif;
@@ -337,19 +367,29 @@ h3{
 
   #description-landing {
     text-align: center;
-    padding: 100px 25px;
+    padding: 50px 25px;
   }
 
   h1{
     font-family:  sans-serif;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 750;
     color: #D88973;
-    font-size:45px;
+    font-size:48px;
     letter-spacing: 0.1em;
     text-align: center;
     text-shadow: none;
 
+  }
+
+  h2{
+    font-family:  sans-serif;
+    font-style: normal;
+    font-weight: 750;
+    color: #EEA243;
+    font-size: 38px;
+    letter-spacing: 0.05em;
+    text-align: left;
   }
 
   h3{
