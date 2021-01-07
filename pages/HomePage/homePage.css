@@ -146,20 +146,20 @@
   }
   
   .service-body {
-	font-family: "sans-serif";
+	font-family: "Roboto";
 	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
+	font-weight: 900;
+	font-size: 20px;
 	letter-spacing: 0.1em;
 	text-align: center;
 	color: #1c1c1c;
   }
   
   .service-heading {
-	font-family: "sans-serif";
+	font-family: "Roboto";
 	font-style: normal;
-	font-weight: 900;
-	font-size: 20px;
+	font-weight: 1000;
+	font-size: 25px;
 	letter-spacing: 0.1em;
 	text-shadow: none;
 	text-align: center;
