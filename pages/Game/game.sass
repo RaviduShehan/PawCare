@@ -2,8 +2,8 @@ $primaryOne: #0084E3
 $primaryTwo: #5B53FF
 $primaryThree: #193E58
 
-$danger: #EB5757
-$success: #75E394
+$danger: #D88973
+$success: #2AB7B7
 
 $gray6: #f2f2f2
 $lightBlack: rgba(51, 51, 51, 0.5)
@@ -16,52 +16,40 @@ $lightBlack: rgba(51, 51, 51, 0.5)
     letter-spacing: $spacing
 
 #nav-img
-    float: left
+    float: right
 
 #collapseMenu
-    background-color: #ffffff
+    background-color: #FBFBFA
     width: 100%
     position : absolute
     z-index: 10
     text-align: center
-    color: #0084E3
+    color: #2AB7B7
     a
-        @include font('sans-serif', normal, 13px, 0.15em)
+        @include font(Arial, Helvetica, sans-serif, normal, 13px, 0.15em)
     .card-body
         padding: 10px
         border: 0.05px solid #dfdfdf !important
         border-radius: 0px
 
 #intro-face
-  width: 100%
-	background-image: url("../../assets/images/intro2.png")
-	background-size: cover
-	height: 207px
+    width: 100%
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url('/assets/images/Background/homepageBg.jpg')
+    background-size: cover
+    height: 207px
 
 .intro-img
     width: 100%
-	height: auto
+    height: auto
 
 .text-container
     text-align: center
 
 #logo-text
-    @include font('sans-serif', normal, 12px, 0.05em)
+    @include font(Arial, Helvetica, sans-serif, normal, 12px, 0.05em)
     text-shadow: none
-    color: #ffffff
+    color: #2AB7B7
 
- #description-landing 
-	width: 100%
-	background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url("../../assets/images/intro1.png")
-	background-size: cover
-	height: 207px
-  
-  
-  .description-img 
-	width: 100%
-	height: auto
-
-  
 .intro-container
     margin: auto
     display: block
@@ -73,11 +61,11 @@ $lightBlack: rgba(51, 51, 51, 0.5)
     padding: 50px 20px
 
 #intro-body
-    @include font('sans-serif', normal, 14px, 0.01em)
-    text-align: center
+    @include font(Arial, Helvetica, sans-serif, normal, 14px, 0.01em)
+    text-align: justify
 
 #intro-heading
-    @include font('sans-serif', 900, 16px,0.1em)
+    @include font(Arial, Helvetica, sans-serif, 900, 16px,0.1em)
     background: -webkit-linear-gradient(168.06deg, #5B53FF 9.21%, #56B7FF 90.79%)
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
@@ -88,11 +76,11 @@ $lightBlack: rgba(51, 51, 51, 0.5)
 
 .service-info
     text-align: center
-    color: #F7FBFF
+    color: #FBFBFA
     padding: 80px 10px
 
 .info-heading
-    @include font('sans-serif', 900, 16px,0.1em)
+    @include font(Arial, Helvetica, sans-serif, 900, 16px,0.1em)
     background: -webkit-linear-gradient(171.5deg, #5B53FF 9.21%, #56B7FF 90.79%)
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
@@ -121,19 +109,19 @@ $lightBlack: rgba(51, 51, 51, 0.5)
     padding: 20px 50px
 
 .service-body
-    @include font('sans-serif', normal, 12px,0.1em)
+    @include font(Arial, Helvetica, sans-serif, normal, 12px,0.1em)
     text-align: center
     color: #343434
 
 .service-heading
-    @include font('sans-serif', 900, 16px,0.1em)
+    @include font(Arial, Helvetica, sans-serif, 900, 16px,0.1em)
     text-shadow: none
     text-align: center
-    color: #0084E3
+    color: #2AB7B7
 
 .service-info
     text-align: center
-    background-color: #F6FBFF
+    background-color: #FBFBFA
 
 .auth-form
     padding: 12px 16px
@@ -145,11 +133,9 @@ $lightBlack: rgba(51, 51, 51, 0.5)
 .team-members
     text-shadow: none
 
-  .team-info {
-		border-top: 0.5px solid #e2a243;
-		padding: 70px 0;
-		background-color: #e2a243;
-	  
+.team-info
+    border-top: 0.5px solid #0244503b
+    padding: 70px 0
 
 .member
     width: 50% !important
@@ -165,14 +151,14 @@ $lightBlack: rgba(51, 51, 51, 0.5)
     color: #343434
 
 .member-name
-    @include font('sans-serif', bold, 14px, 0.05em)
+    @include font(Arial, Helvetica, sans-serif, bold, 14px, 0.05em)
     margin: 0
 
 .member-info
-    @include font('sans-serif', normal, 11px, 0.05em)
+    @include font(Arial, Helvetica, sans-serif, normal, 11px, 0.05em)
 
 #footer-home
-    @include font('sans-serif', 300, 9px, 0.05em)
+    @include font(Arial, Helvetica, sans-serif, 300, 9px, 0.05em)
     height: 160px
     width: 100%
     background-color: $primaryThree
@@ -192,11 +178,11 @@ $lightBlack: rgba(51, 51, 51, 0.5)
 
 @media screen and ( min-width: 768px)
     #intro-body
-        @include font('sans-serif', normal, 24px, 0.01em)
+        @include font(Arial, Helvetica, sans-serif, normal, 24px, 0.01em)
         text-align: justify
 
     #intro-heading
-        @include font('sans-serif', 900, 36px, 0.05em)
+        @include font(Arial, Helvetica, sans-serif, 900, 36px, 0.05em)
         background: -webkit-linear-gradient(168.06deg, #5B53FF 9.21%, #56B7FF 90.79%)
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
@@ -211,12 +197,12 @@ $lightBlack: rgba(51, 51, 51, 0.5)
 
     #intro-face
         width: 100%
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url('../../assets/images/Background/homepageBg.jpg')
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url('/assets/images/Background/homepageBg.jpg')
         background-size: cover
         height: 407px
 
     #logo-text
-        @include font('sans-serif', normal, 22px, 0.05em)
+        @include font(Arial, Helvetica, sans-serif, normal, 22px, 0.05em)
         text-shadow: none
         color: #ffffff
         margin: 15px 0
@@ -226,7 +212,7 @@ $lightBlack: rgba(51, 51, 51, 0.5)
         padding: 100px 25px
 
     .info-heading
-        @include font('sans-serif', 900, 30px, 0.05em)
+        @include font(Arial, Helvetica, sans-serif, 900, 30px, 0.05em)
         background: -webkit-linear-gradient(171.5deg, #5B53FF 9.21%, #56B7FF 90.79%)
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
@@ -234,8 +220,6 @@ $lightBlack: rgba(51, 51, 51, 0.5)
         text-align: center
 
     .service-body
-        @include font('sans-serif', normal, 22px, 0.05em)
+        @include font(Arial, Helvetica, sans-serif, normal, 22px, 0.05em)
         text-align: center
         color: #343434
-
-        

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PawCare | Login</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="../../style/main.css" />
+    <link rel="stylesheet" href="../../pages/Log&Reg/logreg.css" />
+    <script src="../../js/main.js"></script>
+    <script src="../../pages/Log&Reg/log&reg.js"></script>
+
+  </head>
+
+  <body>
+
+    <div data-role="page" id="login-page">
+      <!-- header -->
+        <div data-role="header" id="header">
+          <a class="logo-img" href="../../pages/Homepage/home.html" data-role="none" data-ajax="false">
+            <img class="logo-img" src="../../assets/images/logo.png">
+          </a>
+        </div>
+
+
+
+      <!--Register form-->
+      <div class="form-content">
+        <div class="auth-form">
+
+          <h1 id="h1"> Login to PawCare</h1>
+
+          <label  class="input-label">Email </label>
+          <div class="div-lable">
+            <input id="email-input"  class="text-input"  type="email"   name="email"  data-role="none"  placeholder="Email*" />
+          </div>
+
+          <label  class="input-label">Password </label>
+          <div class="div-lable">
+            <input id="password-input" class="text-input"  type="password" name="password" data-role="none" placeholder="Password*" />
+          </div>
+
+          <button onclick="location.href = '/Mobile-Implementation/PawCare/pages/Log&Reg/login.html';" id="login-btn" class="prime-btn" data-role="none" > Login  </button>
+          <div class="load-ellipsis">
+
+          </div>
+          <div class="link-container">
+            <p>
+              <a data-ajax="false" href="../../pages/Log&Reg/register.html"  data-role="none" >Do not have an account? </a>
+            </p>
+          </div>
+
+          <div class="link-container">
+            <p>
+              <a data-ajax="false" href="../../pages/Log&Reg/forgotpassword.html"  data-role="none" >Forgot Password? </a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="navigation-bar" class="ui-grid-d navigation-bar">
+        <div id="home-icon" align="center" class="ui-block-a">
+          <a class="logo-img" href="../../pages/Homepage/home.html" data-role="none" data-ajax="false">
+          <img class="home-icon" src="../../assets/icons/home.svg" />
+          </a>
+        </div>
+        <div id="star-icon" align="center" class="ui-block-b">
+          <img class="star-icon" src="../../assets/icons/star.svg" />
+        </div>
+        <div id="camera-icon" align="center" class="ui-block-c">
+          <img class="camera-icon" src="../../assets/icons/camera.svg" />
+        </div>
+        <div id="train-icon" align="center" class="ui-block-d">
+          <img class="train-icon" src="../../assets/icons/train.svg" />
+        </div>
+        <div id="settings-icon" align="center" class="ui-block-e">
+          <img class="settings-icon" src="../../assets/icons/settings.svg" />
+        </div>
+      </div>
+      <!-- footer -->
+      <div data-role="footer" id="footer">
+
+      <!-- Footer added through JS -->
+      </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
