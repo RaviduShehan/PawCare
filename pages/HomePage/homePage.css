@@ -28,7 +28,7 @@
   
   #intro-face {
 	width: 100%;
-	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url("/assets/images/intro1.png");
+	background-image: url("../../assets/images/intro2.png");
 	background-size: cover;
 	height: 207px;
   }
@@ -36,8 +36,20 @@
   .intro-img {
 	width: 100%;
 	height: auto;
+
+  }
+  #description-landing {
+	width: 100%;
+	background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url("../../assets/images/intro1.png");
+	background-size: cover;
+	height: 207px;
   }
   
+  .description-img {
+	width: 100%;
+	height: auto;
+
+  } 
   .text-container {
 	text-align: center;
   }
@@ -46,10 +58,11 @@
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: normal;
-	font-size: 12px;
+	font-size: 16px;
 	letter-spacing: 0.05em;
 	text-shadow: none;
-	color: #ffffff;
+	color: #d88973;
+	text-align: left;
   }
   
   .intro-container {
@@ -64,28 +77,34 @@
 	padding: 50px 20px;
   }
   
-  #intro-body {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	letter-spacing: 0.01em;
-	text-align: justify;
-  }
+
   
   #intro-heading {
-	font-family: "Roboto";
+	font-family: "sans-serif";
 	font-style: normal;
-	font-weight: 900;
-	font-size: 16px;
+	font-weight: 1000;
+	font-size: 25px;
 	letter-spacing: 0.1em;
-	background: -webkit-linear-gradient(168.06deg, #1c1c1c 9.21%, #d88973 90.79%);
+	background: -webkit-linear-gradient(168.06deg, #d88973 9.21%, #d88973 90.79%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-shadow: none;
   }
   
- 
+  #intro-body {
+	font-family: "sans-serif";
+	font-style: normal;
+	font-weight: 1000;
+	font-size: 16px;
+	letter-spacing: 0.01em;
+	text-align: justify;
+	text-shadow: none;
+	 
+  }
+  
+#intro-video {
+	max-width: 100%;
+  }
   
   .service-info {
 	text-align: center;
@@ -94,12 +113,12 @@
   }
   
   .info-heading {
-	font-family: "Roboto";
+	font-family: "sans-serif";
 	font-style: normal;
-	font-weight: 900;
-	font-size: 16px;
+	font-weight: 1000;
+	font-size: 24px;
 	letter-spacing: 0.1em;
-	background: -webkit-linear-gradient(171.5deg, #1c1c1c 9.21%, #d88973 90.79%);
+	background: -webkit-linear-gradient(171.5deg, #D88973 9.21%, #1c1c1c 90.79%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-shadow: none;
@@ -118,7 +137,7 @@
   }
   
   .home-services-img {
-	padding: 20px 29px 39px 29px;
+	padding: 15px 24px 34px 24px;
 	align: center;
   }
   
@@ -127,20 +146,20 @@
   }
   
   .service-body {
-	font-family: "Roboto";
+	font-family: "sans-serif";
 	font-style: normal;
 	font-weight: normal;
-	font-size: 12px;
+	font-size: 18px;
 	letter-spacing: 0.1em;
 	text-align: center;
 	color: #1c1c1c;
   }
   
   .service-heading {
-	font-family: "Roboto";
+	font-family: "sans-serif";
 	font-style: normal;
 	font-weight: 900;
-	font-size: 16px;
+	font-size: 20px;
 	letter-spacing: 0.1em;
 	text-shadow: none;
 	text-align: center;
@@ -149,7 +168,7 @@
   
   .service-info {
 	text-align: center;
-	background-color: #F6FBFF;
+	background-color: #fbfbfa;
   }
   
   .auth-form {
@@ -188,7 +207,7 @@
   }
   
   .member-name {
-	font-family: "Roboto";
+	font-family: "sans-serif";
 	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
@@ -197,7 +216,7 @@
   }
   
   .member-info {
-	font-family: "Roboto";
+	font-family: "sans-serif";
 	font-style: normal;
 	font-weight: normal;
 	font-size: 11px;
@@ -205,7 +224,7 @@
   }
   
   #footer-home {
-	font-family: "Roboto";
+	font-family: "sans-serif";
 	font-style: normal;
 	font-weight: 300;
 	font-size: 9px;
@@ -232,21 +251,21 @@
   
   @media screen and (min-width: 768px) {
 	#intro-body {
-	  font-family: "Roboto";
+	  font-family: "sans-serif";
 	  font-style: normal;
 	  font-weight: normal;
 	  font-size: 24px;
 	  letter-spacing: 0.01em;
-	  text-align: justify;
+	  text-align: center;
 	}
   
 	#intro-heading {
-	  font-family: "Roboto";
+	  font-family: "sans-serif";
 	  font-style: normal;
-	  font-weight: 900;
+	  font-weight: 1000;
 	  font-size: 36px;
 	  letter-spacing: 0.05em;
-	  background: -webkit-linear-gradient(168.06deg, #2ab7b7 9.21%, #2ab7b7 90.79%);
+	  background: -webkit-linear-gradient(168.06deg, #d88973 9.21%, #d88973 90.79%);
 	  -webkit-background-clip: text;
 	  -webkit-text-fill-color: transparent;
 	  text-shadow: none;
@@ -262,13 +281,28 @@
   
 	#intro-face {
 	  width: 100%;
-	  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url("/assets/images/intro1.png");
+	  background-image: url("../../assets/images/intro2.png");
 	  background-size: cover;
 	  height: 407px;
 	}
+/*	#description-landing {
+		width: 100%;
+		background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url("../../assets/images/intro1.png");
+		background-size: cover;
+		height: 407px;
+	  }
+	  
+	  .description-img {
+		padding: 100px 0 0;
+		margin: auto;
+		display: block;
+		width: 60%;
+		height: auto;
+	
+	  } */
   
 	#logo-text {
-	  font-family: "Roboto";
+	  font-family: "sans-serif";
 	  font-style: normal;
 	  font-weight: normal;
 	  font-size: 22px;
@@ -284,7 +318,7 @@
 	}
   
 	.info-heading {
-	  font-family: "Roboto";
+	  font-family: "sans-serif";
 	  font-style: normal;
 	  font-weight: 900;
 	  font-size: 30px;
@@ -297,7 +331,7 @@
 	}
   
 	.service-body {
-	  font-family: "Roboto";
+	  font-family: "sans-serif";
 	  font-style: normal;
 	  font-weight: normal;
 	  font-size: 22px;
@@ -305,6 +339,7 @@
 	  text-align: center;
 	  color: #343434;
 	}
+	 
   }
   
   /*# sourceMappingURL=homepage.css.map */
