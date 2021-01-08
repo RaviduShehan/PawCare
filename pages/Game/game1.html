@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../style/main.css" />
     <link rel="stylesheet" href="../../pages/Game/game.css" />
     <script src="../../js/main.js"></script>
-    <script src="../../pages/Game/game.js"></script>
+    <script src="../../pages/Game2/game2.js"></script>
   </head>
 
   <body>
@@ -25,49 +25,50 @@
           </a>
         </div>
 
+      <div class="auth-form">
       <!---intro face -->
 
-        <div class="ui-grid-a intro-face" id="intro-face">
-            <img id="quiz-img" src="../../assets/images/quiz.png" alt="logo" />
+          <div class="ui-grid-a intro-face" id="intro-face">
+              <img id="quiz-img" src="../../assets/images/quiz.png" alt="logo" />
+          </div>
+
+          <div class="ui-grid-a intro-face" id="intro-face2">
+            <h1> Hurry!! </h1>
+            <h3>  Try and Win 10% Discount on Your next Service</h3>
+          </div>
+
+
+
+        <!--Description landing-->
+        <div class="ui-grid-content description-landing" id="description-landing">
+          <div class="description-container">
+            <h2>Terms & Conditions</h2>
+
+            <ul id="intro-body">
+              <li>You have 15 minuts to answer all the 10 questions.</li>
+              <li>There is one answer for each question.</li>
+              <li>Every correct answer, you got '2' loyalty points.</li>
+              <li>If all answers are correct you won 10% Discount on your next service.</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="ui-grid-a intro-face" id="intro-face2">
-          <h1> Hurry!! </h1>
-          <h3>  Try and Win 10% Discount on Your next Service</h3>
+        <div class="ui-grid-a intro-face" id="intro-face3">
+          <h1> Are You Ready? </h1>
         </div>
 
+        <!-- system feedback-->
 
+          
+            <button id="submit" onclick="location.href = '../../pages/Game2/game2.html';"class="prime-btn" data-role="none" type="submit">
+              Yes, Go..
+            </button>
+      
 
-      <!--Description landing-->
-      <div class="ui-grid-content description-landing" id="description-landing">
-        <div class="description-container">
-          <h2>Terms & Conditions</h2>
-
-          <ul id="intro-body">
-            <li>You have 15 minuts to answer all the 10 questions.</li>
-            <li>There is one answer for each question.</li>
-            <li>Every correct answer, you got '2' loyalty points.</li>
-            <li>If all answers are correct you won 10% Discount on your next service.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="ui-grid-a intro-face" id="intro-face3">
-        <h1> Are You Ready? </h1>
-      </div>
-
-      <!-- system feedback-->
-
-        <div class="auth-form">
-          <button id="submit" class="prime-btn" data-role="none" type="submit">
-            Yes, Go..
+          <button onclick="location.href = '../../pages/Log&Reg/login.html';" id="go-back-btn" class="cancel-btn" data-role="none" > No,Back to Services
           </button>
-    
-
-        <button onclick="location.href = '../../pages/Log&Reg/login.html';" id="go-back-btn" class="cancel-btn" data-role="none" > No,Back to Services
-        </button>
-        <div class="load-ellipsis"> </div>
-        </div>
+          <div class="load-ellipsis"> </div>
+      </div>
 
 
 
