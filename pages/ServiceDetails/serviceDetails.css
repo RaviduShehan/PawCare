@@ -1,4 +1,49 @@
-.iconService{
-    width: 1px;
-    height: 1px;
-}
+ .iconService{
+     float: right;
+    
+ }
+ #intro-ServiceD {
+	width: 100%;
+	background-size: cover;
+	height: 150px;
+  }
+  
+ .text-containerService {
+	text-align: center;
+  }
+.textName {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	letter-spacing: 0.05em;
+	text-shadow: none;
+	background: -webkit-linear-gradient(171.5deg, #d88973 9.21%, #d88973 90.79%);
+	text-align: left;
+  }
+
+  #footer-home {
+	font-family: "sans-serif";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 9px;
+	letter-spacing: 0.05em;
+	height: 160px;
+	width: 100%;
+	background-color: #2ab7b7;
+	border: none;
+	padding: 20px 10px;
+	bottom: 0;
+	text-transform: uppercase;
+	color: #f2f2f2;
+	text-shadow: none;
+  }
+  #footer-home p {
+	text-align: center;
+	margin: 5px;
+  }
+  #footer-home ul {
+	text-decoration: none;
+	list-style: none;
+	padding: 0;
+  }
