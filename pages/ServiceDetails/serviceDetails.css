@@ -1,6 +1,6 @@
  .iconService{
    
-    
+
  }
  #intro-ServiceD {
 	width: 100%;
@@ -8,11 +8,12 @@
 	height: 50%;
   }
   .serviceD-textcontainer{
-      
+
   }
   
  .text-containerService {
-	text-align: center;
+    text-align: center;
+    width: auto;
   }
 #textName {
 	font-family: "Roboto";
@@ -33,7 +34,8 @@
 	font-size: 16px;
 	letter-spacing: 0.05em;
 	text-shadow: none;
-	text-align: justify;
+    text-align: justify;
+    padding: 2px;
   }
 
   #footer-home {
