@@ -1,25 +1,39 @@
  .iconService{
-     float: right;
+   
     
  }
  #intro-ServiceD {
 	width: 100%;
 	background-size: cover;
-	height: 150px;
+	height: 50%;
+  }
+  .serviceD-textcontainer{
+      
   }
   
  .text-containerService {
 	text-align: center;
   }
-.textName {
+#textName {
 	font-family: "Roboto";
 	font-style: normal;
-	font-weight: normal;
-	font-size: 20px;
+	font-weight: 900px;
+	font-size: 25px;
 	letter-spacing: 0.05em;
 	text-shadow: none;
-	background: -webkit-linear-gradient(171.5deg, #d88973 9.21%, #d88973 90.79%);
+    background: -webkit-linear-gradient(171.5deg, #d88973 9.21%, #d88973 90.79%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	text-align: left;
+  }
+  #serviceDetails-body{
+    font-family: "sans-serif";
+	font-style: normal;
+	font-weight: 100px;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	text-shadow: none;
+	text-align: justify;
   }
 
   #footer-home {
