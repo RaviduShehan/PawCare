@@ -2,8 +2,46 @@
 	float: left;
   }
   .logo-img{
-	  align-self: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
   }
+
+  .footer-logo{
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 100%;
+  }
+
+  .footer-contacts{
+	
+	width: 15px;
+	margin-right: 10px;
+	padding-top: 5px;
+  }
+
+  .footer-payment1{
+	width: 8%;
+	padding-left: 37%;
+  }
+
+  .footer-payment2{
+	width: 8%;
+  }
+
+  .footer-payment3{
+	width: 8%;
+  }
+
+  .footer-social1{
+	width: 8%;
+	padding-left: 30%;
+  }
+
+  .footer-social2{
+	width: 8%;
+  }
+  
   
   #collapseMenu {
 	background-color: #ffffff;
@@ -124,6 +162,14 @@
 	text-shadow: none;
 	text-align: center;
   }
+
+  .team-heading {
+	font-family: "asap";
+	font-style: normal;
+	font-size: 30px;
+	margin-top: 15px;
+	text-align: center;
+  }
   
  
   .image-container {
@@ -185,64 +231,105 @@
   }
   
   .team-info {
-	border-top: 0.5px solid #1c1c1c;
-	padding: 70px 0;
+	border-top: 0.05px solid #ffffff;
+	padding: 1px;
 	background-color: #eea243;
   }
   
   .member {
 	width: 50% !important;
 	align-content: center;
-	margin: 45px 0;
+	margin: 15px 0;
+	margin-bottom: 30px;
   }
   
   .members-img {
 	margin: auto;
 	display: block;
+	border-radius: 50%;
+	box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 60%;
   }
   
   .member-description {
 	text-align: center;
-	color: #343434;
+	color: #ffffff;
   }
   
   .member-name {
-	font-family: "sans-serif";
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	letter-spacing: 0.05em;
-	margin: 0;
+	font-family: "asap";
+	font-size: 10px;
+	letter-spacing: 0.1em;
+	margin: 1px;
+  }
+
+  .member-no {
+	font-family: "asap";
+	font-size: 10px;
+	letter-spacing: 0.1em;
+	margin-top: 10px;
+	margin-bottom: 1px;
   }
   
   .member-info {
-	font-family: "sans-serif";
-	font-style: normal;
-	font-weight: normal;
-	font-size: 11px;
-	letter-spacing: 0.05em;
+	font-family: "asap";
+	font-size: 10px;
+	letter-spacing: 0.1em;
+	margin: 1px 0;
   }
   
   #footer-home {
-	font-family: "sans-serif";
+	font-family: "Asap";
 	font-style: normal;
 	font-weight: 300;
 	font-size: 9px;
 	letter-spacing: 0.05em;
-	height: 160px;
+	height: 270px;
 	width: 100%;
 	background-color: #2ab7b7;
 	border: none;
-	padding: 20px 10px;
+	padding: 5px 10px;
 	bottom: 0;
-	text-transform: uppercase;
-	color: #f2f2f2;
+	text-transform: none;
+	color: #ffffff;
 	text-shadow: none;
   }
   #footer-home p {
+	font-family: "asap";
 	text-align: center;
-	margin: 5px;
+	margin-top: 1px;
+	text-transform: none;
   }
+
+  #footer-home a{
+	font-family: "asap";
+	font-size: 12px;
+	color: #ffffff;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	margin: 2px 8px;
+  }
+
+  #footer-home li{
+	font-family: "asap";
+	font-size: 12px;
+	color: #ffffff;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	margin: 5px 10px;
+  }
+
+  .nav-payment {
+	font-family: "asap";
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 1px;
+	font-size: 10px;
+	text-transform: none;
+  }
+
   #footer-home ul {
 	text-decoration: none;
 	list-style: none;
