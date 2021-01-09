@@ -371,7 +371,7 @@ select {
   background-color: white !important;
 }
 
-input[type=range] {
+input[type=radio] {
   width: 100%;
   height: 5px;
   -webkit-appearance: none;
@@ -381,14 +381,14 @@ input[type=range] {
   margin: 8px 0;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
+input[type=radio]::-webkit-slider-runnable-track {
   background: #0084E3;
   height: 10px;
   border-radius: 4px;
   transition: 0.3s;
 }
 
-input[type=range]::-webkit-slider-thumb {
+input[type=radio]::-webkit-slider-thumb {
   -webkit-appearance: none;
   background: #5B53FF;
   width: 20px;
@@ -400,8 +400,8 @@ input[type=range]::-webkit-slider-thumb {
   transition: 0.3s;
 }
 
-input[type=range]:hover::-webkit-slider-thumb,
-input[type=range]:focus::-webkit-slider-thumb {
+input[type=radio]:hover::-webkit-slider-thumb,
+input[type=radio]:focus::-webkit-slider-thumb {
   background: #5B53FF;
 }
 
@@ -421,7 +421,7 @@ output {
   text-align: center;
 }
 
-input[type=range]:active + output {
+input[type=radio]:active + output {
   display: block;
   transform: translateX(-50%);
 }

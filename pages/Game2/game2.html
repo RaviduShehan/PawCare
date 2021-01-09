@@ -13,9 +13,21 @@
     <link rel="stylesheet" href="../../pages/Game2/game2.css" />
     <script src="../../js/main.js"></script>
     <script src="../../pages/Game2/game2.js"></script>
+
+    <style> 
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
   </head>
 
-  <body>
+  <body id="body">
     <div data-role="page">
       <!-- header -->
       <div data-role="header" id="header">
@@ -28,7 +40,11 @@
         <div class="auth-form">
           <h1 id="h1"> PawCare Quiz</h1>
 
+          <div style="font-weight: bold" id="time-left"></div>
+          <div id='result' class="space"></div>
+
           <div  id="quiz-face">
+            <form id ="quiz" name ="quiz">
 
             <div class="grid-container">
               <div class="item2"><img class="q2-img" src="../../assets/images/c2.jpg"></div>
@@ -38,6 +54,7 @@
                 <label class="label1"><input type="radio" name="question1"  value=" 1">They're peckish </label>
                 <label class="label1"><input type="radio" name="question1"  value=" 1"> They're boarded
                 </label>
+                <div id='Q1' class="space"></div>
               </div>      
             </div>
 
@@ -47,7 +64,7 @@
               <div class="item2"><p> Dalmatian puppies are born with spotted fur. True or false? </p>
                 <label><input type="radio" name="question2"  value=" 1"> True </label>
                 <label><input type="radio" name="question2"  value=" 1"> False </label>
-                <br><br>
+                <br><div id='Q2' class="space"></div><br>
                 </div>
               <div class="item3">
                 <img class="q2-img" src="../../assets/images/d1.jpg">         
@@ -63,6 +80,7 @@
                 <label><input type="radio" name="question3"  value=" 1"> 2 </label>
                 <label><input type="radio" name="question3"  value=" 1"> 3 </label>
                 <label><input type="radio" name="question3"  value=" 1"> 4 </label>
+                <div id='Q3' class="space"></div>
               </div>      
             </div>
 
@@ -74,6 +92,7 @@
                 <label><input type="radio" name="question4"  value=" 1"> 15 - 20 hours </label>
                 <label><input type="radio" name="question4"  value=" 1"> 6-8 hours </label>
                 <label><input type="radio" name="question4"  value=" 1"> exacty 7 hours </label></div>
+                <div id='Q4' class="space"></div>
               <div class="item3">
                 <img class="q2-img" src="../../assets/images/d2.jpg">         
               </div>      
@@ -88,6 +107,7 @@
                 <label><input type="radio" name="question5"  value=" 1"> 18 </label>
                 <label><input type="radio" name="question5"  value=" 1"> 20 </label>
                 <label><input type="radio" name="question5"  value=" 1"> 22 </label>
+                <div id='Q5' class="space"></div>
               </div>      
             </div>
 
@@ -98,7 +118,9 @@
                 <label><input type="radio" name="question6"  value=" 1"> 2 days </label>
                 <label><input type="radio" name="question6"  value=" 1"> 1 week </label>
                 <label><input type="radio" name="question6"  value=" 1"> 3 weeks </label>
-                <label><input type="radio" name="question6"  value=" 1"> 1 months</label></div>
+                <label><input type="radio" name="question6"  value=" 1"> 1 months</label>
+                <div id='Q6' class="space"></div>
+              </div>
               <div class="item3">
                 <img class="q2-img" src="../../assets/images/d3.jpg">         
               </div>      
@@ -111,7 +133,7 @@
               <div class="item3"><p>All cats have a sweet tooth. </p>
                 <label><input type="radio" name="question7"  value=" 1"> True </label>
                 <label><input type="radio" name="question7"  value=" 1"> False </label>
-                <br><br>
+                <br><div id='Q7' class="space"></div><br>
               </div>      
             </div>
 
@@ -122,7 +144,9 @@
                 <label><input type="radio" name="question8"  value=" 1"> 38 weeks </label>
                 <label><input type="radio" name="question8"  value=" 1"> 63 weeks </label>
                 <label><input type="radio" name="question8"  value=" 1"> 72 weeks </label>
-                <label><input type="radio" name="question8"  value=" 1"> 100 weeks </label></div>
+                <label><input type="radio" name="question8"  value=" 1"> 100 weeks </label>
+                <div id='Q8' class="space"></div>
+              </div>
               <div class="item3">
                 <img class="q2-img" src="../../assets/images/d6.jpg">         
               </div>      
@@ -137,6 +161,7 @@
                 <label><input type="radio" name="question9"  value=" 1"> 8 </label>
                 <label><input type="radio" name="question9"  value=" 1"> 12 </label>
                 <label><input type="radio" name="question9"  value=" 1"> 24 </label>
+                <div id='Q9' class="space"></div>
               </div>      
             </div>
 
@@ -147,7 +172,9 @@
                 <label><input type="radio" name="question10"  value=" 1"> Eyes </label>
                 <label><input type="radio" name="question10"  value=" 1"> Paws </label>
                 <label><input type="radio" name="question10"  value=" 1"> Toungue </label>
-                <label><input type="radio" name="question10"  value=" 1"> Armpits </label></div>
+                <label><input type="radio" name="question10"  value=" 1"> Armpits </label>
+              
+                <div id='Q10' class="space"></div></div>
                 <br>
                 <br>
               <div class="item3">
@@ -155,23 +182,17 @@
               </div>      
             </div>
             
-            
+          </form>
           </div>
                 
-        
+      
           
-            <button id="submit" class="prime-btn" data-role="none" type="submit">
-              Submit
-            </button>
+          
+          <div id="result" class="space"></div>
 
-            <button onclick="location.href = '../../pages/Game/game1.html';" id="go-back-btn" class="cancel-btn" data-role="none" > Cancel
-            </button>
-            <div class="load-ellipsis"> </div>
-
-        </div>
-
-
-
+          <input id="button" type="button" value="Submit" onclick="mark();">
+              
+          <button onclick="location.href = '../../pages/Game/game1.html';" id="go-back-btn" class="cancel-btn" data-role="none" > Cancel </button>
       <!-- footer -->
       <div data-role="footer" id="footer">
 

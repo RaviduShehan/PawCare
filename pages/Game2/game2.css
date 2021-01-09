@@ -31,6 +31,17 @@ h1{
 
 }
 
+.submitgame {
+  background-color: #2AB7B7;
+  width: 100%;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
 
 h3{
   font-family:  sans-serif;
@@ -50,6 +61,9 @@ h2{
   font-size: 20px;
   letter-spacing: 0.05em;
   text-align: left;
+}
+#time-left{
+  color: #EEA243;
 }
 
 .label1{
@@ -97,7 +111,7 @@ h4{
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-input{
+input [type=radio]{
   background-color: #fbfbfa;
   letter-spacing: 0.02em;
 }
@@ -128,6 +142,7 @@ input{
   background-size: cover;
   height: 180px;
 }
+
 
 #intro-face2 {
   margin-top:15px;
@@ -558,16 +573,14 @@ input{
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-input{
+input [type=radio] {
   background-color: #fbfbfa;
-  font-size: 30px;
-}
-
-input[type=radio] {
-    border: 0px;
+  font-size: 30px;    border: 0px;
     width: 10%;
     height: 1.5em;
 }
+
+
 
 .q2-img {
   padding-top: 20%;
