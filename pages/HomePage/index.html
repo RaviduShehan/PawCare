@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
   <link rel="stylesheet" type="text/css" href="../../css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <link rel="stylesheet" href="homePage.css" />
 
@@ -36,31 +37,58 @@
       </div>
     </div>
 
-    <!---intro face -->
+    
     <div data-role="intro">
-      <div class="ui-grid-a intro-face" id="intro-face">
-        <div class="intro-container">
-
-          <div class="text-container">
-            <p id="logo-text">Paw care</p>
+      <!-- <div class="ui-grid-a intro-face" id="intro-face"> -->
+        <!-- <div class="intro-container"> -->
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" id="intro-face">
+                <div class="text-container">
+                  <p id="logo-text">Paw care</p>
+                  <p id="logo-text-des">Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+              <div class="carousel-item" id="description-landing">
+                <div class="text-container">
+                  <p id="logo-text">Booking</p>
+                  <p id="logo-text-des">Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-        </div>
-      </div>
+          <!-- <div class="text-container">
+            <p id="logo-text">Paw care</p>
+          </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
     </div>
 
     <!--Description landing-->
-    <div class="ui-grid-content description-landing" id="description-landing">
+    <div class="ui-grid-content description-landing">
+      <div class="ui-grid-content description-landing">
       <div class="description-container">
         <p id="intro-heading">About Us</p>
 
-        <p id="intro-body">
+        <div>
+         <p id="intro-body">
           Welcome to the leading train booking operating application of
           SriLanka.TrainBuddy is a treasure hunt mobile web application
           encouraging users to visit and explore the best places in the
           country.
         </p>
+        </div>
+
 
       </div>
+    </div>
     </div>
     <!--services-->
     <div class="service-info" id="service-info">
@@ -254,8 +282,10 @@
     </div>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   </div>
 </body>
-
 </html>
