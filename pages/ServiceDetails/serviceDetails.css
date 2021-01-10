@@ -1,0 +1,131 @@
+ .iconService{
+   float: right;
+
+ }
+ #intro-ServiceD {
+	width: 100%;
+	background-size: cover;
+	height: 50%;
+  }
+  .serviceD-textcontainer{
+
+  }
+  
+ .text-containerService {
+    text-align: center;
+    width: auto;
+  }
+#textName {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 900px;
+	font-size: 25px;
+	letter-spacing: 0.05em;
+	text-shadow: none;
+    background: -webkit-linear-gradient(171.5deg, #d88973 9.21%, #d88973 90.79%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: left;
+  }
+  #serviceDetails-body{
+    font-family: "sans-serif";
+	font-style: normal;
+	font-weight: 100px;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	text-shadow: none;
+    text-align: justify;
+    padding: 2px;
+  }
+  #footer-home {
+	font-family: "Asap";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 9px;
+	letter-spacing: 0.05em;
+	height: 270px;
+	width: 100%;
+	background-color: #2ab7b7;
+	border: none;
+	padding: 5px 10px;
+	bottom: 0;
+	text-transform: none;
+	color: #ffffff;
+	text-shadow: none;
+  }
+  #footer-home p {
+	font-family: "asap";
+	text-align: center;
+	margin-top: 1px;
+	text-transform: none;
+  }
+
+  #footer-home a{
+	font-family: "asap";
+	font-size: 12px;
+	color: #ffffff;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	margin: 2px 8px;
+  }
+
+  #footer-home li{
+	font-family: "asap";
+	font-size: 12px;
+	color: #ffffff;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: normal;
+	margin: 5px 10px;
+  }
+
+  .nav-payment {
+	font-family: "asap";
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 1px;
+	font-size: 10px;
+	text-transform: none;
+  }
+
+  #footer-home ul {
+	text-decoration: none;
+	list-style: none;
+	padding: 0;
+  }
+  
+  .footer-logo{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.footer-contacts{
+  
+  width: 15px;
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+.footer-payment1{
+  width: 8%;
+  padding-left: 37%;
+}
+
+.footer-payment2{
+  width: 8%;
+}
+
+.footer-payment3{
+  width: 8%;
+}
+
+.footer-social1{
+  width: 8%;
+  padding-left: 30%;
+}
+
+.footer-social2{
+  width: 8%;
+}

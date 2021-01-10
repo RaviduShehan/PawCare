@@ -1,0 +1,47 @@
+CREATE TABLE IF NOT EXISTS `user` (
+  `user_id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `mobile` int(10) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `favoutites` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+INSERT INTO `user` (`user_id`, `username`, `email`,`mobile`, `password`, `favoutites`) VALUES
+(1, 'senuri','senuri@gmail.com' , 0711234123 , 'senuri123', 'Anne'),
+(2, 'ravidu','ravidu@gmail.com' , 0711234123 , 'ravidu123', 'Anne'),
+(3, 'chanuka','chanuka@gmail.com' , 0711234123 , 'chanuka123', 'Anne'),
+(4, 'dilki','sasi@gmail.com' , 0711234123 , 'sasi123', 'Anne');
+
+
+
+CREATE TABLE `sitter` (
+  `sitter_id` int(11) NOT NULL,
+  `sittername` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `mobile` int(10) NOT NULL,
+  `services` varchar(500) NOT NULL,
+  `price range` varchar(300) NOT NULL,
+  `password` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`user_id`);
+
+
+ALTER TABLE `sitter`
+  ADD PRIMARY KEY (`sitter_id`);
+
+
+
+ALTER TABLE `user`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+
+
+ALTER TABLE `sitter`
+  MODIFY `sitter_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
