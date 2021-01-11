@@ -1,4 +1,3 @@
- 
   
   let feedback = {};
   $(() => {
@@ -24,6 +23,7 @@
 		}
 	  );
 	}
+
 	const track = document.querySelector('.track');
 	let initialPosition = null;
 	let moving = false;

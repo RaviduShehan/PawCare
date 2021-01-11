@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+#service-head-image {
+    width: 100%;
+    background-size: cover;
+}
+.service-description{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50%;
+}
+
+.info-heading {
+	font-family: Roboto;
+	font-weight: 500;
+    font-size: 24px;
+    letter-spacing: normal;
+	background: -webkit-linear-gradient(171.5deg, #D88973 40%, #1c1c1c 60%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: none;
+    text-align: center;
+  }
+
+  .info-description{
+      line-height: 10%;
+      font-family: Roboto;
+      font-weight: 300;
+      text-align: center;
+      font-size: 11px;
+  }
+
+  .info-description2{
+    margin-top: 30px;
+    font-family: Roboto;
+    font-weight: 300;
+    text-align: center;
+    font-size: 11px;
+}
+
+.service-carousel {
+    display: block;
+}
+
+.service-carousel-tab{
+    display: none;
+}
+
+.service-carousel-title{
+    font-family: Roboto;
+	font-weight: 500;
+    font-size: 24px;
+    letter-spacing: normal;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.carou-box{
+    text-align: center;
+}
+
+.circle-base{
+    margin-top: 10px;
+    border-radius: 50%;
+    background: #fbfafa;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    box-shadow: 5px 5px 8px #888888;
+}
+
+.fa-search, .fa-list-ul, .fa-calendar-alt, .fa-credit-card{
+    margin-top: 25%;
+    color: #2ab7b7;
+}
+
+.service-carousel-number{
+    font-family: Roboto;
+	font-weight: 400;
+    font-size: 24px;
+    letter-spacing: normal;
+    margin-top: 9px;
+    text-align: center;
+}
+
+.info-carousel{
+    margin-top: 20px;
+    font-family: Roboto;
+    font-weight: 400;
+    text-align: center;
+    font-size: 12px;
+    line-height: 10%;
+    margin-bottom: 35px;
+}
+
+.service-img{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#postjob-title, #dogwalk-title, #homevisits-title, #housesitting-title, #petsitting-title{
+    font-family: Roboto;
+	font-weight: 400;
+    font-size: 16px;
+    letter-spacing: normal;
+    margin-top: 9px;
+    text-align: center;
+    color: #1c1c1c;
+    margin-bottom: 9px;
+}
+
+#postjob-desc, #dogwalk-desc, #homevisits-desc, #housesitting-desc, #petsitting-desc{
+    display: none;
+}
+
+.ui-btn {
+    background: #2ab7b7;
+    text-shadow: none;
+  }
+  
+  .ui-btn-inner {
+    color: #FFFFFF;
+  }
+  
+  /* tablet portrait */
+  @media screen and (min-width: 768px) {
+
+    .info-heading {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: normal;
+        background: -webkit-linear-gradient(171.5deg, #D88973 40%, #1c1c1c 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: none;
+        text-align: center;
+      }
+
+    .info-description{
+        line-height: 30%;
+        font-family: Roboto;
+        font-weight: 300;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .info-description2{
+        margin-top: 30px;
+        font-family: Roboto;
+        font-weight: 300;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .service-carousel {
+        display: none;
+    }
+    
+    .service-carousel-tab{
+        display: block;
+    }
+
+    .carousel-inner{
+        text-align: center;
+    }
+
+    .service-carousel-title{
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 24px;
+        letter-spacing: normal;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .tab-row{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .tab-line{
+        margin-top: 45px;
+        width: 50%;
+    }
+
+    .info-carousel-tab{
+        margin-top: 30px;
+        font-family: Roboto;
+        font-weight: 400;
+        text-align: center;
+        font-size: 15px;
+        line-height: 60%;
+        margin-bottom: 35px;
+    }
+
+    .service-img{
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        /* margin-top: 20px;
+        margin-bottom: 20px; */
+        border-style: solid;
+        border-width: 0.2px;
+        border-color: #1c1c1c;
+    }
+
+    #postjob-desc, #dogwalk-desc, #homevisits-desc, #housesitting-desc, #petsitting-desc{
+        display: block;
+        display: block;
+        margin-bottom: 10%;
+        font-family: Roboto;
+        font-weight: 300;
+        text-align: center;
+        font-size: 12px;
+        color: #1c1c1c;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+
+    .service-list-row, .service-list-row2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .service-list-row2 .first-item{
+        margin-left: 15%;
+    }
+    .service-list-row2 .second-item{
+        margin-right: 15%;
+    }
+ 
+
+  }
