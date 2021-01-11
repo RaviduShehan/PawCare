@@ -15,6 +15,9 @@
 
 
 </head>
+<div data-role="panel" id="mypanel">
+  <!-- panel content goes here -->
+</div>
 
 <body>
   <div data-role="page">
@@ -35,6 +38,20 @@
         </div>       
       </div>
     </div>
+
+
+    <!-- <div class="collapse" id="collapseMenu">
+      <div class="card card-body">
+        <a href="#intro-face" data-ajax="false" data-role="none">ABOUT US</a>
+      </div>
+      <div class="card card-body">
+        <a href="#service-info" data-ajax="false" data-role="none">
+          SERVICES
+        </a>
+      </div>
+    </div> -->
+
+    
 
     <!---intro face -->
     <div data-role="intro">
@@ -108,16 +125,60 @@
     <!-- system feedback-->
     <div class="ui-grid-contain user-feedback" id="user-feedback">
       <div class="auth-form">
-        <p class="info-heading">Tell Us What you think</p>
-        <label for="username" class="input-label">Name</label>
-        <input id="full-name" class="text-input" type="text" name="username" data-role="none" placeholder="Full Name" />
+        
+        <h2 class="info-heading2">Tell Us What you think</h2>
+        <div class="auth-form2">
+          <label for="firstname" class="input-label">First Name</label>
+        <input id="first-name" class="text-input" type="text" name="firstname" data-role="none" placeholder="First Name" />
 
-        <label for="feedback" class="input-label">Feedback</label>
-        <textarea id="message" style="height: auto;" class="text-input" type="textarea" rows="3" name="feedback"
-          data-role="none" placeholder="Add your feedback"></textarea>
+        <label for="lastname" class="input-label">Last Name</label>
+        <input id="last-name" class="text-input" type="text" name="lastname" data-role="none" placeholder="Last Name" />
+
+        <label for="email" class="input-label">Email</label>
+        <input id="email" class="text-input" type="text" name="email" data-role="none" placeholder="Email" />
+
+        <textarea id="message" style="height: auto;" class="text-input" type="textarea" rows="5" name="feedback"
+          data-role="none" placeholder="Type your message">
+        </textarea>
+
+        <section class='rating-widget'>
+          <!-- Rating Stars Box -->
+          <div class='rating-stars text-center'>
+            <ul id='stars'>
+              <li class='star' title='Poor' data-value='1'>
+                <i class='fa fa-star fa-fw'></i>
+              </li>
+              <li class='star' title='Fair' data-value='2'>
+                <i class='fa fa-star fa-fw'></i>
+              </li>
+              <li class='star' title='Good' data-value='3'>
+                <i class='fa fa-star fa-fw'></i>
+              </li>
+              <li class='star' title='Excellent' data-value='4'>
+                <i class='fa fa-star fa-fw'></i>
+              </li>
+              <li class='star' title='WOW!!!' data-value='5'>
+                <i class='fa fa-star fa-fw'></i>
+              </li>
+            </ul>
+          </div>
+        </section>
+        
+          <!-- <div class="rating" id="first">
+            <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="1" data-iconpos="notext"></a>
+            <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="2" data-iconpos="notext"></a>
+            <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="3" data-iconpos="notext"></a>
+            <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="4" data-iconpos="notext"></a>
+            <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="5" data-iconpos="notext"></a>
+            <b><span class="vote"></span></b>
+          </div> -->
+
+          
         <button id="submit" class="prime-btn" data-role="none" type="submit">
           Post Review
         </button>
+        </div>
+        
       </div>
     </div>
     <!--our team-->
@@ -254,7 +315,8 @@
     </div>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
   </div>
 </body>
 
