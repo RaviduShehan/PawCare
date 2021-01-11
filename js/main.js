@@ -1,4 +1,4 @@
-var firebaseConfig = {
+/*var firebaseConfig = {
   apiKey: "AIzaSyAqgAxxo3m2hpEGYi7l67WIV7VQ_G5hM88",
   authDomain: "travelbuddy-261311.firebaseapp.com",
   databaseURL: "https://travelbuddy-261311.firebaseio.com",
@@ -85,3 +85,4 @@ $(document).on("input", "#distance-range", function() {
 
   $("#range-val").html(control.val());
 });
+*/
