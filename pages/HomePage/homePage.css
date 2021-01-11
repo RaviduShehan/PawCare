@@ -194,7 +194,7 @@
 }
   
   .info-heading {
-	font-family: "sans-serif";
+	font-family: "Open Sans";
 	font-style: normal;
 	font-weight: 1000;
 	font-size: 24px;
@@ -204,6 +204,24 @@
 	-webkit-text-fill-color: transparent;
 	text-shadow: none;
 	text-align: center;
+  }
+
+  .info-heading2 {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 1000;
+	font-size: 24px;
+	letter-spacing: 0.1em;
+	background: -webkit-linear-gradient(171.5deg, #D88973 9.21%, #1c1c1c 90.79%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: none;
+	text-align: center;
+	border-style: solid;
+	border-color: #cfc9c9;
+	border-width: 0.5px;
+	padding: 2px 2px;
+	margin-bottom: 0.01px;
   }
 
   .team-heading {
@@ -263,9 +281,17 @@
   .auth-form {
 	padding: 12px 16px;
   }
+
+  .auth-form2 {
+	padding: 12px 16px;
+	padding-top: 30px;
+	border-style: solid;
+	border-color: #cfc9c9;
+	border-width: 0.5px;
+  }
   
   .user-feedback {
-	padding: 70px 0;
+	padding: 10px 0;
 	border-top: 0.5px solid #3a3a3a75;
   }
   
@@ -376,7 +402,15 @@
   #footer-home ul {
 	text-decoration: none;
 	list-style: none;
-	padding: 0;
+	padding: 0; 
+  }
+
+  .rating-stars ul {
+	list-style-type:none;
+	padding:0;
+	
+	-moz-user-select:none;
+	-webkit-user-select:none;
   }
   
   /* tablet portrait */
