@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../style/main.css" />
     <link rel="stylesheet" href="../../pages/Log&Reg/logreg.css" />
     <script src="../../js/main.js"></script>
-    <script src="../../pages/Log&Reg/log&reg.js"></script>
+    <!--<script src="../../pages/Log&Reg/log&reg.js"></script>-->
 
   </head>
 
@@ -41,34 +41,37 @@
 
           <h1 id="h1"> Register with Us</h1>
 
+          <form action="../../connect.php" method="POST" >
+
           <label  class="input-label">Full Name</label>
           <div class="div-lable">
-            <input id="full-name" class="text-input" type="text" name="name" data-role="none" placeholder="Name*" />
+            <input id="full-name" required class="text-input" type="text" name="username" data-role="none" placeholder="Name*" />
           </div>
 
           <label  class="input-label">Email </label>
           <div class="div-lable">
-            <input id="email-input"  class="text-input"  type="email"   name="email"  data-role="none"  placeholder="Email*" />
+            <input id="email-input" required class="text-input"  type="email"   name="email"  data-role="none"  placeholder="Email*" />
           </div>
 
           <label  class="input-label">Mobile No </label>
           <div class="div-lable">
-            <input id="mobile-input"  class="text-input"  type="mobile"   name="mobile"  data-role="none"  placeholder="Mobile Number*" />
+            <input id="mobile-input" required class="text-input"  type="mobile"   name="mobile"  data-role="none"  placeholder="Mobile Number*" />
           </div>
 
           <label  class="input-label">Password </label>
           <div class="div-lable">
-            <input id="password-input" class="text-input"  type="password" name="password" data-role="none" placeholder="Password*" />
+            <input id="password-input" required class="text-input"  type="password" name="password" data-role="none" placeholder="Password*" />
           </div>
 
           <label  class="input-label"> Confirm password </label>
           <div class="div-lable">
-            <input id="conf-pw" class="text-input" type="confirmpassword" name="confirmpassword" data-role="none" placeholder="Re-enter Password*" />
+            <input id="conf-pw" class="text-input" required type="password" name="confirmpassword" data-role="none" placeholder="Re-enter Password*" />
           </div>
 
 
           <button onclick="window.location.href = '../../pages/Log&Reg/login.html';" id="signup-btn" class="prime-btn" data-role="none" > SignUp
           </button>
+
           <div class="load-ellipsis">
 
           </div>
@@ -77,6 +80,8 @@
               <a data-ajax="false" href="../../pages/Log&Reg/login.html"  data-role="none" >Already have an account? </a>
             </p>
           </div>
+
+        </form>
         </div>
       </div>
 
