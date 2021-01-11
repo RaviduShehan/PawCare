@@ -63,34 +63,7 @@
 	border: 0.05px solid #dfdfdf !important;
 	border-radius: 0px;
   }
-  
-  #intro-face {
-	width: 100%;
-	background-image: url("../../assets/images/intro2.png");
-	background-size: cover;
-	height: 207px;
-  }
-  
-  .intro-img {
-	width: 100%;
-	height: auto;
-
-  }
-  #description-landing {
-	width: 100%;
-	background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url("../../assets/images/intro1.png");
-	background-size: cover;
-	height: 207px;
-  }
-  
-  .description-img {
-	width: 100%;
-	height: auto;
-
-  } 
-  .text-container {
-	text-align: center;
-  }
+ 
   
   #logo-text {
 	font-family: "Roboto";
@@ -103,142 +76,6 @@
 	text-align: left;
   }
   
-  .intro-container {
-	margin: auto;
-	display: block;
-	padding: 75px 10px;
-	width: 75%;
-  }
-  
-  #description-landing {
-	text-align: center;
-	padding: 50px 20px;
-  }
-  
-
-  
-  #intro-heading {
-	font-family: "sans-serif";
-	font-style: normal;
-	font-weight: 1000;
-	font-size: 25px;
-	letter-spacing: 0.1em;
-	background: -webkit-linear-gradient(168.06deg, #d88973 9.21%, #22201f 90.79%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-shadow: none;
-  }
-  
-  #intro-body {
-	font-family: "sans-serif";
-	font-style: normal;
-	font-weight: 1000;
-	font-size: 16px;
-	letter-spacing: 0.01em;
-	text-align: justify;
-	text-shadow: none;
-	 
-  }
-  
-#intro-video {
-	max-width: 100%;
-  }
-  
-  .service-info {
-	text-align: center;
-	color: #2ab7b7;
-	padding: 80px 10px;
-  }
-  
-  .info-heading {
-	font-family: "Open Sans";
-	font-style: normal;
-	font-weight: 1000;
-	font-size: 24px;
-	letter-spacing: 0.1em;
-	background: -webkit-linear-gradient(171.5deg, #D88973 9.21%, #1c1c1c 90.79%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-shadow: none;
-	text-align: center;
-  }
-
-  .info-heading2 {
-	font-family: "Open Sans";
-	font-style: normal;
-	font-weight: 1000;
-	font-size: 24px;
-	letter-spacing: 0.1em;
-	background: -webkit-linear-gradient(171.5deg, #D88973 9.21%, #1c1c1c 90.79%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-shadow: none;
-	text-align: center;
-	border-style: solid;
-	border-color: #cfc9c9;
-	border-width: 0.5px;
-	padding: 2px 2px;
-	margin-bottom: 0.01px;
-  }
-
-  .team-heading {
-	font-family: "asap";
-	font-style: normal;
-	font-size: 30px;
-	margin-top: 15px;
-	text-align: center;
-  }
-  
- 
-  .image-container {
-	margin: auto;
-	display: block;
-    align: center;
-  }
-  
-  #svg-image {
-	fill: green;
-  }
-  
-  .home-services-img {
-	padding: 15px 24px 34px 24px;
-	align: center;
-  }
-  
-  .service-description {
-	padding: 20px 30px;
-  }
-  
-  .service-body {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 900;
-	font-size: 20px;
-	letter-spacing: 0.1em;
-	text-align: center;
-	color: #1c1c1c;
-  }
-  
-  .service-heading {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 1000;
-	font-size: 25px;
-	letter-spacing: 0.1em;
-	text-shadow: none;
-	text-align: center;
-	color: #1c1c1c;
-  }
-  
-  .service-info {
-	text-align: center;
-	background-color: #fbfbfa;
-  }
-  
-  .auth-form {
-	padding: 12px 16px;
-  }
-
   .auth-form2 {
 	padding: 12px 16px;
 	padding-top: 30px;
@@ -262,47 +99,7 @@
 	background-color: #eea243;
   }
   
-  .member {
-	width: 50% !important;
-	align-content: center;
-	margin: 15px 0;
-	margin-bottom: 30px;
-  }
   
-  .members-img {
-	margin: auto;
-	display: block;
-	border-radius: 50%;
-	box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	width: 60%;
-  }
-  
-  .member-description {
-	text-align: center;
-	color: #ffffff;
-  }
-  
-  .member-name {
-	font-family: "asap";
-	font-size: 10px;
-	letter-spacing: 0.1em;
-	margin: 1px;
-  }
-
-  .member-no {
-	font-family: "asap";
-	font-size: 10px;
-	letter-spacing: 0.1em;
-	margin-top: 10px;
-	margin-bottom: 1px;
-  }
-  
-  .member-info {
-	font-family: "asap";
-	font-size: 10px;
-	letter-spacing: 0.1em;
-	margin: 1px 0;
-  }
   
   #footer-home {
 	font-family: "Asap";
@@ -454,44 +251,14 @@
 	
 	  } */
   
-	#logo-text {
-	  font-family: "sans-serif";
-	  font-style: normal;
-	  font-weight: normal;
-	  font-size: 22px;
-	  letter-spacing: 0.05em;
-	  text-shadow: none;
-	  color: #ffffff;
-	  margin: 15px 0;
-	}
+	
   
 	#description-landing {
 	  text-align: center;
 	  padding: 100px 25px;
 	}
   
-	.info-heading {
-	  font-family: "sans-serif";
-	  font-style: normal;
-	  font-weight: 900;
-	  font-size: 30px;
-	  letter-spacing: 0.05em;
-	  background: -webkit-linear-gradient(171.5deg, #1c1c1c 9.21%, #1c1c1c 90.79%);
-	  -webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
-	  text-shadow: none;
-	  text-align: center;
-	}
-  
-	.service-body {
-	  font-family: "sans-serif";
-	  font-style: normal;
-	  font-weight: normal;
-	  font-size: 22px;
-	  letter-spacing: 0.05em;
-	  text-align: center;
-	  color: #343434;
-	}
+	
 	 
   }
   

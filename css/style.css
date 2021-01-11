@@ -276,6 +276,7 @@
 	font-size: 10px !important;
 	letter-spacing: 0.1em;
 	text-transform: none;
+	color: #2ab7b7 ;
   }
   
   .email-error-label, .pw-error-label {
