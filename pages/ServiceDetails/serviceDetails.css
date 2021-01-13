@@ -5,15 +5,24 @@
  #intro-ServiceD {
 	width: 100%;
 	background-size: cover;
-	height: 50%;
+	height: 25%;
   }
   .serviceD-textcontainer{
 
   }
+
   
  .text-containerService {
     text-align: center;
-    width: auto;
+	width: auto;
+	padding: 0;
+  }
+  .availability{
+	  width: 100%;
+	  height: auto;
+  }
+  .locationPin{
+	  height: 20px;
   }
 #textName {
 	font-family: "Roboto";
@@ -23,6 +32,19 @@
 	letter-spacing: 0.05em;
 	text-shadow: none;
     background: -webkit-linear-gradient(171.5deg, #d88973 9.21%, #d88973 90.79%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: left;
+  }
+  #textsubName{
+	font-family: "Roboto";
+	text-align: right;
+	font-style: normal;
+	font-weight: 900px;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	text-shadow: none;
+    background: -webkit-linear-gradient(171.5deg, #1c1c1c 9.21%, #1c1c1c 90.79%);
     -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-align: left;
@@ -37,95 +59,17 @@
     text-align: justify;
     padding: 2px;
   }
-  #footer-home {
-	font-family: "Asap";
-	font-style: normal;
-	font-weight: 300;
-	font-size: 9px;
-	letter-spacing: 0.05em;
-	height: 270px;
+  .pricing-details{
 	width: 100%;
-	background-color: #2ab7b7;
-	border: none;
-	padding: 5px 10px;
-	bottom: 0;
-	text-transform: none;
-	color: #ffffff;
-	text-shadow: none;
+	background-color: #d88973;
+	background-size: cover;
+	height: 400px;
   }
-  #footer-home p {
-	font-family: "asap";
-	text-align: center;
-	margin-top: 1px;
-	text-transform: none;
-  }
+  .pricing-container{
+	background-color: #fbfbfa;
+	display: inline-block;
+	margin: 50 auto;
+	padding: 40px 40px ;
 
-  #footer-home a{
-	font-family: "asap";
-	font-size: 12px;
-	color: #ffffff;
-	font-style: normal;
-	text-decoration: none;
-	font-weight: normal;
-	margin: 2px 8px;
-  }
-
-  #footer-home li{
-	font-family: "asap";
-	font-size: 12px;
-	color: #ffffff;
-	font-style: normal;
-	text-decoration: none;
-	font-weight: normal;
-	margin: 5px 10px;
-  }
-
-  .nav-payment {
-	font-family: "asap";
-	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 1px;
-	font-size: 10px;
-	text-transform: none;
-  }
-
-  #footer-home ul {
-	text-decoration: none;
-	list-style: none;
-	padding: 0;
   }
   
-  .footer-logo{
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-}
-
-.footer-contacts{
-  
-  width: 15px;
-  margin-right: 10px;
-  padding-top: 5px;
-}
-
-.footer-payment1{
-  width: 8%;
-  padding-left: 37%;
-}
-
-.footer-payment2{
-  width: 8%;
-}
-
-.footer-payment3{
-  width: 8%;
-}
-
-.footer-social1{
-  width: 8%;
-  padding-left: 30%;
-}
-
-.footer-social2{
-  width: 8%;
-}
