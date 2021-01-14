@@ -94,11 +94,17 @@
 }
 
 .service-img{
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(251,251,250,1) 100%);
-    width: 100%;
+    /* background: radial-gradient(circle, rgba(255,255,255,1) 10%, rgba(251,251,250,1) 70%); */
+    background: white;
+    /* width: 100%; */
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style: solid;
+    border-width: 0.1pt;
+    border-color: #1c1c1c;
 }
 
 
@@ -123,7 +129,7 @@
 }
 
 #game-button-enter {
-    width: 80%;
+    width: 85%;
     margin: auto;
     border-radius: 40px;
     background: #2ab7b7;
@@ -210,8 +216,10 @@
         background-color: white;
         width: 100%;
         text-align: center;
-        /* margin-top: 20px;
-        margin-bottom: 20px; */
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
         border-style: solid;
         border-width: 0.2px;
         border-color: #1c1c1c;
