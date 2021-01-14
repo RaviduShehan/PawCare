@@ -144,7 +144,7 @@ function getLocation(tarLng, tarLat) {
   return Math.round(dinKm);
 }
 
-function createItem(snapshot) {
+/*function createItem(snapshot) {
   let snap = snapshot.val();
   let distance = getLocation(snap.long, snap.lat);
   let html = "";
@@ -168,8 +168,8 @@ function createItem(snapshot) {
   html += "&nbsp;" + snap.author + "</p>";
   html += "</div>";
   return html;
-}
-
+} 
+*/
 //Filter data
 $(document).on("input", "#distance-range", function() {
   let elemArr = document.getElementsByClassName("fav-item");
