@@ -94,7 +94,7 @@
 }
 
 .service-img{
-    background-color: white;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(251,251,250,1) 100%);
     width: 100%;
     text-align: center;
     margin-top: 20px;
@@ -117,14 +117,22 @@
     display: none;
 }
 
-.ui-btn {
+
+.gamification{
+    margin-bottom: 10px;
+}
+
+#game-button-enter {
+    width: 80%;
+    margin: auto;
+    border-radius: 40px;
     background: #2ab7b7;
+    margin-top: 5px;
+    color: #fbfbfa;
     text-shadow: none;
-  }
-  
-  .ui-btn-inner {
-    color: #FFFFFF;
-  }
+}
+
+
   
   /* tablet portrait */
   @media screen and (min-width: 768px) {
