@@ -16,6 +16,10 @@
   text-decoration: none;
 }
 
+.mbsc-err-msg{
+  color: #EB5757;
+}
+
 .div-lable{
   padding-left: 12px;
   padding-right: 35px;
