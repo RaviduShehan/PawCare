@@ -1,10 +1,17 @@
 .fav-items {
-  padding: 15px;
+  padding: 25px;
   width: 100%;
   display: grid;
   grid-template-columns: auto;
-  color: #ffffff;
+  color: #2ab7b7;
   text-shadow: none;
+  background-color: #eea243;
+  letter-spacing: 0.15em;
+}
+#backImage{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url("../../assets/images/serviceProvider1.jpeg");
+  background-size: cover;
+  height: 160px;
 }
 .fav-items .fav-item, .fav-items .fav-item-loading {
   margin-bottom: 15px;
@@ -13,19 +20,22 @@
   border-radius: 10px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
   background-size: cover !important;
+  
 }
 .fav-items .fav-item p, .fav-items .fav-item-loading p {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
 }
-.fav-items .fav-item .distance-txt, .fav-items .fav-item-loading .distance-txt {
+.fav-items .fav-item .service-txt, .fav-items .fav-item-loading .service-txt {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  font-size: 9px;
+  font-size: 14px;
   letter-spacing: 0.1em;
   line-height: 12px;
+  text-shadow: none;
+  
 }
 .fav-items .fav-item div, .fav-items .fav-item-loading div {
   height: 116px;
@@ -37,8 +47,9 @@
   font-style: normal;
   font-weight: 900;
   font-size: 36px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   line-height: 40px;
+  color: #1c1c1c;
 }
 .fav-items .fav-item div .place, .fav-items .fav-item-loading div .place {
   font-family: "Lato";
@@ -48,16 +59,18 @@
   letter-spacing: 0.05em;
   line-height: 16px;
   justify-content: center;
+  color: #d88973;
 }
 .fav-items .fav-item .user-owner, .fav-items .fav-item-loading .user-owner {
-  font-family: "Lato";
+  font-family: "Roboto";
   font-style: normal;
-  font-weight: 300;
-  font-size: 9px;
+  font-weight: 600;
+  font-size: 16px;
   letter-spacing: 0.1em;
   vertical-align: middle;
   line-height: 12px;
   text-align: left;
+  text-shadow: none;
 }
 .fav-items .fav-item-loading {
   background: #ffffff !important;
@@ -83,7 +96,7 @@
     transform: translateX(100%);
   }
 }
-.distance-txt.loading {
+.service-txt.loading {
   height: 12px;
 }
 
@@ -133,35 +146,3 @@
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .fav-items {
-    padding: 15px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 200px 200px;
-  }
-  .fav-items .fav-item, .fav-items .fav-item-loading {
-    margin: 5px;
-    height: auto;
-  }
-  .fav-items .fav-item div, .fav-items .fav-item-loading div {
-    height: 145px;
-  }
-  .fav-items .fav-item div .district, .fav-items .fav-item-loading div .district {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 42px;
-    letter-spacing: 0.15em;
-    line-height: 55px;
-  }
-  .fav-items .fav-item div .place, .fav-items .fav-item-loading div .place {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    letter-spacing: 0.05em;
-  }
-}
-
-/*# sourceMappingURL=faviourites.css.map */

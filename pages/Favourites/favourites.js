@@ -10,6 +10,7 @@ $(function() {
   $(".floating-btn").click(function() {
     $("#success-body").css("display", "none");
     $("#main-body").css("display", "block");
+    
   });
   if (navigator.geolocation) {
     //Get Current Location
@@ -31,6 +32,7 @@ $(function() {
     var doc = new jsPDF();
     var specialElementHandlers = {
       "#fav-items": function(element, renderer) {
+      
         return true;
       }
     };
@@ -54,10 +56,10 @@ $(function() {
 
     Email.send({
       Host: "smtp.gmail.com",
-      Username: "trainbuddytest@gmail.com",
-      Password: "Buddy678",
+      Username: "pawcare21@gmail.com",
+      Password: "PawCare123@",
       To: receiver,
-      From: "trainbuddytest@gmail.com",
+      From: "pawcare21@gmail.com",
       Subject: emailSubject,
       Body: emailBody,
       Attachments: [
@@ -66,6 +68,7 @@ $(function() {
           data: pdfBase64
         }
       ]
+    
     }).then(() => {
       $(".lds-hourglass").css("display", "none");
       $(".modal-loader").css("display", "none");
@@ -141,7 +144,7 @@ function getLocation(tarLng, tarLat) {
   return Math.round(dinKm);
 }
 
-function createItem(snapshot) {
+/*function createItem(snapshot) {
   let snap = snapshot.val();
   let distance = getLocation(snap.long, snap.lat);
   let html = "";
@@ -165,8 +168,8 @@ function createItem(snapshot) {
   html += "&nbsp;" + snap.author + "</p>";
   html += "</div>";
   return html;
-}
-
+} 
+*/
 //Filter data
 $(document).on("input", "#distance-range", function() {
   let elemArr = document.getElementsByClassName("fav-item");
