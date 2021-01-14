@@ -22,17 +22,104 @@
   }
 
   .footer-payment1{
-	width: 8%;
-	padding-left: 37%;
+	width: 10%;
   }
 
   .footer-payment2{
-	width: 8%;
+	width: 10%;
   }
 
   .footer-payment3{
-	width: 8%;
+	width: 10%;
   }
+
+  .footer-payment4{
+	width: 10%;
+	padding-left: 33%;
+  }
+
+  .ui-btn .ui-btn-a:visited{
+	  background-color:#2ab7b7;
+  }
+
+  #btnNav{
+	background-color: transparent;
+  }
+  
+
+.header_button {
+    flex-shrink: 0;
+    outline: none;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+}
+#nav-text{
+	color: #ffffff;
+}
+
+.nav__links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 250px;
+    background: linear-gradient(to right bottom, #26a6a6, #4ab6b6, #65c6c6, #7fd6d6, #97e7e7);
+    transform: translateX(-250px);
+	transition: transform 0.3s;
+	text-decoration: none;
+	
+}
+
+.nav--open .nav__links {
+    transform: translateX(0);
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: transform 0.2s;
+    text-shadow: none;
+}
+
+.nav__link > i {
+    margin-right: 15px;
+}
+
+.nav__link--active {
+	color: #009578;
+	text-decoration: none;
+}
+
+.nav__link--active,
+.nav__link:hover {
+	background: #239090;
+	text-decoration: none;
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.nav--open .nav__overlay {
+    visibility: visible;
+    opacity: 1;
+}
 
   .footer-social1{
 	width: 8%;
@@ -108,7 +195,7 @@
 	font-weight: 300;
 	font-size: 9px;
 	letter-spacing: 0.05em;
-	height: 270px;
+	height: 300px;
 	width: 100%;
 	background-color: #2ab7b7;
 	border: none;
@@ -117,7 +204,7 @@
 	text-transform: none;
 	color: #ffffff;
 	text-shadow: none;
-  }
+	}
   #footer-home p {
 	font-family: "asap";
 	text-align: center;
@@ -157,35 +244,10 @@
   #footer-home ul {
 	text-decoration: none;
 	list-style: none;
-	padding: 0; 
-  }
+	padding: 0;
+	}
 
-  .rating-stars ul {
-	list-style-type:none;
-	padding:0;
-	
-	-moz-user-select:none;
-	-webkit-user-select:none;
-  }
   
-  .rating-stars ul > li.star {
-	display:inline-block;
-	
-  }
-  
-  .rating-stars ul  li.star  i {
-	font-size:2.5em; /* Change the size of the stars */
-	color:#ccc; /* Color on idle state */
-  }
-  
-  /* .rating-stars ul  li.star.hover  i {
-	color:#FFCC36;
-  } */
-  
-  .rating-stars ul  li.star.selected  i {
-	color:#FFCC36;
-  }
-
   
   
   
@@ -228,6 +290,20 @@
 	  display: block;
 	  width: 60%;
 	  height: auto;
+	}
+
+	.nav__links {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		height: 100vh;
+		width: 250px;
+		background: linear-gradient(to right bottom, #26a6a6, #4ab6b6, #65c6c6, #7fd6d6, #97e7e7);
+		transform: translateX(-250px);
+		transition: transform 0.3s;
+		text-decoration: none;
+		
 	}
   
 	#intro-face {
