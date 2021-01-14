@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+
+#service-head-image {
+   width:100%; 
+   background-size: cover;
+   background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),  url("../../assets/images/servivepages.jpg");
+   height: 300px;
+}
+
+  ul.breadcrumbs {
+	padding: 5px 10px;
+	list-style: none;
+	/* margin-top: 5px; */
+  }
+  ul.breadcrumbs li {
+	display: inline;
+	font-size: 13px;
+	text-shadow: none;
+	color: #2ab7b7;
+	font-family: Roboto;
+  }
+  ul.breadcrumbs li+li:before {
+	padding: 4px;
+	color: #fafafb;
+	content: "/\00a0";
+  }
+  ul.breadcrumbs li a {
+	color: #fafafb;
+	text-decoration: none;
+  }
+
+  .headimg-content{
+	text-align: center;
+  }
+
+  .headimg-content-title{
+	font-family: Roboto;
+	text-shadow: none;
+	color: #fafafb;
+  }
+
+  .headimg-content-content{
+	  /* margin-top: 10%; */
+	font-family: Roboto;
+	font-size: 13px;
+	text-shadow: none;
+	color: #fafafb;
+	margin-left: 5px;
+	margin-right: 5px;
+  }
+
+  div #searchbar .ui-input-text  {
+	font-size: 14px;
+	width: 100% ;
+	margin-left: 30%;
+	border-radius: 40px;
+	height: 40px;
+	
+  }
+  
+  #searchbar #searchbtn {
+	/* float: left; */
+	width: 50%;
+	font-family: Asap;
+	background: #eea243;
+	text-shadow: none;
+	color: #fafafb;
+	margin-top: 7px;
+	margin-left: 10%;
+	border: none;
+	border-radius: 40px;
+	height: 40px;
+  }
+
+  #map {
+	height: 350px;
+	width: 100%;
+  }
+
+  /* .providers{
+	background: #ffffff
+  } */
+
+  .service-provider-title{
+	 	text-align: center;
+	  	font-family: Roboto;
+		text-shadow: none;
+		margin-top: 20px;
+		
+  }
+
+#service-providers{
+	overflow:auto;
+	height:200px;
+	display: block;
+	/* background: #ffffff */
+}
+
+#provider-img{
+	width: 80%;
+	border-radius: 50%;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+#provider-name{
+	color: #d88973;
+	margin-top: 20px;
+	/* float: left; */
+}
+
+#provider-name .fa-heart{
+	margin-left: 10px;
+	color: red;
+}
+
+#provider-location{
+	font-size: 12px;
+}
+
+.fa-star{
+	color:#eea243;
+	margin-left: 2px;
+}
+
+.botton-icon{
+	color: #2ab7b7;
+	margin-left: 30%;
+}
+
+#service-providers-tab{
+	display: none;
+}
+
+
+    /* tablet portrait */
+	@media screen and (min-width: 768px) {
+
+		#service-head-image {
+			width:100%; 
+			background-size: cover;
+			background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),  url("../../assets/images/servivepages.jpg");
+			height: 400px;
+		 }
+
+		 ul.breadcrumbs li {
+			display: inline;
+			font-size: 18px;
+			text-shadow: none;
+			color: #2ab7b7;
+			font-family: Roboto;
+		  }
+
+		  .headimg-content-content{
+			margin-top: 5%;
+		  font-family: Roboto;
+		  text-shadow: none;
+		  color: #fafafb;
+		  margin-left:10%;
+		  margin-right: 10%;
+		  font-size: 16px;
+		}
+
+		div #searchbar .ui-input-text  {
+			width: 90% ;
+			margin-left: 30%;
+			border-radius: 40px;
+			height: 40px;
+			font-size: 14px;
+			
+		  }
+
+		  #searchbar{
+			margin-top: 5%;
+		}
+		
+		  
+		  #searchbar #searchbtn {
+			/* float: left; */
+			width: 50%;
+			/* padding: 10px; */
+			background: #eea243;
+			margin-top: 7px;
+			margin-left: 10%;
+			border: none;
+			border-radius: 40px;
+			height: 40px;
+		  }
+
+		  #map {
+			height: 400px;
+			width: 100%;
+		  }
+
+		  #service-providers{
+			overflow:auto;
+			height:400px;
+		}
+
+		#service-providers{
+			display: none;
+		}
+
+		#service-providers-tab{
+			overflow:auto;
+			height:400px;
+			display: block;
+		}
+
+		#provider-img-tab{
+			width: 70%;
+			border-radius: 50%;
+			margin-left: 40px;
+			margin-top: 20px;
+			
+		}
+
+		#provider-name-tab{
+			color: #d88973;
+			margin-top: 20px;
+			text-align: center;
+		}
+		
+		#provider-name-tab .fa-heart{
+			margin-left: 10px;
+			color: red;
+		}
+
+		#provider-location-tab{
+			font-size: 14px;
+			text-align: center;
+		}
+
+		#rate{
+			text-align: center;
+			color:#eea243;
+			margin-left: 2px;
+		}
+		
+
+	}
