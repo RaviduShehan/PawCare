@@ -40,12 +40,13 @@
   text-transform: uppercase;
 }
 .confirmation-section .time-txt {
-  font-family: "Lato";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
   font-size: 15px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: right;
 }
 .confirmation-section .class-txt {
   font-family: "Roboto";
@@ -54,22 +55,25 @@
   font-size: 12px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  
 }
 .confirmation-section .place-txt {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  letter-spacing: 0.1em;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  float: right;
 }
 .confirmation-section .one-price {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  letter-spacing: 0.1em;
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  float: right;
 }
 .confirmation-section .price {
   font-family: "Roboto";
@@ -78,8 +82,8 @@
   font-size: 18px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  text-align: right;
-  color: #2afbfb;
+  float: right;
+  color: #2ab7b7;
 }
 
 .pay-checkout {
