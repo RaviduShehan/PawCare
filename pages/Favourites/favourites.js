@@ -10,6 +10,7 @@ $(function() {
   $(".floating-btn").click(function() {
     $("#success-body").css("display", "none");
     $("#main-body").css("display", "block");
+    
   });
   if (navigator.geolocation) {
     //Get Current Location
@@ -31,6 +32,7 @@ $(function() {
     var doc = new jsPDF();
     var specialElementHandlers = {
       "#fav-items": function(element, renderer) {
+      
         return true;
       }
     };
@@ -54,10 +56,10 @@ $(function() {
 
     Email.send({
       Host: "smtp.gmail.com",
-      Username: "trainbuddytest@gmail.com",
-      Password: "Buddy678",
+      Username: "pawcare21@gmail.com",
+      Password: "PawCare123@",
       To: receiver,
-      From: "trainbuddytest@gmail.com",
+      From: "pawcare21@gmail.com",
       Subject: emailSubject,
       Body: emailBody,
       Attachments: [
@@ -66,6 +68,7 @@ $(function() {
           data: pdfBase64
         }
       ]
+    
     }).then(() => {
       $(".lds-hourglass").css("display", "none");
       $(".modal-loader").css("display", "none");
