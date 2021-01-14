@@ -44,7 +44,24 @@
           </p>
         </div>
         <div class="serviceIcons">
-
+          <div class="row">
+            <div class="column">
+              <img src="../../assets/icons/gBadge.svg"  style="height:50px;">
+            </div>
+            <div class="column">
+              <img src="../../assets/icons/dogicon.svg"  style="height:50px;">
+            </div>
+            <div class="column">
+              <img src="../../assets/icons/gate.svg" >
+            </div>
+            <div class="column">
+              <img src="../../assets/icons/ambulance.svg" >
+            </div>
+            <div class="column">
+              <img src="../../assets/icons/caricon.svg" >
+            </div>
+          </div>
+    
         </div>
         <div class="serviceD-textcontainer">
           <p id="serviceDetails-body">
@@ -108,19 +125,19 @@
       <div class="booking-form">
         <h2 id="bookingHeading">Make a Booking</h2>
         <div class="booking-form-content">
-          <label for="firstname" class="input-labelB">Date</label>
+          <label id="input-labelB">Date</label>
           <input type="date" data-role="date" data-inline="true">
 
-          <label for="intime" class="input-labelB">In Time</label>
+          <label  id="input-labelB">In Time</label>
           <input id="intime" class="text-inputB" type="time" name="intime" data-role="none" placeholder="In time" />
 
-          <label for="outTime" class="input-labelB">Out Time</label>
+          <label  id="input-labelB">Out Time</label>
           <input id="outTime" class="text-inputB" type="time" name="outTime" data-role="none" placeholder="Out Time" />
-          <label for="instructions" class="input-labelB">Special Instruction</label>
+          <label  id="input-labelB">Special Instruction</label>
           <textarea id="message" style="height: auto;" class="text-inputB" type="textarea" rows="5" name="Instructions"
             data-role="none" placeholder="Type your message">
             </textarea>
-          <label for="totalValue" class="input-labelB">Total Value : Rs. 1000</label>
+          <label  id="input-labelB">Total Value : Rs. 1000</label>
 
         </div>
         <a class="booking" href="../../pages/Payment/paymentindex.html" data-ajax="false" data-role="none">
@@ -128,10 +145,6 @@
         </a>
 
       </div>
-
-
-
-
       <!-- footer -->
       <div data-role="footer" id="footer-home">
         <div class="nav-logo-container">
