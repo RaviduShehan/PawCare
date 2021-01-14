@@ -1,46 +1,6 @@
 #nav-img {
 	float: left;
   }
-  .logo-img{
-	margin-left: auto;
-	margin-right: auto;
-	width: 60%;
-  }
-
-  .footer-logo{
-  	margin-left: auto;
-  	margin-right: auto;
-  	width: 100%;
-  }
-
-  .footer-contacts{
-	
-	width: 15px;
-	margin-right: 10px;
-	padding-top: 5px;
-  }
-
-  .footer-payment1{
-	width: 8%;
-	padding-left: 37%;
-  }
-
-  .footer-payment2{
-	width: 8%;
-  }
-
-  .footer-payment3{
-	width: 8%;
-  }
-
-  .footer-social1{
-	width: 8%;
-	padding-left: 30%;
-  }
-
-  .footer-social2{
-	width: 8%;
-  }
   
   
   #collapseMenu {
@@ -282,6 +242,10 @@
 	padding: 12px 16px;
   }
 
+  .auth-form3 {
+	padding: 12px 16px;
+  }
+
   .auth-form2 {
 	padding: 12px 16px;
 	padding-top: 30px;
@@ -347,64 +311,6 @@
 	margin: 1px 0;
   }
   
-  #footer-home {
-	font-family: "Asap";
-	font-style: normal;
-	font-weight: 300;
-	font-size: 9px;
-	letter-spacing: 0.05em;
-	height: 270px;
-	width: 100%;
-	background-color: #2ab7b7;
-	border: none;
-	padding: 5px 10px;
-	bottom: 0;
-	text-transform: none;
-	color: #ffffff;
-	text-shadow: none;
-  }
-  #footer-home p {
-	font-family: "asap";
-	text-align: center;
-	margin-top: 1px;
-	text-transform: none;
-  }
-
-  #footer-home a{
-	font-family: "asap";
-	font-size: 12px;
-	color: #ffffff;
-	font-style: normal;
-	text-decoration: none;
-	font-weight: normal;
-	margin: 2px 8px;
-  }
-
-  #footer-home li{
-	font-family: "asap";
-	font-size: 12px;
-	color: #ffffff;
-	font-style: normal;
-	text-decoration: none;
-	font-weight: normal;
-	margin: 5px 10px;
-  }
-
-  .nav-payment {
-	font-family: "asap";
-	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 1px;
-	font-size: 10px;
-	text-transform: none;
-  }
-
-  #footer-home ul {
-	text-decoration: none;
-	list-style: none;
-	padding: 0; 
-  }
-
   .rating-stars ul {
 	list-style-type:none;
 	padding:0;
@@ -412,6 +318,26 @@
 	-moz-user-select:none;
 	-webkit-user-select:none;
   }
+  
+  .rating-stars ul > li.star {
+	display:inline-block;
+	
+  }
+  
+  .rating-stars ul  li.star  i {
+	font-size:2.5em; /* Change the size of the stars */
+	color:#ccc; /* Color on idle state */
+  }
+  
+  /* .rating-stars ul  li.star.hover  i {
+	color:#FFCC36;
+  } */
+  
+  .rating-stars ul  li.star.selected  i {
+	color:#FFCC36;
+  }
+
+
   
   /* tablet portrait */
   @media screen and (min-width: 768px) {

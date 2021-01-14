@@ -40,7 +40,8 @@ $(document).ready(function(){
 		$(stars[i]).addClass('selected');
 	  }
 	  
-	  
+	  var ratingValue = parseInt($('#stars li.selected').last().data('value'), 10);
+    
 	  
 	  
 	});
@@ -49,7 +50,9 @@ $(document).ready(function(){
   });
   
   
-  window.addEventListener("load", () => {
+
+
+window.addEventListener("load", () => {
 	document.body.classList.remove("preload");
 });
 
@@ -64,4 +67,4 @@ document.addEventListener("DOMContentLoaded", () => {
 		nav.classList.remove("nav--open");
 	});
 });
-  
+
