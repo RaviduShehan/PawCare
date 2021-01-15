@@ -95,26 +95,20 @@
 	text-align: center;
 	padding: 50px 20px;
   }
- 
-  #intro-heading{
-	text-align: center;
-}
-#part1{
-  font-family: "sans-serif";
-font-style: normal;
-font-weight: 900;
-font-size: 30px;
-letter-spacing: 0.05em;
-color: #1c1c1c;
-}
-#part2{
-  font-family: "sans-serif";
-font-style: normal;
-font-weight: 900;
-font-size: 30px;
-letter-spacing: 0.05em;
-color: #D88973;
-}
+  
+
+  
+  /* #intro-heading {
+	font-family: "sans-serif";
+	font-style: normal;
+	font-weight: 1000;
+	font-size: 25px;
+	letter-spacing: 0.1em;
+	background: -webkit-linear-gradient(168.06deg, #d88973 9.21%, #22201f 90.79%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: none;
+  } */
   
   #intro-body {
 	font-family: Roboto;
@@ -138,13 +132,31 @@ color: #D88973;
 	color: #2ab7b7;
 	padding: 80px 10px;
   }
- 
+
+  /* #intro-heading {
+	font-family: "sans-serif";
+	font-style: normal;
+	font-weight: 1000;
+	font-size: 25px;
+	letter-spacing: 0.1em;
+	background: -webkit-linear-gradient(168.06deg, #d88973 9.21%, #22201f 90.79%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: none;
+  } */
 
   #intro-heading {
- 
+	font-family: Roboto;
+	letter-spacing: normal;
+	font-weight: 500;
+	font-size: 24px;
+	letter-spacing: 0.1em;
+  background: -webkit-linear-gradient(171.5deg, #D88973 40%, #1c1c1c 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-shadow: none;
   text-align: center;
-  
+  margin-top: 20px;
 }
   
   .info-heading {
@@ -223,8 +235,9 @@ color: #D88973;
   .service-heading {
 	font-family: Roboto;
 	letter-spacing: normal;
-	font-weight: 1000;
+	font-weight: 500;
 	font-size: 20px;
+	/* letter-spacing: 0.1em; */
 	text-shadow: none;
 	text-align: center;
 	color: #1c1c1c;
@@ -455,7 +468,18 @@ span.posted-at {
 		background-size: cover;
 		height: 207px;
 	  }
-
+	#intro-heading {
+		font-family: Roboto;
+		letter-spacing: normal;
+		font-weight: 500;
+		font-size: 30px;
+	  letter-spacing: 0.05em;
+	  background: -webkit-linear-gradient(168.06deg, #D88973 40%, #1c1c1c 80%);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  text-shadow: none;
+	  text-align: center;
+	}
   
 	.intro-img {
 	  padding: 100px 0 0;
@@ -477,25 +501,7 @@ span.posted-at {
 		color: #1c1c1c;
 		text-align: left;
 	}
-	#intro-heading{
-		text-align: center;
-	}
-	#part1{
-	  font-family: "sans-serif";
-	font-style: normal;
-	font-weight: 900;
-	font-size: 30px;
-	letter-spacing: 0.05em;
-	color: #1c1c1c;
-  }
-  #part2{
-	  font-family: "sans-serif";
-	font-style: normal;
-	font-weight: 900;
-	font-size: 30px;
-	letter-spacing: 0.05em;
-	color: #D88973;
-  }
+
 		
 	#logo-text-des{
 		font-family: "Roboto";
@@ -522,6 +528,15 @@ span.posted-at {
 
 
 	.info-heading {
+		font-family: Roboto;
+		letter-spacing: normal;
+		font-weight: 500;
+		font-size: 30px;
+	  letter-spacing: 0.05em;
+	  background: -webkit-linear-gradient(171.5deg, 168.06deg, #D88973 40%, #1c1c1c 80%);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  text-shadow: none;
 	  text-align: center;
 	}
 	
