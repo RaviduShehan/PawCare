@@ -1,6 +1,51 @@
 #nav-img {
 	float: left;
   }
+  .logo-img{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+  }
+  .description-container{
+	  padding: 2px;
+	  height: 200px;
+	  border: #1c1c1c;
+  }
+
+  .footer-logo{
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 100%;
+  }
+
+  .footer-contacts{
+	
+	width: 15px;
+	margin-right: 10px;
+	padding-top: 5px;
+  }
+
+  .footer-payment1{
+	width: 8%;
+	padding-left: 37%;
+  }
+
+  .footer-payment2{
+	width: 8%;
+  }
+
+  .footer-payment3{
+	width: 8%;
+  }
+
+  .footer-social1{
+	width: 8%;
+	padding-left: 30%;
+  }
+
+  .footer-social2{
+	width: 8%;
+  }
   
   
   #collapseMenu {
@@ -61,7 +106,7 @@
 	font-family: "Roboto";
 	font-style:normal;
 	font-weight: 500;
-	font-size: 17px;
+	font-size: 30px;
 	letter-spacing: 0.05em;
 	text-shadow: none;
 	color: #D88973;
@@ -74,7 +119,7 @@
 	font-family: "Roboto";
 	font-style:normal;
 	/* font-weight: 400; */
-	font-size: 10px;
+	font-size: 18px;
 	letter-spacing: 0.05em;
 	text-shadow: none;
 	color: #1c1c1c;
@@ -110,11 +155,12 @@
   #intro-body {
 	font-family: "sans-serif";
 	font-style: normal;
-	font-weight: 1000;
+	font-weight: 500;
 	font-size: 16px;
 	letter-spacing: 0.01em;
 	text-align: justify;
 	text-shadow: none;
+	padding: 2px;
 	 
   }
   
@@ -139,18 +185,24 @@
 	-webkit-text-fill-color: transparent;
 	text-shadow: none;
   } */
-
-  #intro-heading {
+  #intro-heading{
+	  text-align: center;
+  }
+  #part1{
 	font-family: "sans-serif";
-	font-style: normal;
-	font-weight: 1000;
-	font-size: 24px;
-	letter-spacing: 0.1em;
-  background: -webkit-linear-gradient(168.06deg, #d88973 9.21%, #1c1c1c 90.79%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: none;
-  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  color: #1c1c1c;
+}
+#part2{
+	font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  color: #D88973;
 }
   
   .info-heading {
@@ -397,7 +449,7 @@
 		font-family: "Roboto";
 		font-style:normal;
 		font-weight: 500;
-		font-size: 17px;
+		font-size: 50px;
 		letter-spacing: 0.05em;
 		text-shadow: none;
 		color: #1c1c1c;
@@ -409,7 +461,7 @@
 		font-family: "Roboto";
 		font-style:normal;
 		/* font-weight: 400; */
-		font-size: 1px;
+		font-size: 18px;
 		letter-spacing: 0.05em;
 		text-shadow: none;
 		color: #1c1c1c;
@@ -435,12 +487,13 @@
 	  font-weight: 900;
 	  font-size: 30px;
 	  letter-spacing: 0.05em;
-	  background: -webkit-linear-gradient(171.5deg,  #d88973 9.21%, #1c1c1c 90.79%);
+	  background: -webkit-linear-gradient(171.5deg,  #d88973 50%, #1c1c1c 50%);
 	  -webkit-background-clip: text;
 	  -webkit-text-fill-color: transparent;
 	  text-shadow: none;
 	  text-align: center;
 	}
+	
   
 	.service-body {
 	  font-family: "sans-serif";
