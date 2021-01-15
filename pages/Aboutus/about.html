@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
   <link rel="stylesheet" type="text/css" href="../../css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <link rel="stylesheet" href="../../components/header_footer.css" />
   <link rel="stylesheet" href="../../pages/Aboutus/about.css" />
@@ -24,233 +25,239 @@
 
 <body>
 
-    <div data-role="page">
+  <div data-role="page">
 
-        <!-- header -->
-        <div data-role="header" id="header">
-          <div class="ui-grid-a main-container">
-            <div class="ui-block-a head-avatar" style="width: 20%;">
-              <a id="nav-img" data-toggle="collapse" href="#collapseMenu" role="button" aria-expanded="false"
-                aria-controls="collapseMenu">
-                <img class="menu-icon" src="../../assets/icons/menu.svg" />
+      <!-- header -->
+      <div data-role="header" id="header">
+        <div class="ui-grid-a main-container">
+          <div class="ui-block-a head-avatar" style="width: 20%;">
+        
+            <button class="header_button" id="btnNav" type="button" data-role="none">
+              <img class="menu-icon" src="../../assets/icons/menu.svg" />
+            </button>
+  
+          </div>
+          <div class="ui-block-b logo-container" style="width: 60%;">
+            <img class="logo-img" src="../../assets/logo/logo.png" />
+          </div> 
+          <div class="ui-block-c head-avatar2" style="width: 20%;">
+            <img class="user-icon" src="../../assets/icons/user.png" />
+          </div>       
+        </div>
+
+    <nav class="nav">
+      <div class=" nav__links">
+         
+        <div class="ui-block-a logo-container" style="width: 20%;">
+          <a href="../../pages/HomePage/index.html">  <img  class="user-icon" src="../../assets/icons/Logo.png" /></a>
+        </div>
+        <div class="ui-block-b " style="width: 80%;">
+
+
+          <a href="../../pages/HomePage/index.html" class="nav__link" id="nav-text">
+            Home
+          </a>
+          <a href="../../pages/Aboutus/about.html" class="nav__link" id="nav-text">
+            About Us
+          </a>
+          <a href="../../pages/Service/servicehome.html" class="nav__link" id="nav-text">
+            Services
+          </a>
+
+          <a href="../../pages/Petsitting/petsitting.html" class="nav__link" id="nav-text">
+            &emsp;&ensp;Pet Sitting
+          </a>
+          <a href="#" class="nav__link" id="nav-text">
+            &emsp;&ensp;House Sitting
+          </a>
+          <a href="#" class="nav__link" id="nav-text">
+            &emsp;&ensp;Home Visits
+          </a>
+          <a href="#" class="nav__link" id="nav-text">
+            &emsp;&ensp;Dog Walking
+          </a>
+          <a href="../../pages/PostAJob/postajob.html" class="nav__link" id="nav-text">
+            &emsp;&ensp;Post a job
+          </a>
+
+          <a href="../../pages/HomePage/index.html" class="nav__link" id="nav-text">
+            Rate us
+          </a>
+          <a href="" class="nav__link" id="nav-text">
+            Become a Sitter
+          </a>
+          <a href="../../pages/Myptofile/myprofile.html" class="nav__link" id="nav-text">
+            My profile
+          </a>
+          <a href="../../pages/Log&Reg/login.html" class="nav__link" id="nav-text">
+            Sign in
+          </a>
+        </div>
+
+      </div>
+      <div class="nav__overlay"></div>
+    </nav>
+
+
+    <!-- bread crumb -->
+    <div class="about-crumb">
+      <div id="about-crumb-title">
+        <p>About Us</p>
+      </div>
+      <ul class="breadcrumbs">
+        <li><a href="../../pages/HomePage/index.html">Home page</a></li>
+        <li>About us</li>
+      </ul>
+    </div>
+
+    <!-- iframe -->
+
+    <div class="frame-container">
+      <iframe src="https://www.youtube.com/embed/P5WZFcmkDQM" name="video" style="border:none;" title="about-video"
+        id="video-frame" allowfullscreen></iframe>
+    </div>
+
+
+    <div class="description-carousel">
+      <!-- carousel 1 -->
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="we-care">
+          </div>
+          <div class="carousel-item" id="we-care-text">
+            <div class="we-care-container">
+              <p id="we-care-head">We care your pet</p>
+              <p id="we-care-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper
+                ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.</p>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- carousel 2 -->
+      <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="why-us">
+          </div>
+          <div class="carousel-item" id="why-us-text">
+            <div class="why-us-container">
+              <p id="why-us-head">Why us different</p>
+              <p id="why-us-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper
+                ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.</p>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- mobile and tab -->
+    <div class="description-box">
+      <div class="row">
+        <div class="col">
+          <div class="we-care-container-tab">
+            <p id="we-care-head-tab">We care your pet</p>
+            <p id="we-care-des-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper
+              ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.</p>
+          </div>
+        </div>
+        <div class="col">
+          <img class="landscape-img" src="../../assets/images/about.png">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <img class="landscape-img" src="../../assets/images/wyus.jpg">
+        </div>
+        <div class="col">
+          <div class="why-us-container-tab">
+            <p id="why-us-head-tab">Why us different</p>
+            <p id="why-us-des-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper
+              ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <div data-role="footer" id="footer-home">
+      <div class="nav-logo-container">
+        <img class="footer-logo" src="../../assets/logo/logo.png" />
+      </div>
+      <p class="nav-copyright">&copy; Copyright - Company</p>
+      <p class="nav-payment">Payment Methods</p>
+      <div class="nav-payment-container">
+        <img class="footer-payment4" />
+        <img class="footer-payment1" src="../../assets/icons/visa.png" />
+        <img class="footer-payment2" src="../../assets/icons/paypal.png" />
+        <img class="footer-payment3" src="../../assets/icons/mastercard.png" />
+      </div>
+      <div class="ui-grid-b">
+        <div class="ui-block-a" style="width: 50%;">
+          <ul class="navigation-list">
+            <li>
+              <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
+                Home
               </a>
-            </div>
-            <div class="ui-block-b logo-container" style="width: 60%;">
-              <img class="logo-img" src="../../assets/logo/logo.png" />
-            </div> 
-            <div class="ui-block-c head-avatar2" style="width: 20%;">
-              <img class="user-icon" src="../../assets/icons/user.png" />
-            </div>       
-          </div>
+            </li>
+            <li>
+              <a href="../../pages/Service/servicehome.html" data-ajax="false" data-role="none">
+                Services
+              </a>
+            </li><br>
+            <li>
+              <a href="../../pages/Petsitting/petsitting.html" data-ajax="false" data-role="none">
+                Pet Sitting
+              </a>
+            </li>
+            <li>
+              <a href="#" data-ajax="false" data-role="none">
+                House Sitting
+              </a>
+            </li>
+            <li>
+              <a href="#" data-ajax="false" data-role="none">
+                Home Visits
+              </a>
+            </li>
+            <li>
+              <a href="#" data-ajax="false" data-role="none">
+                Dog Walking
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <nav class="nav">
-          <div class="nav__links">
-            <!-- <a class="nav__link nav__link--active" href="#">
-              Projects
-            </a> -->
-            <a href="#" class="nav__link" id="nav-text">
-              Home
-            </a>
-            <a href="#" class="nav__link" id="nav-text">
-              About Us
-            </a>
-            <a href="#" class="nav__link" id="nav-text">
-              Services
-            </a>
-    
-            <a href="#" class="nav__link" id="nav-text">
-              Pet Sitting
-            </a>
-            <a href="#" class="nav__link" id="nav-text">
-              House Sitting
-            </a>
-            <a href="#" class="nav__link" id="nav-text">
-              Home Visits
-            </a>
-            <a href="#" class="nav__link" id="nav-text">
-              Dog Walking
-            </a>
-            <a href="#" class="nav__link" id="nav-text">
-              Post a job
-            </a>
-    
-            <a href="#" class="nav__link" id="nav-text">
-              Rate us
-            </a>
-            <a href="#" class="nav__link" id="nav-text">
-              Become a Sitter
-            </a>
-            <a href="#" class="nav__link" id="nav-text">
-              My profile
-            </a>
-            <a href="#" class="nav__link" id="nav-text">
-              Sign in
-            </a>
-              
-          </div>
-          <div class="nav__overlay"></div>
-        </nav>
-
-
-
-        <!-- bread crumb -->
-        <div class="about-crumb">
-            <div id="about-crumb-title">
-                <p>About Us</p>
-            </div>
-            <ul class="breadcrumbs">
-                <li><a href="#">Home page</a></li>
-                <li>About us</li>
-              </ul>
+        <div class="ui-block-b" style="width: 50%;">
+          <ul class="navigation-list">
+            <li>Contact Us</li><br>
+            <li><img class="footer-contacts" src="../../assets/icons/phone.png" /> (+94)76 12345679</li>
+            <li><img class="footer-contacts" src="../../assets/icons/whatsapp.png" /> (+94)77 12345679</li>
+            <li><img class="footer-contacts" src="../../assets/icons/email.png" /> pawcare@gmail.com</li>
+          </ul>
         </div>
 
-        <!-- iframe -->
-
-        <div class="frame-container">
-            <iframe src="https://www.youtube.com/embed/P5WZFcmkDQM" name="video" style="border:none;" title="about-video"  id="video-frame" allowfullscreen></iframe>
-        </div>
-
-
-        <div class="description-carousel">
-        <!-- carousel 1 -->
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" id="we-care">
-              </div>
-              <div class="carousel-item" id="we-care-text">
-                <div class="we-care-container">
-                  <p id="we-care-head">We care your pet</p>
-                  <p id="we-care-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper
-                       ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.</p>
-                </div>
-              </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-
-            <!-- carousel 2 -->
-            <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" id="why-us">
-                  </div>
-                  <div class="carousel-item" id="why-us-text">
-                    <div class="why-us-container">
-                      <p id="why-us-head">Why us different</p>
-                      <p id="why-us-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper
-                           ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.</p>
-                    </div>
-                  </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            </div>
-        </div>
-
-
-        <!-- mobile and tab -->
-        <div class="description-box">
-            <div class="row">
-                <div class="col">
-                        <div class="we-care-container-tab">
-                          <p id="we-care-head-tab">We care your pet</p>
-                          <p id="we-care-des-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper
-                               ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.</p>
-                        </div>
-                </div>
-                <div class="col">
-                    <img class="landscape-img" src="../../assets/images/about.png" >
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <img class="landscape-img" src="../../assets/images/wyus.jpg">
-                </div>
-                <div class="col">
-                        <div class="why-us-container-tab">
-                          <p id="why-us-head-tab">Why us different</p>
-                          <p id="why-us-des-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper
-                               ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.</p>
-                        </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-                 <!-- footer -->
-                 <div data-role="footer" id="footer-home">
-                    <div class="nav-logo-container" >
-                    <img class="footer-logo"  src="../../assets/logo/logo.png" />
-                    </div>
-                    <p class="nav-copyright">&copy; Copyright - Company</p>
-                    <p class="nav-payment">Payment Methods</p>
-                    <div class="nav-payment-container" >
-                    <img class="footer-payment1"  src="../../assets/icons/visa.png" />
-                    <img class="footer-payment2"  src="../../assets/icons/paypal.png" />
-                    <img class="footer-payment3"  src="../../assets/icons/mastercard.png" />
-                    </div>
-                    <div class="ui-grid-b">
-                    <div class="ui-block-a" style="width: 50%;">
-                        <ul class="navigation-list">
-                        <li>
-                            <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
-                            Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
-                            Services
-                            </a>
-                        </li><br>
-                        <li>
-                            <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
-                            Pet Sitting
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
-                            House Sitting
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
-                            Home Visits
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
-                            Dog Walking
-                            </a>
-                        </li>
-                        </ul>
-                    </div>
-            
-                    <div class="ui-block-b" style="width: 50%;">
-                        <ul class="navigation-list">
-                        <li>Contact Us</li><br>
-                        <li><img class="footer-contacts" src="../../assets/icons/phone.png" /> (+94)76 12345678</li>
-                        <li><img class="footer-contacts" src="../../assets/icons/whatsapp.png" /> (+94)77 12345678</li>
-                        <li><img class="footer-contacts" src="../../assets/icons/email.png" />  pawcare@gmail.com</li>
-                        </ul>
-                    </div>
-            
-                    <!-- <div align="center" class="ui-block-c social-media-icons">
+        <!-- <div align="center" class="ui-block-c social-media-icons">
                         <p>Connect with us</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -272,27 +279,31 @@
                         <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                         </svg>
                     </div> -->
-                    </div>
-            
-                    <div class="ui-grid-a">
-                    <br>
-                    <div class="nav-payment-container" >
-                        <img class="footer-payment1"  src="../../assets/icons/facebook-.png" />
-                        <img class="footer-payment2"  src="../../assets/icons/twitter.png" />
-                        <img class="footer-payment3"  src="../../assets/icons/instagram.png" />
-                    </div>
-                    </div>
-                </div>
-        
-            </div>
-        
-        
-            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-              <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-              <script type="text/javascript" src="../../js/script.js"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-              <script src="https://kit.fontawesome.com/97327e6699.js" crossorigin="anonymous"></script>
-        </body>
-        
-        </html>
+      </div>
+
+      <div class="ui-grid-a">
+        <br>
+        <div class="nav-payment-container">
+          <img class="footer-payment1" src="../../assets/icons/facebook-.png" />
+          <img class="footer-payment2" src="../../assets/icons/twitter.png" />
+          <img class="footer-payment3" src="../../assets/icons/instagram.png" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="../../js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/97327e6699.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
