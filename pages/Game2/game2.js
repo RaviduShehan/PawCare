@@ -1,4 +1,4 @@
-var total_seconds =60*15;
+var total_seconds =60*10;
 var minutesLeft = parseInt(total_seconds/60);
 var secondsLeft = parseInt(total_seconds%60);
 var timeTaken=0;
@@ -37,8 +37,9 @@ function mark() {
         }
 	}
 	
-	document.getElementById("time-left").innerHTML="<div class='result'><br/>Marks =  " + marks+'<br/>Time Taken :' + minutesTaken + ' minutes ' + secondsTaken + ' seconds <br/>Correct answers : '+correct+'<br/>Wrong answers  : '+wrong+'<br/>Blank answers : '+noanswer+'</div>' ;
-    bgColor(marks);
+	
+	document.getElementById("time-left").innerHTML="<div class='result'><h2> You missed it. Let's try again later </h2> <br/>Loyalty Points =  " + marks+'<br/>Time Taken :' + minutesTaken + ' minutes ' + secondsTaken + ' seconds <br/>Correct answers : '+correct+'<br/>Wrong answers  : '+wrong+'<br><br><a id="aa" data-ajax="false" href="../../pages/Log&Reg/register.html"  data-role="none" > Go back to services </a> </div>' ;
+    
   }
 }
 
@@ -46,17 +47,7 @@ function StopTimer() {
     clearTimeout(Timer); 
 }
 
-function bgColor(marks){
-    if(marks<=0){
-		document.getElementById("body").style.backgroundColor="rgb(231, 76, 60)";
-    }else if(marks<=11){
-        document.getElementById( "body" ).style.backgroundColor="rgb(237, 187, 153)";
-    }else if(marks<=16){
-        document.getElementById( "body" ).style.backgroundColor="rgb(249, 231, 159)";
-    }else if(marks<=21){
-        document.getElementById( "body" ).style.backgroundColor="rgb(255,215,0)";
-    }
-}
+
 
 function TimeLeft(){
 	document.getElementById("time-left").innerHTML='Time Left: ' + minutesLeft + ' minutes ' + secondsLeft + ' seconds' ;

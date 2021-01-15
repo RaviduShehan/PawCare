@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PawCare | Sitter</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="../../style/main.css" />
+    <link rel="stylesheet" href="../../pages/Log&Reg/logreg.css" />
+    <script src="../../js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script src="../../pages/Log&Reg/logreg.js"></script>
+
+  </head>
+
+  <body>
+
+    <div data-role="page" id="signup-page">
+      <!-- header -->
+        <div data-role="header" id="header">
+          <div>
+            <a class="logo-img" href="/pages/Homepage/home.html" data-role="none" data-ajax="false">
+              <img class="logo-img" src="../../assets/images/logo.png">
+            </a>
+          </div>
+
+ 
+
+        </div>
+
+      <!--Register form-->
+      <div class="form-content">
+        <div class="auth-form">
+          <div class="row">
+            <div class="col image">
+
+            </div>
+            <div class="col">
+              <h1 id="h1"> Become a Sitter</h1>
+
+                <form  id="registration" >
+
+                <label  class="input-label">Name</label>
+                <div class="div-lable">
+                  <input mbsc-input id="full-name" required class="text-input" type="text" name="username" data-role="none" placeholder="Name*" />
+                </div>
+
+                <label  class="input-label">Email </label>
+                <div class="div-lable">
+                  <input mbsc-input id="email-input" required class="text-input"  type="email"   name="email"  data-role="none"  placeholder="Email*" />
+                </div>
+                
+                <label  class="input-label">Mobile No </label>
+                <div class="div-lable">
+                  <input mbsc-input id="mobile-input" required class="text-input"  type="mobile"   name="mobile" minlength="10" maxlength="10" data-role="none"  placeholder="Mobile Number*" />
+                </div>
+
+                <label  class="input-label">Services Providing </label>
+
+                <div class="div-lable">
+                  <label class="container">Pet Sitter
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Home Sitter
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Home Visit
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Dog Walking
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <br>
+                </div>
+
+
+
+                <label  class="input-label">Price Range (Rs. per hour) </label>
+                <div class="div-lable">
+                  <input mbsc-input id="price-input" required class="text-input"  type="number"   name="price"  data-role="none"  placeholder="Per hour*" />
+                </div>
+
+                
+
+                <label  class="input-label">Password </label>
+                <div class="div-lable">
+                  <input mbsc-input id="password-input" required class="text-input" minlength="6" required data-icon="lock2" type="password" name="password" data-role="none" placeholder="Password*" />
+                </div>
+
+                <label  class="input-label"> Confirm password </label>
+                <div class="div-lable">
+                  <input mbsc-input id="confirm"  class="text-input" required type="password" name="confirmpassword" data-role="none" placeholder="Re-enter Password*" />
+                </div>
+
+
+                <div class="mbsc-form-group mbsc-btn-group-block">
+                  <button mbsc-button id="md-success" class="prime-btn"  type="submit">Sign Up</button>
+              </div>
+
+                <div class="load-ellipsis">
+
+                </div>
+                <div class="link-container">
+                  <br>
+                  <p >
+                    <a id="aa" class="linka" data-ajax="false" href="../../pages/Log&Reg/login.html"  data-role="none" >Already have an account? </a>
+                  </p>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div data-role="footer" id="footer">
+
+      <!-- Footer added through JS -->
+      </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
