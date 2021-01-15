@@ -208,7 +208,7 @@
               <div class="form-content">
               <div class="auth-form2">
 
-                <form method="post" action="comments.php" >
+                <form action="../HomePage/comments.php" method="POST"  >
 
                 <label for="first-name" class="input-label">First Name</label>
                 <input id="firstname" class="text-input" type="text" name="firstname" data-role="none" required placeholder="First Name" />
@@ -255,11 +255,14 @@
                   <b><span class="vote"></span></b>
                 </div> -->
 
-                <input type="button" class="prime-btn" id="submitButton" value="Post Review">
+                <!-- <input type="button" class="prime-btn" id="submitButton" value="Post Review"> -->
                 <!-- <input type="button" class="prime-btn" onclick="myFunction()" value="Post Review"> -->
-                <!-- <button id="submit" class="prime-btn" data-role="none" type="submit" >
+                <button id="submit" class="prime-btn" onclick="window.location.href = '../../pages/HomePage/index.html';" data-role="none" type="submit" >
                   Post Review
-                </button> -->
+                </button>
+                <div class="load-ellipsis">
+
+                </div>
                 </form>
               </div>
               </div>
@@ -268,32 +271,8 @@
         </div>
         <div class="carousel-item" id="user-feedback">
           <div class="ui-grid-contain user-feedback" id="user-feedback">
-<<<<<<< HEAD
             <div class="comment_section" id="comment_section">
-              
-=======
-            <div class="auth-form">
-              <h2 class="info-heading2"><span id="part1">Tell Us</span><span id="part2">What you think </span>k</h2>
-              <div class="auth-form2">
-                <label for="firstname" class="input-label">First Name</label>
-                <input id="first-name" class="text-input" type="text" name="firstname" data-role="none" placeholder="First Name" />
-
-                <label for="lastname" class="input-label">Last Name</label>
-                <input id="last-name" class="text-input" type="text" name="lastname" data-role="none" placeholder="Last Name" />
-
-                <label for="email" class="input-label">Email</label>
-                <input id="email" class="text-input" type="text" name="email" data-role="none" placeholder="Email" />
-
-                <textarea id="message" style="height: auto;" class="text-input" type="textarea" rows="5" name="feedback"
-                  data-role="none" placeholder="Type your message">
-                </textarea>
-
-                
-                <button id="submit" class="prime-btn" data-role="none" type="submit">
-                  Post Review
-                </button>
-              </div>
->>>>>>> main
+              <div id="output"></div>
             </div>
           </div>
         </div>
