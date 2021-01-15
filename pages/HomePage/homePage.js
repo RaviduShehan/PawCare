@@ -1,74 +1,81 @@
   
-  let feedback = {};
-  $(() => {
-	$("#submit").click(() => {
-	  addFeedback();
-	  alert("Sent Successfully!");
-	});
-  });
+//   let feedback = {};
+//   $(() => {
+// 	$("#submit").click(() => {
+// 	  addFeedback();
+// 	  alert("Sent Successfully!");
+// 	});
+//   });
   
-  function addFeedback() {
-	dbRef
-	  .ref("feedbacks")
-	  .push()
-	  .set(
-		{
-		  name: $("#full-name").val(),
-		  message: $("#message").val()
-		},
-		error => {
-		  if (error) {
-			alert(error);
-		  }
-		}
-	  );
-	}
+//   function addFeedback() {
+// 	dbRef
+// 	  .ref("feedbacks")
+// 	  .push()
+// 	  .set(
+// 		{
+// 		  name: $("#full-name").val(),
+// 		  message: $("#message").val()
+// 		},
+// 		error => {
+// 		  if (error) {
+// 			alert(error);
+// 		  }
+// 		}
+// 	  );
+// 	}
 
-	const track = document.querySelector('.track');
-	let initialPosition = null;
-	let moving = false;
-	let transform = 0;
+	// const track = document.querySelector('.track');
+	// let initialPosition = null;
+	// let moving = false;
+	// let transform = 0;
 	
-	const gestureStart = (e) => {
-	  initialPosition = e.pageX;
-	  moving = true;
-	  const transformMatrix = window.getComputedStyle(track).getPropertyValue('transform');
-	  if (transformMatrix !== 'none') {
-		transform = parseInt(transformMatrix.split(',')[4].trim());
-	  }
-	}
+	// const gestureStart = (e) => {
+	//   initialPosition = e.pageX;
+	//   moving = true;
+	//   const transformMatrix = window.getComputedStyle(track).getPropertyValue('transform');
+	//   if (transformMatrix !== 'none') {
+	// 	transform = parseInt(transformMatrix.split(',')[4].trim());
+	//   }
+	// }
 	
-	const gestureMove = (e) => {
-	  if (moving) {
-		const currentPosition = e.pageX;
-		const diff = currentPosition - initialPosition;
-		track.style.transform = `translateX(${transform + diff}px)`;  
-	  }
-	};
+	// const gestureMove = (e) => {
+	//   if (moving) {
+	// 	const currentPosition = e.pageX;
+	// 	const diff = currentPosition - initialPosition;
+	// 	track.style.transform = `translateX(${transform + diff}px)`;  
+	//   }
+	// };
 	
-	const gestureEnd = (e) => {
-	  moving = false;
-	}
+	// const gestureEnd = (e) => {
+	//   moving = false;
+	// }
 	
-	if (window.PointerEvent) {
-	  window.addEventListener('pointerdown', gestureStart);
+	// if (window.PointerEvent) {
+	//   window.addEventListener('pointerdown', gestureStart);
 	
-	  window.addEventListener('pointermove', gestureMove);
+	//   window.addEventListener('pointermove', gestureMove);
 	
-	  window.addEventListener('pointerup', gestureEnd);  
-	} else {
-	  window.addEventListener('touchdown', gestureStart);
+	//   window.addEventListener('pointerup', gestureEnd);  
+	// } else {
+	//   window.addEventListener('touchdown', gestureStart);
 	
-	  window.addEventListener('touchmove', gestureMove);
+	//   window.addEventListener('touchmove', gestureMove);
 	
-	  window.addEventListener('touchup', gestureEnd);  
+	//   window.addEventListener('touchup', gestureEnd);  
 	  
-	  window.addEventListener('mousedown', gestureStart);
+	//   window.addEventListener('mousedown', gestureStart);
 	
-	  window.addEventListener('mousemove', gestureMove);
+	//   window.addEventListener('mousemove', gestureMove);
 	
-	  window.addEventListener('mouseup', gestureEnd);  
-	}
+	//   window.addEventListener('mouseup', gestureEnd);  
+	// }
+
+	function myFunction() {
+		document.getElementById("feedbackForm");
+		alert("SSS");
+		console.log("aaaa",document.getElementById("feedbackForm"));
+	  }
+  
 
 	
 	

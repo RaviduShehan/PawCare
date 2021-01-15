@@ -11,7 +11,7 @@ function mark() {
     var answered;
 	StopTimer();
 	
-	var CorrectAnswers=[1,1,1,1,1,1,1,1,1,1];
+	var CorrectAnswers=[2,2,3,2,2,3,2,2,1,3];
     var answerID=['Q1','Q2','Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10'];
 	
 	for (var i= 0; i < CorrectAnswers.length; i++ ) {

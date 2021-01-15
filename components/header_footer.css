@@ -5,6 +5,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
+	height: 50px;
   }
 
   .footer-logo{
@@ -68,6 +69,7 @@
     transform: translateX(-250px);
 	transition: transform 0.3s;
 	text-decoration: none;
+	overflow: auto;
 	
 }
 
@@ -302,6 +304,7 @@
 		transform: translateX(-250px);
 		transition: transform 0.3s;
 		text-decoration: none;
+		overflow: auto;
 		
 	}
   
