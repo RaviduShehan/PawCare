@@ -1,4 +1,4 @@
-var total_seconds =60*15;
+var total_seconds =60*10;
 var minutesLeft = parseInt(total_seconds/60);
 var secondsLeft = parseInt(total_seconds%60);
 var timeTaken=0;
@@ -11,7 +11,7 @@ function mark() {
     var answered;
 	StopTimer();
 	
-	var CorrectAnswers=[1,1,1,1,1,1,1,1,1,1];
+	var CorrectAnswers=[2,2,3,2,2,3,2,2,1,3];
     var answerID=['Q1','Q2','Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10'];
 	
 	for (var i= 0; i < CorrectAnswers.length; i++ ) {
@@ -26,37 +26,43 @@ function mark() {
 				}else{
 					marks-=1;
                     wrong+=1;
-                    document.getElementById(answerID[i]).innerHTML='Wrong Answer(answer is '+CorrectAnswers[i]+')';
+                    document.getElementById(answerID[i]).innerHTML='Wrong Answer';
 				}
 		
             x++;
 		}
         if(answered==false){
             noanswer+=1;
-            document.getElementById(answerID[i]).innerHTML='Not Answered(answer is '+CorrectAnswers[i]+')'; 
+            document.getElementById(answerID[i]).innerHTML='Not Answered'; 
         }
 	}
-	
-	document.getElementById("time-left").innerHTML="<div class='result'><br/>Marks =  " + marks+'<br/>Time Taken :' + minutesTaken + ' minutes ' + secondsTaken + ' seconds <br/>Correct answers : '+correct+'<br/>Wrong answers  : '+wrong+'<br/>Blank answers : '+noanswer+'</div>' ;
-    bgColor(marks);
+	if(correct==10){
+		Scroll();
+		document.getElementById("time-left").innerHTML="<div class='result'> <h2> Hurray! You Win it</h2> <br> <h3> You'll get 10% off on your nrxt service </h3> <br/> Loyalty points =  " + 
+		marks+'<br/>Time Taken :' + minutesTaken + ' minutes ' + secondsTaken + 
+		' seconds <br/>Correct answers : '+correct+'<br> <br> </div> <a id="aa" data-ajax="false" href="../../pages/Log&Reg/register.html"  data-role="none" > Go back to services </a> ' ;
+
+		
+	}else{
+		Scroll();
+		document.getElementById("time-left").innerHTML="<div class='result'> <h2> You missed it. Let's try again later </h2> <br/> Loyalty points =  " + 
+		marks+'<br/>Time Taken :' + minutesTaken + ' minutes ' + secondsTaken + 
+		' seconds <br/>Correct answers : '+correct+'<br> <br> <a id="aa" data-ajax="false" href="../../pages/Log&Reg/register.html"  data-role="none" > Go back to services </a>' ;
+
+	}	
+    
   }
 }
+
+function Scroll() {
+	window.scrollTo(0, 0);
+  }
 
 function StopTimer() {
     clearTimeout(Timer); 
 }
 
-function bgColor(marks){
-    if(marks<=0){
-		document.getElementById("body").style.backgroundColor="rgb(231, 76, 60)";
-    }else if(marks<=11){
-        document.getElementById( "body" ).style.backgroundColor="rgb(237, 187, 153)";
-    }else if(marks<=16){
-        document.getElementById( "body" ).style.backgroundColor="rgb(249, 231, 159)";
-    }else if(marks<=21){
-        document.getElementById( "body" ).style.backgroundColor="rgb(255,215,0)";
-    }
-}
+
 
 function TimeLeft(){
 	document.getElementById("time-left").innerHTML='Time Left: ' + minutesLeft + ' minutes ' + secondsLeft + ' seconds' ;
