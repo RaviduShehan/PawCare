@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PawCare | Login</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="../../style/main.css" />
+    <link rel="stylesheet" href="../../pages/Log&Reg/logreg.css" />
+    <script src="../../js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script src="../../pages/Log&Reg/log.js"></script>
+    
+  </head>
+
+  <body>
+
+    <div data-role="page" id="login-page">
+      <!-- header -->
+        <div data-role="header" id="header">
+          <a class="logo-img" href="../../pages/Homepage/home.html" data-role="none" data-ajax="false">
+            <img class="logo-img" src="../../assets/images/logo.png">
+          </a>
+        </div>
+
+
+
+      <!--Register form-->
+      <div class="form-content">
+        <div class="auth-form">
+
+          <h1 id="h1"> Login to PawCare</h1>
+
+          <form id="log">
+
+          
+            <label  class="input-label">Email </label>
+            <div class="div-lable">
+              <input mbsc-input id="email-input" required class="text-input"  type="email"   name="email"  data-role="none"  placeholder="Email*" />
+            </div>
+   
+
+      
+            <label name="password" class="input-label">Password </label>
+            <div class="div-lable">
+              <input mbsc-input id="password-input" required class="text-input"  type="password" name="password" data-role="none" placeholder="Password*" />
+            </div>
+       
+
+
+          <div class="mbsc-form-group mbsc-btn-group-block">
+            <button mbsc-button   id="md-success" class="prime-btn"  type="submit">Login</button>
+        </div>
+        <br>
+    
+
+          
+
+
+          <div class="link-container">
+            <p class="linka">
+              <a id="aa" data-ajax="false" href="../../pages/Log&Reg/register.html"  data-role="none" >Do not have an account? </a>
+            </p>
+          </div>
+
+          
+          </form>
+
+        </div>
+      </div>
+
+     
+      <!-- footer -->
+      <div data-role="footer" id="footer">
+
+      <!-- Footer added through JS -->
+      </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
