@@ -131,7 +131,45 @@ ul.breadcrumbs {
         /* height: 300px; */
       }
 
-  } 
+      .we-care-container-tab{
+        text-align: center;
+        position: relative;
+        top: 50px;
+    }
+
+  .why-us-container-tab{
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+#why-us-head-tab{
+    text-shadow: none;
+	color: #d88973;
+    font-family: Roboto;
+    font-size: 25px;
+
+  }
+
+  #we-care-head-tab{
+    text-shadow: none;
+	color: #2ab7b7;
+    font-family: Roboto;
+    font-size: 25px;
+
+  }
+
+  #why-us-des-tab{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#we-care-des-tab{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+} 
 
 
 
@@ -148,5 +186,9 @@ ul.breadcrumbs {
       .description-carousel{
         display: none;
       }
+
+      .description-box{
+        display: block;
+    }
 
 }
