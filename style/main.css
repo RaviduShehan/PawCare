@@ -326,21 +326,25 @@ select {
   padding-left: 12px;
   background-color: white !important;
   -webkit-appearance: none;
+  display: flex;
 }
 
 .text-input::placeholder {
   color: #1a1a1a56;
   font-weight: 400;
+  display: flex;
 }
 
 .text-input::-webkit-input-placeholder {
   color: #1a1a1a56;
   font-weight: 400;
+  display: flex;
 }
 
 .text-input::-ms-input-placeholder {
   color: #1a1a1a56;
   font-weight: 400;
+  display: flex;
 }
 
 .file-input {
@@ -358,6 +362,7 @@ select {
   padding: 6px;
   margin-bottom: 10px;
   background-color: white !important;
+  display: flex;
 }
 
 input[type=range] {
@@ -368,6 +373,7 @@ input[type=range] {
   border: 0;
   padding: 0 8px;
   margin: 8px 0;
+  display: flex;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -413,6 +419,7 @@ output {
 input[type=range]:active + output {
   display: block;
   transform: translateX(-50%);
+  display: flex;
 }
 
 .range-slider p {
