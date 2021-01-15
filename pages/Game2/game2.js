@@ -36,27 +36,13 @@ function mark() {
             document.getElementById(answerID[i]).innerHTML='Not Answered'; 
         }
 	}
-	if(correct==10){
-		Scroll();
-		document.getElementById("time-left").innerHTML="<div class='result'> <h2> Hurray! You Win it</h2> <br> <h3> You'll get 10% off on your nrxt service </h3> <br/> Loyalty points =  " + 
-		marks+'<br/>Time Taken :' + minutesTaken + ' minutes ' + secondsTaken + 
-		' seconds <br/>Correct answers : '+correct+'<br> <br> </div> <a id="aa" data-ajax="false" href="../../pages/Log&Reg/register.html"  data-role="none" > Go back to services </a> ' ;
 
-		
-	}else{
-		Scroll();
-		document.getElementById("time-left").innerHTML="<div class='result'> <h2> You missed it. Let's try again later </h2> <br/> Loyalty points =  " + 
-		marks+'<br/>Time Taken :' + minutesTaken + ' minutes ' + secondsTaken + 
-		' seconds <br/>Correct answers : '+correct+'<br> <br> <a id="aa" data-ajax="false" href="../../pages/Log&Reg/register.html"  data-role="none" > Go back to services </a>' ;
-
+	
+	
 	}	
     
-  }
+	}	
 }
-
-function Scroll() {
-	window.scrollTo(0, 0);
-  }
 
 function StopTimer() {
     clearTimeout(Timer); 
