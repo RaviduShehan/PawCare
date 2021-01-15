@@ -31,6 +31,7 @@ if ($conn->connect_error) {
 }
 echo "Connected successfully";
 
+$id = isset($_POST['id']) ? $_POST['id'] : "";
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $comment = $_POST['comment'];
@@ -43,7 +44,7 @@ $date = date('Y-m-d H:i:s');
       //         SELECT name FROM user WHERE email = $email
       //         ) LIMIT 1";
 
-      $sql = "INSERT INTO comments (firstname, lastname, comment, comment_date) VALUES('$firstname', '$lastname', '$comment', '$date')";
+      $sql = "INSERT INTO comments (parent_id,firstname, lastname, comment, comment_date) VALUES('$id','$firstname', '$lastname', '$comment', '$date')";
 
   if ($conn->query($sql) === TRUE) {
       echo "New record created successfully";
