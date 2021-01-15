@@ -231,6 +231,10 @@
 	margin-bottom: 0.01px;
   }
 
+  #comment_section{
+	  height: 524px;
+	  overflow: auto;
+  }
   .team-heading {
 	font-family: "asap";
 	font-style: normal;
