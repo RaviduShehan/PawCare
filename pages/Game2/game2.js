@@ -1,4 +1,4 @@
-var total_seconds =60*10;
+var total_seconds =60*15;
 var minutesLeft = parseInt(total_seconds/60);
 var secondsLeft = parseInt(total_seconds%60);
 var timeTaken=0;
@@ -26,29 +26,37 @@ function mark() {
 				}else{
 					marks-=1;
                     wrong+=1;
-                    document.getElementById(answerID[i]).innerHTML='Wrong Answer';
+                    document.getElementById(answerID[i]).innerHTML='Wrong Answer(answer is '+CorrectAnswers[i]+')';
 				}
 		
             x++;
 		}
         if(answered==false){
             noanswer+=1;
-            document.getElementById(answerID[i]).innerHTML='Not Answered'; 
+            document.getElementById(answerID[i]).innerHTML='Not Answered(answer is '+CorrectAnswers[i]+')'; 
         }
 	}
-
 	
-	
-	}	
-    
-	}	
+	document.getElementById("time-left").innerHTML="<div class='result'><br/>Marks =  " + marks+'<br/>Time Taken :' + minutesTaken + ' minutes ' + secondsTaken + ' seconds <br/>Correct answers : '+correct+'<br/>Wrong answers  : '+wrong+'<br/>Blank answers : '+noanswer+'</div>' ;
+    bgColor(marks);
+  }
 }
 
 function StopTimer() {
     clearTimeout(Timer); 
 }
 
-
+function bgColor(marks){
+    if(marks<=0){
+		document.getElementById("body").style.backgroundColor="rgb(231, 76, 60)";
+    }else if(marks<=11){
+        document.getElementById( "body" ).style.backgroundColor="rgb(237, 187, 153)";
+    }else if(marks<=16){
+        document.getElementById( "body" ).style.backgroundColor="rgb(249, 231, 159)";
+    }else if(marks<=21){
+        document.getElementById( "body" ).style.backgroundColor="rgb(255,215,0)";
+    }
+}
 
 function TimeLeft(){
 	document.getElementById("time-left").innerHTML='Time Left: ' + minutesLeft + ' minutes ' + secondsLeft + ' seconds' ;
