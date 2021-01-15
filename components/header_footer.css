@@ -5,6 +5,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
+	height: 50px;
   }
 
   .footer-logo{
@@ -307,7 +308,11 @@
 		
 	}
   
+<<<<<<< HEAD
 	/* #intro-face {
+=======
+/*	#intro-face {
+>>>>>>> main
 	  width: 100%;
 	  background-image: url("../../assets/images/intro2.png");
 	  background-size: cover;

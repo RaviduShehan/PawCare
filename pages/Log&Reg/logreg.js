@@ -3,7 +3,14 @@ $(function () {
   $('#registration').on('submit', function (ev) {
       if ($(this).valid()) {
           ev.preventDefault();
-          window.location.href = "../../pages/Game/game1.html";
+
+          if (confirm("Confirm Registration") == true) {
+            window.location.href = "../../pages/Game/game1.html";
+          } else {
+            window.location.href = "../../pages/Log&Reg/login.html";
+          }
+          
+          
       }
   }).validate({
       errorClass: 'mbsc-err-msg',

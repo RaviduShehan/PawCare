@@ -41,7 +41,7 @@
   height: 116px;
   padding: 32px 0;
 }
-.fav-items .fav-item div .district, .fav-items .fav-item-loading div .district {
+.fav-items .fav-item div .district, .fav-items .fav-item-loading div .name {
   justify-content: center;
   font-family: "Roboto";
   font-style: normal;

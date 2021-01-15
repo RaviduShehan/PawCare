@@ -3,7 +3,10 @@ $(function () {
 
     $('#log').on('submit', function (ev) {
         if ($(this).valid()) {
+            alert('Confirmed');
             ev.preventDefault();
+                   
+          window.location.href = "../../pages/Game/game1.html";
             
         }
     }).validate({
@@ -17,6 +20,7 @@ $(function () {
         unhighlight: function (element) {
             $(element).closest('.mbsc-input').removeClass("mbsc-err");
         },
+    
         messages: {
             
             email: {

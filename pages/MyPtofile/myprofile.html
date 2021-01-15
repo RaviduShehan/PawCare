@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PawCare | My Profile</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="../../style/main.css" />
+    <link rel="stylesheet" href="../../pages/MyPtofile/myprofile.css" />
+    <script src="../../js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script src="../../pages/MyPtofile/myprofile.js"></script>
+
+  </head>
+
+  <body>
+
+    <div data-role="page" id="signup-page">
+      <!-- header -->
+        <div data-role="header" id="header">
+          <div>
+            <a class="logo-img" href="/pages/Homepage/home.html" data-role="none" data-ajax="false">
+              <img class="logo-img" src="../../assets/images/logo.png">
+            </a>
+          </div>
+
+ 
+
+        </div>
+
+      <!--Register form-->
+      <div class="form-content">
+        <div class="auth-form">
+
+          <h1 id="h1"> My Profile</h1>
+
+          <form  id="userprofile" >
+
+            <div class="profile-section">
+            <div class="ui-grid-a tot-points">
+              <div id="imgave" class="ui-block-a">
+                <div class="points">
+                  <img class="center" src="../../assets/images/user.svg" />
+
+                         <br>         
+        
+                </div>
+              </div>
+              </div>
+             
+            </div>
+            
+         
+     
+            
+
+          <label  class="input-label">Name</label>
+          <div class="div-lable">
+            <label mbsc-input id="full-name" required class="text-input" type="text" name="username" data-role="none" placeholder="qqq"> qqq </label>
+          </div>
+
+          <label  class="input-label">Email </label>
+          <div class="div-lable">
+            <label mbsc-input id="email-input" required class="text-input"  type="email"   name="email"  data-role="none"  placeholder="qqq@gmail.com*"> qqq@gmail.com </label>
+          </div>
+
+          <label  class="input-label">Mobile No </label>
+          <div class="div-lable">
+            <label mbsc-input id="mobile-input" required class="text-input"  type="mobile"   name="mobile" minlength="10" maxlength="10" data-role="none"  placeholder="1234567890" > 1234567890 </label>
+          </div>
+
+                  
+          <label name="password" class="input-label">Password </label>
+          <div class="div-lable">
+            <input mbsc-input id="password-input" required class="text-input"  type="password" name="password" data-role="none" value="FakePSW" />
+          </div>
+
+          <button onclick="location.href = '../../pages/Log&Reg/login.html';" class="prime-btn"  > Favourite List </button>
+          <button onclick="location.href = '../../pages/Log&Reg/login.html';" class="prime-btn"  > Edit Profile </button>
+            <button onclick="location.href = '../../pages/Log&Reg/login.html';" class="prime-btn"  > Log Out</button>
+        
+
+          <div class="load-ellipsis">
+
+          </div>
+          
+
+        </form>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div data-role="footer" id="footer">
+
+      <!-- Footer added through JS -->
+      </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
