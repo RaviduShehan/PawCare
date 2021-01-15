@@ -8,17 +8,15 @@ setTimeout("TimeLeft()",1);
 
 function mark() {
 	var x =0;
-    var answered;
+    var answered = false;
 	StopTimer();
 	
 	var CorrectAnswers=[2,2,3,2,2,3,2,2,1,3];
     var answerID=['Q1','Q2','Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10'];
 	
 	for (var i= 0; i < CorrectAnswers.length; i++ ) {
-        answered=false;
-		for (var y = 0; y < 4; y++ ) {
-			if ( document.forms[0].elements[x].checked) {
-                answered=true;
+        answered =false;
+		
 				if(document.forms[0].elements[x].value==CorrectAnswers[i]){
 					marks+=2;
                     correct+=1;
@@ -26,18 +24,13 @@ function mark() {
 				}else{
 
                     wrong+=1;
-                    document.getElementById(answerID[i]).innerHTML='Wrong Answer(answer is '+CorrectAnswers[i]+')';
+                    document.getElementById(answerID[i]).innerHTML='Wrong Answer';
 				}
 		
             x++;
-		}
-        if(answered==false){
-            noanswer+=1;
-            document.getElementById(answerID[i]).innerHTML='Not Answered(answer is '+CorrectAnswers[i]+')'; 
-        }
-	}
 	
-	document.getElementById("time-left").innerHTML="<div class='result'><br/>Marks =  " + marks+'<br/>Time Taken :' + minutesTaken + ' minutes ' + secondsTaken + ' seconds <br/>Correct answers : '+correct+'<br/>Wrong answers  : '+wrong+'<br/>Blank answers : '+noanswer+'</div>' ;
+	
+	document.getElementById("time-left").innerHTML="<div class='result'><br/>Marks =  " + marks+'<br/>Time Taken :' + minutesTaken + ' minutes ' + secondsTaken + ' seconds <br/>Correct answers : '+correct+'<br/>Wrong answers  : '+wrong+'<br><br><a id="aa" data-ajax="false" href="../../pages/Log&Reg/register.html"  data-role="none" > Go back to services </a> </div>' ;
     bgColor(marks);
   }
 }
