@@ -24,7 +24,7 @@ function mark() {
                     correct+=1;
                     document.getElementById(answerID[i]).innerHTML='Correct Answer';
 				}else{
-					marks-=1;
+
                     wrong+=1;
                     document.getElementById(answerID[i]).innerHTML='Wrong Answer(answer is '+CorrectAnswers[i]+')';
 				}
