@@ -152,18 +152,7 @@
 	border: 0.05px solid #dfdfdf !important;
 	border-radius: 0px;
   }
- 
-  
-  #logo-text {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	letter-spacing: 0.05em;
-	text-shadow: none;
-	color: #d88973;
-	text-align: left;
-  }
+
   
   .auth-form2 {
 	padding: 12px 16px;
@@ -172,22 +161,6 @@
 	border-color: #cfc9c9;
 	border-width: 0.5px;
   }
-/*   
-  .user-feedback {
-	padding: 10px 0;
-	border-top: 0.5px solid #3a3a3a75;
-  }
-  
-  .team-members {
-	text-shadow: none;
-  }
-  
-  .team-info {
-	border-top: 0.05px solid #ffffff;
-	padding: 1px;
-	background-color: #eea243;
-  } */
-  
   
   
   #footer-home {
