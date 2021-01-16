@@ -14,42 +14,7 @@
 	  height: 200px;
 	  border: #1c1c1c;
   }
-
-  .footer-logo{
-  	margin-left: auto;
-  	margin-right: auto;
-  	width: 100%;
-  }
-
-  .footer-contacts{
-	
-	width: 15px;
-	margin-right: 10px;
-	padding-top: 5px;
-  }
-
-  .footer-payment1{
-	width: 8%;
-	padding-left: 37%;
-  }
-
-  .footer-payment2{
-	width: 8%;
-  }
-
-  .footer-payment3{
-	width: 8%;
-  }
-
-  .footer-social1{
-	width: 8%;
-	padding-left: 30%;
-  }
-
-  .footer-social2{
-	width: 8%;
-  }
-  
+ 
   
   #collapseMenu {
 	background-color: #ffffff;
