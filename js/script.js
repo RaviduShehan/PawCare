@@ -68,3 +68,48 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
+//Navigation Fucntions
+$(document).on("click", "#nav-text1", function() {
+	window.location.href = "../../pages/HomePage/index.html";
+  });
+
+  $(document).on("click", "#nav-text2", function() {
+	window.location.href ="../../pages/Aboutus/about.html";
+  });
+  
+  $(document).on("click", "#nav-text3", function() {
+	window.location.href ="../../pages/Service/servicehome.html";
+  });
+  $(document).on("click", "#nav-text4", function() {
+	window.location.href ="../../pages/Petsitting/petsitting.html";
+  });
+  $(document).on("click", "#nav-text5", function() {
+	window.location.href ="../../pages/Aboutus/about.html";
+  });
+  $(document).on("click", "#nav-text6", function() {
+	window.location.href ="../../pages/Aboutus/about.html";
+  });
+  $(document).on("click", "#nav-text7", function() {
+	window.location.href ="../../pages/Aboutus/about.html";
+  });
+  $(document).on("click", "#nav-text8", function() {
+	window.location.href ="../../pages/PostAJob/postajob.html";
+  });
+  $(document).on("click", "#nav-text9", function() {
+	window.location.href ="#stars";
+  });
+  $(document).on("click", "#nav-text10", function() {
+	window.location.href ="../../pages/BecomeASitter/sitterLogin.html";
+  });
+  $(document).on("click", "#nav-text11", function() {
+	window.location.href ="../../pages/MyPtofile/myprofile.html";
+  });
+  $(document).on("click", "#nav-text12", function() {
+	window.location.href ="../../pages/Log&Reg/login.html";
+  });
+
+  
+  
+  
+
+
