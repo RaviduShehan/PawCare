@@ -668,7 +668,7 @@
 	  }
 	  
 	  #logo-text {
-		font-family: "Roboto";
+		font-family: Roboto;
 		/* font-style:normal; */
 		/* font-weight: 500; */
 		font-size: 30px;
@@ -680,7 +680,7 @@
 	  }
 	
 	  #logo-text-des{
-		font-family: "Roboto";
+		font-family: Roboto;
 		/* font-style:normal; */
 		font-weight: 400;
 		font-size: 15px;
