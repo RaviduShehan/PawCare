@@ -2,6 +2,9 @@
    float: right;
 
  }
+ .iconService{
+ background: none;
+ }
  #intro-ServiceD {
 	width: 100%;
 	background-size: cover;
