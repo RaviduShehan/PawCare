@@ -1,121 +1,101 @@
-.auth-form {
-  padding: 12px 16px;
+.login-image{
+  display: none
 }
 
 .mbsc-err-msg{
-  color: #EB5757;
+  color: #EB5757; 
 }
 
 
+.login-box{
+  border-style: solid;
+  border-width: 0.2px;
+  border-color: #b1b1b1;
+  margin: 20px 20px 20px 20px;
 }
 
-h1{
-  font-family:  sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  letter-spacing: 0.1em;
-  text-align: center;
-}
-
-
-
-h3{
-  font-family:  sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  letter-spacing: 0.05em;
-  text-align: center;
-}
-
-.link-container a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
+#login-title{
+  font-family: Roboto;
   font-weight: 400;
-  font-size: 12px;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-
-}
-
-.logo-display {
-  padding: 50px 50px;
-}
-
-.text-display {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  color: #0084E3;
-  padding: 14px 0px 10px 17px;
-}
-
-.email-container {
-  padding: 0px 20px 0px 17px;
-}
-
-#email-text {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  letter-spacing: 0.1em;
+  font-size: 25px;
+  letter-spacing: normal;
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
   text-align: center;
+}
+
+#log{
+  margin: 20px 20px 20px 20px;
+}
+
+#log label{
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: normal;
+  color: #1c1c1c;
+}
+
+.field-input {
+  margin-top: 10%;
+}
+
+.ui-btn{
+  margin-top: 20%;
+  background-color: #2ab7b7;
+  color: #fafafb;
   text-shadow: none;
+  border-radius: 50px;
 }
 
-.btn-container {
-  padding: 10px 0px 183px 0px;
+#other-link #link1,
+#other-link #link2{
+  margin-left: 10px;
+  color: #2ab7b7;
+  font-weight: 300;
 }
 
+/* .ui-focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+ } */
 
+/* mobile landscape */
+@media screen and (min-width: 667px) {
+  .field-input {
+      margin-top: 5%;
+  }
 
-#verify-text {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  letter-spacing: 0.1em;
-  text-align: center;
-  text-shadow: none;
-  color: #EB5757;
+  .ui-btn{
+      margin-top: 8%;
+      background-color: #2ab7b7;
+      color: #fafafb;
+      text-shadow: none;
+      border-radius: 50px;
+  }
 }
 
+/* tablet portrait */
 @media screen and (min-width: 768px) {
-  .auth-form {
-    padding: 2% 20%;
+  .login-image{
+      display: block;
+      width: 100%;
+      background-image:url("../../assets/images/logg.jpeg");
+      background-size: cover;
+      height: 670px;
   }
 
-  #aa{  
-    font-weight: 400;
-    font-size: 32px;
+  .field-input {
+      margin-top: 10%;
   }
 
-  h1{
-    font-family:  sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    letter-spacing: 0.1em;
-    text-align: center;
-    text-shadow: none;
-  
-  }
-
-  
-
-  
-
-  h3{
-    font-family:  sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    letter-spacing: 0.05em;
-    text-align: center;
+  .login-box{
+      border-style: solid;
+      border-width: 0.2px;
+      border-color: #b1b1b1;
+      margin: 80px 20px 20px 20px;
   }
 
   .ui-btn{
@@ -124,12 +104,36 @@ h3{
       color: #fafafb;
       text-shadow: none;
       border-radius: 50px;
-    border: none;
-  
   }
-  
+
+
 }
 
 
+/* tab landscape */
+@media screen and (min-width: 1024px) {
+  .login-image{
+      display: block;
+      width: 100%;
+      background-image:url("../../assets/images/provider_login.jpeg");
+      background-size: cover;
+      height: 550px;
+  }
 
-/*# sourceMappingURL=logreg.css.map */
+  .ui-btn{
+      margin-top: 10%;
+      background-color: #2ab7b7;
+      color: #fafafb;
+      text-shadow: none;
+      border-radius: 50px;
+  }
+
+  .login-box{
+      border-style: solid;
+      border-width: 0.2px;
+      border-color: #b1b1b1;
+      margin: 50px 20px 20px 20px;
+  }
+
+
+}
