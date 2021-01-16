@@ -46,49 +46,56 @@
     </div>
 
     <nav class="nav">
-      <div class="nav__links">
+      <div class=" nav__links">
         <!-- <a class="nav__link nav__link--active" href="#">
           Projects
         </a> -->
-        <a href="../../pages/Homepage/index" class="nav__link" id="nav-text">
-          Home
-        </a>
-        <a href="#" class="nav__link" id="nav-text">
-          About Us
-        </a>
-        <a href="../../pages/Service/servicehome" class="nav__link" id="nav-text">
-          Services
-        </a>
+        <div class="ui-block-a logo-container" style="width: 20%;">
+          <img class="user-icon" src="../../assets/icons/logo.png" />
+        </div> 
+        <div class="ui-block-b " style="width: 80%;">
+        
 
-        <a href="D:\IIT Final Year\2.Semester 1\Mobile UI UX\Coursework 2\PawCare\pages\Petsitting\petsitting.html" class="nav__link" id="nav-text">
-          Pet Sitting
-        </a>
-        <a href="#" class="nav__link" id="nav-text">
-          House Sitting
-        </a>
-        <a href="#" class="nav__link" id="nav-text">
-          Home Visits
-        </a>
-        <a href="#" class="nav__link" id="nav-text">
-          Dog Walking
-        </a>
-        <a href="#" class="nav__link" id="nav-text">
-          Post a job
-        </a>
+          <a href="#" class="nav__link" id="nav-text">
+            Home
+          </a>
+          <a href="#" class="nav__link" id="nav-text">
+            About Us
+          </a>
+          <a href="#" class="nav__link" id="nav-text">
+            Services
+          </a>
 
-        <a href="#" class="nav__link" id="nav-text">
-          Rate us
-        </a>
-        <a href="#" class="nav__link" id="nav-text">
-          Become a Sitter
-        </a>
-        <a href="#" class="nav__link" id="nav-text">
-          My profile
-        </a>
-        <a href="../pages/Log&Reg/login.html" class="nav__link" id="nav-text">
-          Sign in
-        </a>
-          
+          <a href="#" class="nav__link" id="nav-text">
+            &emsp;&ensp;Pet Sitting
+          </a>
+          <a href="#" class="nav__link" id="nav-text">
+            &emsp;&ensp;House Sitting
+          </a>
+          <a href="#" class="nav__link" id="nav-text">
+            &emsp;&ensp;Home Visits
+          </a>
+          <a href="#" class="nav__link" id="nav-text">
+            &emsp;&ensp;Dog Walking
+          </a>
+          <a href="#" class="nav__link" id="nav-text">
+            &emsp;&ensp;Post a job
+          </a>
+
+          <a href="#" class="nav__link" id="nav-text">
+            Rate us
+          </a>
+          <a href="#" class="nav__link" id="nav-text">
+            Become a Sitter
+          </a>
+          <a href="#" class="nav__link" id="nav-text">
+            My profile
+          </a>
+          <a href="#" class="nav__link" id="nav-text">
+            Sign in
+          </a>
+        </div> 
+            
       </div>
       <div class="nav__overlay"></div>
     </nav>
@@ -101,14 +108,14 @@
             <div class="carousel-inner">
               <div class="carousel-item active" id="intro-face">
                 <div class="text-container">
-                  <p id="logo-text" style="font-size: 28px; font-family: sans-serif;"><b>PawCare</b></p>
-                  <p id="logo-text-des"> </p>
+                  <p id="logo-text">PawCare</p>
+                  <p id="logo-text-des">Welcome </p>
                 </div>
               </div>
               <div class="carousel-item" id="description-landing">
                 <div class="text-container">
-                  <p id="logo-text" style="font-size: 28px; font-family: sans-serif;"><b>Booking</b></p>
-                  <p id="logo-text-des"> </p>
+                  <p id="logo-text">Booking</p>
+                  <p id="logo-text-des">Select sitters </p>
                 </div>
               </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -131,7 +138,7 @@
     <div class="ui-grid-content description-landing">
       <div class="ui-grid-content description-landing">
       <div class="description-container">
-        <p id="intro-heading"><span id="part1">About</span><span id="part2">Us </span></p>
+        <p id="intro-heading">About Us </p>
 
         <div class="introMain">
          <p id="intro-body">
@@ -149,7 +156,7 @@
     </div>
     <!--services-->
     <div class="service-info" id="service-info">
-      <p id="intfo-heading"><span id="part1">Our</span><span id="part2">Services </span></p>
+      <p id="info-heading">OurServices</p>
       <div id="booking-service service-cont">
         <div class="image-container">
           <div class="service-container">
@@ -192,27 +199,28 @@
     </div>
 
 
-    <div id="user-feedback" class="carousel slide" data-ride="carousel">
+    <div id="user-feedback" class="carousel slide" data-ride="carousel" data-interval="false">
       <div class="carousel-inner">
         <div class="carousel-item active" id="user-feedback">
           <div class="ui-grid-contain user-feedback" id="user-feedback">
             <div class="auth-form3">
               <h2 class="info-heading2">Tell Us What you think</h2>
+              <div class="form-content">
               <div class="auth-form2">
 
-                <form action="../../comment_list.php" method="POST" >
+                <form method="post" action="comments.php" >
 
-                <label for="firstname" class="input-label">First Name</label>
-                <input id="firstname" class="text-input" type="text" name="firstname" data-role="none" placeholder="First Name" />
+                <label for="first-name" class="input-label">First Name</label>
+                <input id="firstname" class="text-input" type="text" name="firstname" data-role="none" required placeholder="First Name" />
 
-                <label for="lastname" class="input-label">Last Name</label>
-                <input id="lastname" class="text-input" type="text" name="lastname" data-role="none" placeholder="Last Name" />
+                <label for="last-name" class="input-label">Last Name</label>
+                <input id="lastname" class="text-input" type="text" name="lastname" data-role="none" required placeholder="Last Name" />
 
-                <label for="email" class="input-label">Email</label>
-                <input id="email" class="text-input" type="text" name="email" data-role="none" placeholder="Email" />
+                <label for="addcomments" class="input-label">Comment</label>
+                
 
-                <textarea id="comment" style="height: auto;" class="text-input" type="textarea" rows="5" name="feedback"
-                  data-role="none" placeholder="Type your message">
+                <textarea id="comment" style="height: auto;" class="text-input" type="textarea" rows="5" required name="comment"
+                  data-role="none" placeholder="Add a Comment" required>
                 </textarea>
 
                 <section class='rating-widget'>
@@ -247,38 +255,21 @@
                   <b><span class="vote"></span></b>
                 </div> -->
 
-            
-                <button id="submit" class="prime-btn" data-role="none" type="submit">
+                <input type="button" class="prime-btn" id="submitButton" value="Post Review">
+                <!-- <input type="button" class="prime-btn" onclick="myFunction()" value="Post Review"> -->
+                <!-- <button id="submit" class="prime-btn" data-role="none" type="submit" >
                   Post Review
-                </button>
+                </button> -->
                 </form>
+              </div>
               </div>
             </div>
           </div>
         </div>
         <div class="carousel-item" id="user-feedback">
           <div class="ui-grid-contain user-feedback" id="user-feedback">
-            <div class="auth-form">
-              <h2 class="info-heading2"><span id="part1">Tell Us</span><span id="part2">What you think </span>k</h2>
-              <div class="auth-form2">
-                <label for="firstname" class="input-label">First Name</label>
-                <input id="first-name" class="text-input" type="text" name="firstname" data-role="none" placeholder="First Name" />
-
-                <label for="lastname" class="input-label">Last Name</label>
-                <input id="last-name" class="text-input" type="text" name="lastname" data-role="none" placeholder="Last Name" />
-
-                <label for="email" class="input-label">Email</label>
-                <input id="email" class="text-input" type="text" name="email" data-role="none" placeholder="Email" />
-
-                <textarea id="message" style="height: auto;" class="text-input" type="textarea" rows="5" name="feedback"
-                  data-role="none" placeholder="Type your message">
-                </textarea>
-
-                
-                <button id="submit" class="prime-btn" data-role="none" type="submit">
-                  Post Review
-                </button>
-              </div>
+            <div class="comment_section" id="comment_section">
+              
             </div>
           </div>
         </div>
@@ -428,6 +419,7 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script type="text/javascript" src="../../js/script.js"></script>
+    <script type="text/javascript" src="../HomePage/homePage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
