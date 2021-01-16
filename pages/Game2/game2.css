@@ -22,7 +22,7 @@
 h1{
   font-family:  sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 24px;
   color: #2AB7B7;
   letter-spacing: 0.1em;
@@ -76,7 +76,6 @@ input [type=radio]{
   background-color: #2ab7b7;
   padding-left: 1%;
   width: 100%;
-  display: flex;
 }
 h4{
   font-family:  Arial, Helvetica, sans-serif;
@@ -119,7 +118,10 @@ h4{
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-
+input [type=radio]{
+  background-color: #fbfbfa;
+  letter-spacing: 0.02em;
+}
 
 .q2-img {
   padding-top: 40%;
@@ -582,8 +584,6 @@ h4{
   letter-spacing: 0.05em;
 }
 
-
-
 .grid-container2 > div {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
@@ -591,10 +591,9 @@ h4{
 
 input [type=radio] {
   background-color: #fbfbfa;
-  font-size: 28px;    
+  font-size: 28px;    border: 0px;
     width: 10%;
     height: 1.5em;
-    display: flex;
 }
 
 

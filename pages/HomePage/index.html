@@ -17,13 +17,20 @@
 
 
 </head>
+<div data-role="panel" id="mypanel">
+  <!-- panel content goes here -->
+</div>
+
 <body>
   <div data-role="page">
     <!-- header -->
     <div data-role="header" id="header">
       <div class="ui-grid-a main-container">
         <div class="ui-block-a head-avatar" style="width: 20%;">
-      
+          <!-- <a id="nav-img" data-toggle="collapse" href="#collapseMenu" role="button" aria-expanded="false"
+            aria-controls="collapseMenu">
+            <img class="menu-icon" src="../../assets/icons/menu.svg" />
+          </a> -->
           <button class="header_button" id="btnNav" type="button" data-role="none">
             <img class="menu-icon" src="../../assets/icons/menu.svg" />
           </button>
@@ -40,24 +47,26 @@
 
     <nav class="nav">
       <div class=" nav__links">
-      
+        <!-- <a class="nav__link nav__link--active" href="#">
+          Projects
+        </a> -->
         <div class="ui-block-a logo-container" style="width: 20%;">
-         <a href="../../pages/HomePage/index.html">  <img  class="user-icon" src="../../assets/icons/Logo.png" /></a>
+          <img class="user-icon" src="../../assets/icons/logo.png" />
         </div> 
         <div class="ui-block-b " style="width: 80%;">
         
 
-          <a href="../../pages/HomePage/index.html" class="nav__link" id="nav-text">
+          <a href="#" class="nav__link" id="nav-text">
             Home
           </a>
-          <a href="../../pages/Aboutus/about.html" class="nav__link" id="nav-text">
+          <a href="#" class="nav__link" id="nav-text">
             About Us
           </a>
-          <a href="../../pages/Service/servicehome.html" class="nav__link" id="nav-text">
+          <a href="#" class="nav__link" id="nav-text">
             Services
           </a>
 
-          <a href="../../pages/Petsitting/petsitting.html" class="nav__link" id="nav-text">
+          <a href="#" class="nav__link" id="nav-text">
             &emsp;&ensp;Pet Sitting
           </a>
           <a href="#" class="nav__link" id="nav-text">
@@ -69,20 +78,20 @@
           <a href="#" class="nav__link" id="nav-text">
             &emsp;&ensp;Dog Walking
           </a>
-          <a href="../../pages/PostAJob/postajob.html" class="nav__link" id="nav-text">
+          <a href="#" class="nav__link" id="nav-text">
             &emsp;&ensp;Post a job
           </a>
 
-          <a href="../../pages/HomePage/index.html" class="nav__link" id="nav-text">
+          <a href="#" class="nav__link" id="nav-text">
             Rate us
           </a>
-          <a href="" class="nav__link" id="nav-text">
+          <a href="#" class="nav__link" id="nav-text">
             Become a Sitter
           </a>
-          <a href="../../pages/Myptofile/myprofile.html" class="nav__link" id="nav-text">
+          <a href="#" class="nav__link" id="nav-text">
             My profile
           </a>
-          <a href="../../pages/Log&Reg/login.html" class="nav__link" id="nav-text">
+          <a href="#" class="nav__link" id="nav-text">
             Sign in
           </a>
         </div> 
@@ -99,14 +108,14 @@
             <div class="carousel-inner">
               <div class="carousel-item active" id="intro-face">
                 <div class="text-container">
-                  <p id="logo-text" style="font-size: 28px; font-family: sans-serif;"><b>PawCare</b></p>
-                  <p id="logo-text-des"> </p>
+                  <p id="logo-text">PawCare</p>
+                  <p id="logo-text-des">Welcome </p>
                 </div>
               </div>
               <div class="carousel-item" id="description-landing">
                 <div class="text-container">
-                  <p id="logo-text" style="font-size: 28px; font-family: sans-serif;"><b>Booking</b></p>
-                  <p id="logo-text-des"> </p>
+                  <p id="logo-text">Booking</p>
+                  <p id="logo-text-des">Select sitters </p>
                 </div>
               </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -129,7 +138,7 @@
     <div class="ui-grid-content description-landing">
       <div class="ui-grid-content description-landing">
       <div class="description-container">
-        <p id="intro-heading"><span id="part1">About</span><span id="part2">Us </span></p>
+        <p id="intro-heading">About Us</p>
 
         <div class="introMain">
          <p id="intro-body">
@@ -147,7 +156,7 @@
     </div>
     <!--services-->
     <div class="service-info" id="service-info">
-      <p id="intfo-heading"><span id="part1">Our</span><span id="part2">Services </span></p>
+      <p id="info-heading">OurServices</p>
       <div id="booking-service service-cont">
         <div class="image-container">
           <div class="service-container">
@@ -199,7 +208,7 @@
               <div class="form-content">
               <div class="auth-form2">
 
-                <form action="../HomePage/comments.php" method="POST"  >
+                <form method="post" action="comments.php" >
 
                 <label for="first-name" class="input-label">First Name</label>
                 <input id="firstname" class="text-input" type="text" name="firstname" data-role="none" required placeholder="First Name" />
@@ -237,13 +246,20 @@
                   </div>
                 </section>
           
-                
-                <button id="submit" class="prime-btn" onclick="window.location.href = '../../pages/HomePage/index.html';" data-role="none" type="submit" >
-                  Post Review
-                </button>
-                <div class="load-ellipsis">
+                <!-- <div class="rating" id="first">
+                  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="1" data-iconpos="notext"></a>
+                  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="2" data-iconpos="notext"></a>
+                  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="3" data-iconpos="notext"></a>
+                  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="4" data-iconpos="notext"></a>
+                  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="5" data-iconpos="notext"></a>
+                  <b><span class="vote"></span></b>
+                </div> -->
 
-                </div>
+                <input type="button" class="prime-btn" id="submitButton" value="Post Review">
+                <!-- <input type="button" class="prime-btn" onclick="myFunction()" value="Post Review"> -->
+                <!-- <button id="submit" class="prime-btn" data-role="none" type="submit" >
+                  Post Review
+                </button> -->
                 </form>
               </div>
               </div>
@@ -253,7 +269,7 @@
         <div class="carousel-item" id="user-feedback">
           <div class="ui-grid-contain user-feedback" id="user-feedback">
             <div class="comment_section" id="comment_section">
-              <div id="output"></div>
+              
             </div>
           </div>
         </div>
@@ -331,27 +347,27 @@
               </a>
             </li>
             <li>
-              <a href="../../pages/Service/servicehome.html" data-ajax="false" data-role="none">
+              <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
                 Services
               </a>
             </li><br>
             <li>
-              <a href="../../pages/Petsitting/petsitting.html" data-ajax="false" data-role="none">
+              <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
                 Pet Sitting
               </a>
             </li>
             <li>
-              <a href="#" data-ajax="false" data-role="none">
+              <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
                 House Sitting
               </a>
             </li>
             <li>
-              <a href="#" data-ajax="false" data-role="none">
+              <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
                 Home Visits
               </a>
             </li>
             <li>
-              <a href="#" data-ajax="false" data-role="none">
+              <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
                 Dog Walking
               </a>
             </li>
@@ -366,6 +382,29 @@
             <li><img class="footer-contacts" src="../../assets/icons/email.png" />  pawcare@gmail.com</li>
           </ul>
         </div>
+
+        <!-- <div align="center" class="ui-block-c social-media-icons">
+          <p>Connect with us</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-facebook">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-twitter">
+            <path
+              d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+            </path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-instagram">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </div> -->
       </div>
 
       <div class="ui-grid-a">
