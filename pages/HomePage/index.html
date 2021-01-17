@@ -201,8 +201,9 @@
               <div class="form-content">
               <div class="auth-form2">
 
-                <form method="post" action="comments.php" >
+                <form action="../HomePage/comments.php" method="POST"  >
 
+                <input type="hidden" name="id" id="id" placeholder="id" />
                 <label for="first-name" class="input-label">First Name</label>
                 <input id="firstname" class="text-input" type="text" name="firstname" data-role="none" required placeholder="First Name" />
 
@@ -238,21 +239,11 @@
                     </ul>
                   </div>
                 </section>
-          
-                <!-- <div class="rating" id="first">
-                  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="1" data-iconpos="notext"></a>
-                  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="2" data-iconpos="notext"></a>
-                  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="3" data-iconpos="notext"></a>
-                  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="4" data-iconpos="notext"></a>
-                  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="5" data-iconpos="notext"></a>
-                  <b><span class="vote"></span></b>
-                </div> -->
-
-                <input type="button" class="prime-btn" id="submitButton" value="Post Review">
+                <!-- <input type="button" class="prime-btn" id="submitButton" value="Post Review"> -->
                 <!-- <input type="button" class="prime-btn" onclick="myFunction()" value="Post Review"> -->
-                <!-- <button id="submit" class="prime-btn" data-role="none" type="submit" >
+                <button id="submit" class="prime-btn" onclick="window.location.href = '../../pages/HomePage/index.html';" data-role="none" type="submit" >
                   Post Review
-                </button> -->
+                </button>
                 </form>
               </div>
               </div>
@@ -262,7 +253,7 @@
         <div class="carousel-item" id="user-feedback">
           <div class="ui-grid-contain user-feedback" id="user-feedback">
             <div class="comment_section" id="comment_section">
-              
+              <div id="output"></div>
             </div>
           </div>
         </div>
