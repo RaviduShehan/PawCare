@@ -68,6 +68,29 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
+
+
+$(document).on("input", "#distance-range", function() {
+	let control = $(this),
+	  min = control.attr("min"),
+	  max = control.attr("max"),
+	  val = control.val(),
+	  thumbWidth = control.data("thumbwidth");
+  
+	let range = max - min;
+  
+	let position = ((val - min) / range) * 100;
+	let offsetPosition =
+	  Math.round((thumbWidth * position) / 100) - thumbWidth / 2;
+	let output = control.next("output");
+  
+	output
+	  .css("left", "calc(" + position + "% - " + offsetPosition + "px)")
+	  .text(val);
+  
+	$("#range-val").html(control.val());
+  });
+
 //Navigation Fucntions
 $(document).on("click", "#nav-text1", function() {
 	window.location.href = "../../pages/HomePage/index.html";

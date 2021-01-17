@@ -1,12 +1,19 @@
  .iconService{
-   float: right;
+  float: center;
 
  }
- .iconService{
- background: none;
+ .socialMedia{
+	 float: right;
+	 width: 30px;
+	 margin:2px;
+ }
+ .type-badge1{
+	margin: 1px 5px;
+ 
+	object-fit: contain;
  }
  .serviceIcons img{
-	margin: 1px 0px;
+	margin: 4px 0px;
 	height: 50px;
 	object-fit: contain;
 
@@ -38,9 +45,7 @@
 	background-size: cover;
 	height: 25%;
   }
-  .serviceD-textcontainer{
-
-  }
+  
   ul.breadcrumbsService {
 	padding: 5px 10px;
 	list-style: none;
@@ -79,6 +84,9 @@
   }
   .locationPin{
 	  height: 20px;
+  }
+  .rating-container{
+	  width: auto;
   }
 #textName {
 	font-family: "Roboto";
@@ -249,201 +257,776 @@
     /* phone landscape */
 	@media screen and (min-width: 667px) {
 		.iconService{
-			float: right;
-		 
-		  }
-		  #intro-ServiceD {
-			 width: 100%;
-			 background-size: cover;
-			 height: 25%;
-		   }
-		   .serviceD-textcontainer{
-		 
-		   }
-		 
-		   
-		  .text-containerService {
-			 text-align: center;
-			 width: auto;
-			 padding: 0;
-		   }
-		   .availability{
-			   width: 100%;
-			   height: auto;
-		   }
-		   .locationPin{
-			   height: 20px;
-		   }
-		 #textName {
-			 font-family: "Roboto";
-			 font-style: normal;
-			 font-weight: 900px;
-			 font-size: 25px;
-			 letter-spacing: 0.05em;
-			 text-shadow: none;
-			 background: -webkit-linear-gradient(171.5deg, #d88973 9.21%, #d88973 90.79%);
-			 -webkit-background-clip: text;
-			 -webkit-text-fill-color: transparent;
-			 text-align: left;
-		   }
-		   #textsubName{
-			 font-family: "Roboto";
-			 text-align: right;
-			 font-style: normal;
-			 font-weight: 900px;
-			 font-size: 14px;
-			 letter-spacing: 0.05em;
-			 text-shadow: none;
-			 background: -webkit-linear-gradient(171.5deg, #1c1c1c 9.21%, #1c1c1c 90.79%);
-			 -webkit-background-clip: text;
-			 -webkit-text-fill-color: transparent;
-			 text-align: left;
-		   }
-		   #serviceDetails-body{
-			 font-family: "sans-serif";
-			 font-style: normal;
-			 font-weight: 100px;
-			 font-size: 16px;
-			 letter-spacing: 0.05em;
-			 text-shadow: none;
-			 text-align: justify;
-			 padding: 2px;
-		   }
-		   .pricing-details{
-			 width: 100%;
-			 background-color: #d88973;
-			 background-size: cover;
-			 height: 400px;
-		   }
-		   .pricing-container{
-			 background-color: #FBFBFA ;
-			  margin: 20px 20px 20px 20px;
-			 align-content: center;
-		   }
-		   #pricing-heading{
-			 font-family: "Roboto";
-			 font-style: normal;
-			 font-weight: 1000px;
-			 font-size: 30px;
-			 letter-spacing: 0.05em;
-			 text-shadow: none;
-			 text-align: justify;
-			 padding: 2px;
-			 background: -webkit-linear-gradient(171.5deg, #2ab7b7 9.21%, #2ab7b7 100%);
-			 -webkit-background-clip: text;
-			 -webkit-text-fill-color: transparent;
-		   }
-			#bookingHeading{
-			 font-family: "Roboto";
-			 font-style: normal;
-			 font-weight: 1000px;
-			 font-size: 30px;
-			 letter-spacing: 0.05em;
-			 text-shadow: none;
-			 text-align: justify;
-			 padding: 2px;
-			 background: -webkit-linear-gradient(171.5deg, #2ab7b7 9.21%, #2ab7b7 100%);
-			 -webkit-background-clip: text;
-			 -webkit-text-fill-color: transparent;
-			}
-			.rating-stars ul {
-			 list-style-type:none;
-			 padding:0;
-			 
-			 -moz-user-select:none;
-			 -webkit-user-select:none;
-		   }
-		   .booking-form {
-			 padding: 12px 16px;
-			 
-		   }
-		   .booking-form-content{
-			 padding: 12px 16px;
-			 padding-top: 30px;
-			 border-style: solid;
-			 border-color: #cfc9c9;
-			 border-width: 0.5px;
-		   }
+			float: center;
 		  
-		   .text-inputB {
-			 width: 90%;
-			 height: 10px;
-			 background: #2ab7b7;
-			 border-radius: 5px;
-			 font-family: "Open sans";
-			 font-style: normal;
-			 font-weight: normal;
-			 font-size: 16px;
-			 letter-spacing: 0.1em;
-			 color: #2ab7b7;
-			 padding: 12px 16px;
-			 margin-bottom: 10px;
-			 background-color: white !important;
-			 -webkit-appearance: none;
 		   }
-			
-		   a.booking:link, a.booking:visited {
-			 font-family: "Asap";
-			 font-style: normal;
-			 font-weight: none;
-			 font-size: 14px;
-			 letter-spacing: 0.15em;
-			 /*text-transform: uppercase;*/
-			 width: 90%;
-			 height: 46px;
-			 margin: 5px 0;
-			 padding: 13px 15px;
-			 line-height: 16px;
-			 color: #ffffff;
-			 background: linear-gradient(149.59deg, #2ab7b7 9.21%, #2ab7b7 90.79%);
-			 box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-			 -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-			 -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-			 box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-			 border-radius: 25px;
-			 border: none;
-			 text-shadow: none;
-			 text-align: center;
-			 text-decoration: none;
-			 display: inline-block;
+		   .socialMedia{
+			   float: right;
+			   width: 30px;
+			   margin:2px;
 		   }
+		   .type-badge1{
+			  margin: 1px 5px;
 		   
-		   a.booking:hover, a.booking:active {
+			  object-fit: contain;
+		   }
+		   .serviceIcons img{
+			  margin: 4px 0px;
+			  height: 50px;
+			  object-fit: contain;
+		  
+		   }
+		   #popupBasic1{
+			   background-color: #2ab7b7;
+			   font-family: Roboto;
+		   }
+		   #popupBasic2{
+			  background-color: #2ab7b7;
+			  font-family: Roboto;
+		  }
+		  #popupBasic3{
+			  background-color: #2ab7b7;
+			  font-family: Roboto;
+		  }
+		  #popupBasic4{
 			 background-color: #2ab7b7;
-		   }
-		   .text-inputB::placeholder {
-			 color: #1c1c1c;
-			 font-weight: 400;
-		   }
-		   
-		   .text-inputB::-webkit-input-placeholder {
-			 color: #1c1c1c;
-			 font-weight: 400;
+			 font-family: Roboto;
+		  }
+		  #popupBasic5{
+			  background-color: #2ab7b7;
+			  font-family: Roboto;
 		   }
 		   
-		   .text-inputB::-ms-input-placeholder {
-			 color: #1c1c1c;
-			 font-weight: 400;
-		   }
-		   #gBadge{
-			 height: 50px;
-		   }
-		   #dogicon{
-			 height: 50px;
-		   }
-		   .column {
-			 float: left;
+		  
+		   #intro-ServiceD {
+			  width: 100%;
+			  background-size: cover;
+			  height: 25%;
+			}
+			
+			ul.breadcrumbsService {
+			  padding: 5px 10px;
+			  list-style: none;
+			  /* margin-top: 5px; */
+			}
+			ul.breadcrumbsService li {
+			  display: inline;
+			  font-size: 13px;
+			  text-shadow: none;
+			  color: #2ab7b7;
+			  font-family: Roboto;
+			}
+			ul.breadcrumbsService li+li:before {
+			  padding: 4px;
+			  color: #D88973;
+			  content: "/\00a0";
+			}
+			ul.breadcrumbsService li+li+li:before {
+			  padding: 4px;
+			  color: #D88973;
+			  content: "/\00a0";
+			}
+			ul.breadcrumbsService li a {
+			  color: #2ab7b7;
+			  text-decoration: none;
+			}
+		  
+		   .text-containerService {
+			  text-align: center;
+			  width: auto;
+			  padding: 0;
+			}
+			.availability{
+				width: 100%;
+				height: auto;
+			}
+			.locationPin{
+				height: 20px;
+			}
+			.rating-container{
+				width: auto;
+			}
+		  #textName {
+			  font-family: "Roboto";
+			  font-style: normal;
+			  font-weight: 900px;
+			  font-size: 25px;
+			  letter-spacing: 0.05em;
+			  text-shadow: none;
+			  background: -webkit-linear-gradient(171.5deg, #d88973 9.21%, #d88973 90.79%);
+			  -webkit-background-clip: text;
+			  -webkit-text-fill-color: transparent;
+			  text-align: left;
+			}
+			#textsubName{
+			  font-family: "Roboto";
+			  text-align: right;
+			  font-style: normal;
+			  font-weight: 900px;
+			  font-size: 14px;
+			  letter-spacing: 0.05em;
+			  text-shadow: none;
+			  background: -webkit-linear-gradient(171.5deg, #1c1c1c 9.21%, #1c1c1c 90.79%);
+			  -webkit-background-clip: text;
+			  -webkit-text-fill-color: transparent;
+			  text-align: left;
+			}
+			#serviceDetails-body{
+			  font-family: "sans-serif";
+			  font-style: normal;
+			  font-weight: 100px;
+			  font-size: 16px;
+			  letter-spacing: 0.05em;
+			  text-shadow: none;
+			  text-align: justify;
+			  padding: 2px;
+			}
+			.pricing-details{
+			  width: 100%;
+			  background-color: #d88973;
+			  background-size: cover;
+			  height: 400px;
+			}
+			.pricing-container{
+			  background-color: #FBFBFA ;
+			   margin: 20px 20px 20px 20px;
+			  align-content: center;
+			}
+			#pricing-heading{
+			  font-family: "Roboto";
+			  font-style: normal;
+			  font-weight: 1000px;
+			  font-size: 30px;
+			  letter-spacing: 0.05em;
+			  text-shadow: none;
+			  text-align: justify;
+			  padding: 2px;
+			  background: -webkit-linear-gradient(171.5deg, #2ab7b7 9.21%, #2ab7b7 100%);
+			  -webkit-background-clip: text;
+			  -webkit-text-fill-color: transparent;
+			}
+			 #bookingHeading{
+			  font-family: "Roboto";
+			  font-style: normal;
+			  font-weight: 1000px;
+			  font-size: 30px;
+			  letter-spacing: 0.05em;
+			  text-shadow: none;
+			  text-align: justify;
+			  padding: 2px;
+			  background: -webkit-linear-gradient(171.5deg, #2ab7b7 9.21%, #2ab7b7 100%);
+			  -webkit-background-clip: text;
+			  -webkit-text-fill-color: transparent;
+			 }
+			 .rating-stars ul {
+			  list-style-type:none;
+			  padding:0;
 			  
-			 padding: 5px;
-		   }
+			  -moz-user-select:none;
+			  -webkit-user-select:none;
+			}
 		   
-		   /* Clear floats after image containers */
-		   .row::after {
-			 content: "";
-			 clear: both;
-			 display: table;
-		   }
+			.booking-form-content{
+			  padding: 12px 16px;
+			  padding-top: 30px;
+			  border-style: solid;
+			  border-color: #cfc9c9;
+			   
+			}
+		   
+			.text-inputB {
+			  width: 90%;
+			  height: 10px;
+			  background: #2ab7b7;
+			  border-radius: 5px;
+			  font-family: "Open sans";
+			  font-style: normal;
+			  font-weight: normal;
+			  font-size: 16px;
+			  letter-spacing: 0.1em;
+			  color: #2ab7b7;
+			  padding: 12px 16px;
+			  margin-bottom: 10px;
+			  background-color: white !important;
+			  -webkit-appearance: none;
+			}
+			 
+			a.booking:link, a.booking:visited {
+			  font-family: "Asap";
+			  font-style: normal;
+			  font-weight: none;
+			  font-size: 14px;
+			  letter-spacing: 0.15em;
+			  /*text-transform: uppercase;*/
+			  width: 90%;
+			  height: 46px;
+			  margin: 5px 0;
+			  padding: 13px 15px;
+			  line-height: 16px;
+			  color: #ffffff;
+			  background: linear-gradient(149.59deg, #2ab7b7 9.21%, #2ab7b7 90.79%);
+			  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+			  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+			  -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+			  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+			  border-radius: 25px;
+			  border: none;
+			  text-shadow: none;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			}
+			
+			a.booking:hover, a.booking:active {
+			  background-color: #2ab7b7;
+			}
+			.text-inputB::placeholder {
+			  color: #1c1c1c;
+			  font-weight: 400;
+			}
+			
+			.text-inputB::-webkit-input-placeholder {
+			  color: #1c1c1c;
+			  font-weight: 400;
+			}
+			
+			.text-inputB::-ms-input-placeholder {
+			  color: #1c1c1c;
+			  font-weight: 400;
+			}
+			#gBadge{
+			  height: 50px;
+			}
+			#dogicon{
+			  height: 50px;
+			}
+			.column {
+			  float: left;
+			   
+			  padding: 5px;
+			}
+			
+			/* Clear floats after image containers */
+			.row::after {
+			  content: "";
+			  clear: both;
+			  display: table;
+			}
 	}
 	  /* tablet portrait */
 	  @media screen and (min-width: 768px) {
+		.iconService{
+			float: center;
+		  
+		   }
+		   .socialMedia{
+			   float: right;
+			   width: 30px;
+			   margin:2px;
+		   }
+		   .type-badge1{
+			  margin: 1px 5px;
+		   
+			  object-fit: contain;
+		   }
+		   .serviceIcons img{
+			  margin: 4px 0px;
+			  height: 50px;
+			  object-fit: contain;
+		  
+		   }
+		   #popupBasic1{
+			   background-color: #2ab7b7;
+			   font-family: Roboto;
+		   }
+		   #popupBasic2{
+			  background-color: #2ab7b7;
+			  font-family: Roboto;
+		  }
+		  #popupBasic3{
+			  background-color: #2ab7b7;
+			  font-family: Roboto;
+		  }
+		  #popupBasic4{
+			 background-color: #2ab7b7;
+			 font-family: Roboto;
+		  }
+		  #popupBasic5{
+			  background-color: #2ab7b7;
+			  font-family: Roboto;
+		   }
+		   
+		  
+		   #intro-ServiceD {
+			  width: 100%;
+			  background-size: cover;
+			  height: 25%;
+			}
+			
+			ul.breadcrumbsService {
+			  padding: 5px 10px;
+			  list-style: none;
+			  /* margin-top: 5px; */
+			}
+			ul.breadcrumbsService li {
+			  display: inline;
+			  font-size: 13px;
+			  text-shadow: none;
+			  color: #2ab7b7;
+			  font-family: Roboto;
+			}
+			ul.breadcrumbsService li+li:before {
+			  padding: 4px;
+			  color: #D88973;
+			  content: "/\00a0";
+			}
+			ul.breadcrumbsService li+li+li:before {
+			  padding: 4px;
+			  color: #D88973;
+			  content: "/\00a0";
+			}
+			ul.breadcrumbsService li a {
+			  color: #2ab7b7;
+			  text-decoration: none;
+			}
+		  
+		   .text-containerService {
+			  text-align: center;
+			  width: auto;
+			  padding: 0;
+			}
+			.availability{
+				width: 100%;
+				height: auto;
+			}
+			.locationPin{
+				height: 20px;
+			}
+			.rating-container{
+				width: auto;
+			}
+		  #textName {
+			  font-family: "Roboto";
+			  font-style: normal;
+			  font-weight: 900px;
+			  font-size: 25px;
+			  letter-spacing: 0.05em;
+			  text-shadow: none;
+			  background: -webkit-linear-gradient(171.5deg, #d88973 9.21%, #d88973 90.79%);
+			  -webkit-background-clip: text;
+			  -webkit-text-fill-color: transparent;
+			  text-align: left;
+			}
+			#textsubName{
+			  font-family: "Roboto";
+			  text-align: right;
+			  font-style: normal;
+			  font-weight: 900px;
+			  font-size: 14px;
+			  letter-spacing: 0.05em;
+			  text-shadow: none;
+			  background: -webkit-linear-gradient(171.5deg, #1c1c1c 9.21%, #1c1c1c 90.79%);
+			  -webkit-background-clip: text;
+			  -webkit-text-fill-color: transparent;
+			  text-align: left;
+			}
+			#serviceDetails-body{
+			  font-family: "sans-serif";
+			  font-style: normal;
+			  font-weight: 100px;
+			  font-size: 16px;
+			  letter-spacing: 0.05em;
+			  text-shadow: none;
+			  text-align: justify;
+			  padding: 2px;
+			}
+			.pricing-details{
+			  width: 100%;
+			  background-color: #d88973;
+			  background-size: cover;
+			  height: 400px;
+			}
+			.pricing-container{
+			  background-color: #FBFBFA ;
+			   margin: 20px 20px 20px 20px;
+			  align-content: center;
+			}
+			#pricing-heading{
+			  font-family: "Roboto";
+			  font-style: normal;
+			  font-weight: 1000px;
+			  font-size: 30px;
+			  letter-spacing: 0.05em;
+			  text-shadow: none;
+			  text-align: justify;
+			  padding: 2px;
+			  background: -webkit-linear-gradient(171.5deg, #2ab7b7 9.21%, #2ab7b7 100%);
+			  -webkit-background-clip: text;
+			  -webkit-text-fill-color: transparent;
+			}
+			 #bookingHeading{
+			  font-family: "Roboto";
+			  font-style: normal;
+			  font-weight: 1000px;
+			  font-size: 30px;
+			  letter-spacing: 0.05em;
+			  text-shadow: none;
+			  text-align: justify;
+			  padding: 2px;
+			  background: -webkit-linear-gradient(171.5deg, #2ab7b7 9.21%, #2ab7b7 100%);
+			  -webkit-background-clip: text;
+			  -webkit-text-fill-color: transparent;
+			 }
+			 .rating-stars ul {
+			  list-style-type:none;
+			  padding:0;
+			  
+			  -moz-user-select:none;
+			  -webkit-user-select:none;
+			}
+		   
+			.booking-form-content{
+			  padding: 12px 16px;
+			  padding-top: 30px;
+			  border-style: solid;
+			  border-color: #cfc9c9;
+			   
+			}
+		   
+			.text-inputB {
+			  width: 90%;
+			  height: 10px;
+			  background: #2ab7b7;
+			  border-radius: 5px;
+			  font-family: "Open sans";
+			  font-style: normal;
+			  font-weight: normal;
+			  font-size: 16px;
+			  letter-spacing: 0.1em;
+			  color: #2ab7b7;
+			  padding: 12px 16px;
+			  margin-bottom: 10px;
+			  background-color: white !important;
+			  -webkit-appearance: none;
+			}
+			 
+			a.booking:link, a.booking:visited {
+			  font-family: "Asap";
+			  font-style: normal;
+			  font-weight: none;
+			  font-size: 14px;
+			  letter-spacing: 0.15em;
+			  /*text-transform: uppercase;*/
+			  width: 90%;
+			  height: 46px;
+			  margin: 5px 0;
+			  padding: 13px 15px;
+			  line-height: 16px;
+			  color: #ffffff;
+			  background: linear-gradient(149.59deg, #2ab7b7 9.21%, #2ab7b7 90.79%);
+			  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+			  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+			  -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+			  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+			  border-radius: 25px;
+			  border: none;
+			  text-shadow: none;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			}
+			
+			a.booking:hover, a.booking:active {
+			  background-color: #2ab7b7;
+			}
+			.text-inputB::placeholder {
+			  color: #1c1c1c;
+			  font-weight: 400;
+			}
+			
+			.text-inputB::-webkit-input-placeholder {
+			  color: #1c1c1c;
+			  font-weight: 400;
+			}
+			
+			.text-inputB::-ms-input-placeholder {
+			  color: #1c1c1c;
+			  font-weight: 400;
+			}
+			#gBadge{
+			  height: 50px;
+			}
+			#dogicon{
+			  height: 50px;
+			}
+			.column {
+			  float: left;
+			   
+			  padding: 5px;
+			}
+			
+			/* Clear floats after image containers */
+			.row::after {
+			  content: "";
+			  clear: both;
+			  display: table;
+			}
 	  }
+	  /* tab landscape */
+	  @media screen and (min-width: 768px) {
+	  .iconService{
+		float: center;
+	  
+	   }
+	   .socialMedia{
+		   float: right;
+		   width: 30px;
+		   margin:2px;
+	   }
+	   .type-badge1{
+		  margin: 1px 5px;
+	   
+		  object-fit: contain;
+	   }
+	   .serviceIcons img{
+		  margin: 4px 0px;
+		  height: 50px;
+		  object-fit: contain;
+	  
+	   }
+	   #popupBasic1{
+		   background-color: #2ab7b7;
+		   font-family: Roboto;
+	   }
+	   #popupBasic2{
+		  background-color: #2ab7b7;
+		  font-family: Roboto;
+	  }
+	  #popupBasic3{
+		  background-color: #2ab7b7;
+		  font-family: Roboto;
+	  }
+	  #popupBasic4{
+		 background-color: #2ab7b7;
+		 font-family: Roboto;
+	  }
+	  #popupBasic5{
+		  background-color: #2ab7b7;
+		  font-family: Roboto;
+	   }
+	   
+	  
+	   #intro-ServiceD {
+		  width: 100%;
+		  background-size: cover;
+		  height: 25%;
+		}
+		
+		ul.breadcrumbsService {
+		  padding: 5px 10px;
+		  list-style: none;
+		  /* margin-top: 5px; */
+		}
+		ul.breadcrumbsService li {
+		  display: inline;
+		  font-size: 13px;
+		  text-shadow: none;
+		  color: #2ab7b7;
+		  font-family: Roboto;
+		}
+		ul.breadcrumbsService li+li:before {
+		  padding: 4px;
+		  color: #D88973;
+		  content: "/\00a0";
+		}
+		ul.breadcrumbsService li+li+li:before {
+		  padding: 4px;
+		  color: #D88973;
+		  content: "/\00a0";
+		}
+		ul.breadcrumbsService li a {
+		  color: #2ab7b7;
+		  text-decoration: none;
+		}
+	  
+	   .text-containerService {
+		  text-align: center;
+		  width: auto;
+		  padding: 0;
+		}
+		.availability{
+			width: 100%;
+			height: auto;
+		}
+		.locationPin{
+			height: 20px;
+		}
+		.rating-container{
+			width: auto;
+		}
+	  #textName {
+		  font-family: "Roboto";
+		  font-style: normal;
+		  font-weight: 900px;
+		  font-size: 25px;
+		  letter-spacing: 0.05em;
+		  text-shadow: none;
+		  background: -webkit-linear-gradient(171.5deg, #d88973 9.21%, #d88973 90.79%);
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+		  text-align: left;
+		}
+		#textsubName{
+		  font-family: "Roboto";
+		  text-align: right;
+		  font-style: normal;
+		  font-weight: 900px;
+		  font-size: 14px;
+		  letter-spacing: 0.05em;
+		  text-shadow: none;
+		  background: -webkit-linear-gradient(171.5deg, #1c1c1c 9.21%, #1c1c1c 90.79%);
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+		  text-align: left;
+		}
+		#serviceDetails-body{
+		  font-family: "sans-serif";
+		  font-style: normal;
+		  font-weight: 100px;
+		  font-size: 16px;
+		  letter-spacing: 0.05em;
+		  text-shadow: none;
+		  text-align: justify;
+		  padding: 2px;
+		}
+		.pricing-details{
+		  width: 100%;
+		  background-color: #d88973;
+		  background-size: cover;
+		  height: 400px;
+		}
+		.pricing-container{
+		  background-color: #FBFBFA ;
+		   margin: 20px 20px 20px 20px;
+		  align-content: center;
+		}
+		#pricing-heading{
+		  font-family: "Roboto";
+		  font-style: normal;
+		  font-weight: 1000px;
+		  font-size: 30px;
+		  letter-spacing: 0.05em;
+		  text-shadow: none;
+		  text-align: justify;
+		  padding: 2px;
+		  background: -webkit-linear-gradient(171.5deg, #2ab7b7 9.21%, #2ab7b7 100%);
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+		}
+		 #bookingHeading{
+		  font-family: "Roboto";
+		  font-style: normal;
+		  font-weight: 1000px;
+		  font-size: 30px;
+		  letter-spacing: 0.05em;
+		  text-shadow: none;
+		  text-align: justify;
+		  padding: 2px;
+		  background: -webkit-linear-gradient(171.5deg, #2ab7b7 9.21%, #2ab7b7 100%);
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+		 }
+		 .rating-stars ul {
+		  list-style-type:none;
+		  padding:0;
+		  
+		  -moz-user-select:none;
+		  -webkit-user-select:none;
+		}
+	   
+		.booking-form-content{
+		  padding: 12px 16px;
+		  padding-top: 30px;
+		  border-style: solid;
+		  border-color: #cfc9c9;
+		   
+		}
+	   
+		.text-inputB {
+		  width: 90%;
+		  height: 10px;
+		  background: #2ab7b7;
+		  border-radius: 5px;
+		  font-family: "Open sans";
+		  font-style: normal;
+		  font-weight: normal;
+		  font-size: 16px;
+		  letter-spacing: 0.1em;
+		  color: #2ab7b7;
+		  padding: 12px 16px;
+		  margin-bottom: 10px;
+		  background-color: white !important;
+		  -webkit-appearance: none;
+		}
+		 
+		a.booking:link, a.booking:visited {
+		  font-family: "Asap";
+		  font-style: normal;
+		  font-weight: none;
+		  font-size: 14px;
+		  letter-spacing: 0.15em;
+		  /*text-transform: uppercase;*/
+		  width: 90%;
+		  height: 46px;
+		  margin: 5px 0;
+		  padding: 13px 15px;
+		  line-height: 16px;
+		  color: #ffffff;
+		  background: linear-gradient(149.59deg, #2ab7b7 9.21%, #2ab7b7 90.79%);
+		  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+		  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+		  -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+		  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+		  border-radius: 25px;
+		  border: none;
+		  text-shadow: none;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		}
+		
+		a.booking:hover, a.booking:active {
+		  background-color: #2ab7b7;
+		}
+		.text-inputB::placeholder {
+		  color: #1c1c1c;
+		  font-weight: 400;
+		}
+		
+		.text-inputB::-webkit-input-placeholder {
+		  color: #1c1c1c;
+		  font-weight: 400;
+		}
+		
+		.text-inputB::-ms-input-placeholder {
+		  color: #1c1c1c;
+		  font-weight: 400;
+		}
+		#gBadge{
+		  height: 50px;
+		}
+		#dogicon{
+		  height: 50px;
+		}
+		.column {
+		  float: left;
+		   
+		  padding: 5px;
+		}
+		
+		/* Clear floats after image containers */
+		.row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
