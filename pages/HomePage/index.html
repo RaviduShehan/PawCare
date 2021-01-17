@@ -214,7 +214,6 @@
                 <div class="form-content">
                   <div class="auth-form2">
       
-      
                     <form action="../HomePage/comments.php" method="POST">
       
                       <input type="hidden" name="id" id="id" placeholder="id" />
@@ -222,12 +221,16 @@
                       <input id="firstname" class="text-input" type="text" name="firstname" data-role="none" required
                         placeholder="First Name" />
       
+                      <label for="last-name" class="input-label">Last Name</label>
+                      <input id="lastname" class="text-input" type="text" name="lastname" data-role="none" required
+                        placeholder="Last Name" />
+      
                       <label for="addcomments" class="input-label">Comment</label>
       
       
                       <textarea id="comment" style="height: auto;" class="text-input" type="textarea" rows="5" required
                         name="comment" data-role="none" placeholder="Add a Comment" required>
-                      </textarea>
+                        </textarea>
       
                       <section class='rating-widget'>
                         <!-- Rating Stars Box -->
@@ -251,30 +254,23 @@
                           </ul>
                         </div>
                       </section>
-      
-      
-      
-                      <input type="button" class="prime-btn" id="submitButton" value="Post Review">
-      
+                      <!-- <input type="button" class="prime-btn" id="submitButton" value="Post Review"> -->
+                      <!-- <input type="button" class="prime-btn" onclick="myFunction()" value="Post Review"> -->
+                      <button id="submit" class="prime-btn"
+                        onclick="window.location.href = '../../pages/HomePage/index.html';" data-role="none" type="submit">
+                        Post Review
+                      </button>
                     </form>
                   </div>
-                  </section>
-                  <!-- <input type="button" class="prime-btn" id="submitButton" value="Post Review"> -->
-                  <!-- <input type="button" class="prime-btn" onclick="myFunction()" value="Post Review"> -->
-                  <button id="submit" class="prime-btn" onclick="window.location.href = '../../pages/HomePage/index.html';"
-                    data-role="none" type="submit">
-                    Post Review
-                  </button>
-                  </form>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item" id="user-feedback">
-          <div class="ui-grid-contain user-feedback" id="user-feedback">
-            <div class="comment_section" id="comment_section">
-              <div id="output"></div>
+          <div class="carousel-item" id="user-feedback">
+            <div class="ui-grid-contain user-feedback" id="user-feedback">
+              <div class="comment_section" id="comment_section">
+                <div id="output"></div>
+              </div>
             </div>
           </div>
           <a class="carousel-control-prev" href="#user-feedback" role="button" data-slide="prev">
