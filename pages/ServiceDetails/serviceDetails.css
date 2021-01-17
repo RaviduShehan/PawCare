@@ -1,12 +1,20 @@
  .iconService{
-   float: right;
+  float: center;
+ 
 
  }
- .iconService{
- background: none;
+ .socialMedia{
+	 float: right;
+	 width: 30px;
+	 margin:2px;
+ }
+ .type-badge1{
+	margin: 1px 5px;
+ 
+	object-fit: contain;
  }
  .serviceIcons img{
-	margin: 1px 0px;
+	margin: 4px 0px;
 	height: 50px;
 	object-fit: contain;
 
@@ -38,9 +46,7 @@
 	background-size: cover;
 	height: 25%;
   }
-  .serviceD-textcontainer{
-
-  }
+  
   ul.breadcrumbsService {
 	padding: 5px 10px;
 	list-style: none;
@@ -79,6 +85,9 @@
   }
   .locationPin{
 	  height: 20px;
+  }
+  .rating-container{
+	  width: auto;
   }
 #textName {
 	font-family: "Roboto";
