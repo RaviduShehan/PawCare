@@ -35,19 +35,7 @@
 	margin-bottom: 10px;
   }
   
-  .page-title {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 900;
-	font-size: 16px;
-	letter-spacing: 0.1em;
-	background: linear-gradient(146.75deg, #5B53FF 9.21%, #56B7FF 90.79%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-shadow: none;
-	text-transform: uppercase;
-  }
-  
+   
   .no-items {
 	padding: 10px 15px;
 	display: none;

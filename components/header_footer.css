@@ -102,10 +102,42 @@
     background-color: none;
     cursor: pointer;
 }
-#nav-text{
+#nav-text1{
 	color: #ffffff;
 }
-
+#nav-text2{
+	color: #ffffff;
+}
+#nav-text3{
+	color: #ffffff;
+}
+#nav-text4{
+	color: #ffffff;
+}
+#nav-text5{
+	color: #ffffff;
+}
+#nav-text6{
+	color: #ffffff;
+}
+#nav-text7{
+	color: #ffffff;
+}
+#nav-text8{
+	color: #ffffff;
+}
+#nav-text9{
+	color: #ffffff;
+}
+#nav-text10{
+	color: #ffffff;
+}
+#nav-text11{
+	color: #ffffff;
+}
+#nav-text12{
+	color: #ffffff;
+}
 .nav__links {
     position: fixed;
     top: 0;
@@ -302,47 +334,8 @@
   
   
   
-  
-
-  /* .rated {
-	background-color: yellow !important;
-  }
-  
-  .rating a {
-	border: 0px !important;
-	
-  } */
-  
-  
   @media screen and (min-width: 768px) {
-	/* #intro-body {
-	  font-family: "sans-serif";
-	  font-style: normal;
-	  font-weight: normal;
-	  font-size: 24px;
-	  letter-spacing: 0.01em;
-	  text-align: center;
-	}
-  
-	#intro-heading {
-	  font-family: "sans-serif";
-	  font-style: normal;
-	  font-weight: 1000;
-	  font-size: 36px;
-	  letter-spacing: 0.05em;
-	  background: -webkit-linear-gradient(168.06deg, #d88973 9.21%, #d88973 90.79%);
-	  -webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
-	  text-shadow: none;
-	}
-   */
-	/* .intro-img {
-	  padding: 100px 0 0;
-	  margin: auto;
-	  display: block;
-	  width: 60%;
-	  height: auto;
-	} */
+
 
 	.nav__links {
 		position: fixed;
@@ -358,38 +351,6 @@
 		overflow: auto;
 		
 	}
-  
-	/* #intro-face {
-	  width: 100%;
-	  background-image: url("../../assets/images/intro2.png");
-	  background-size: cover;
-	  height: 407px;
-	} */
-/*	#description-landing {
-		width: 100%;
-		background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)), url("../../assets/images/intro1.png");
-		background-size: cover;
-		height: 407px;
-	  }
-	  
-	  .description-img {
-		padding: 100px 0 0;
-		margin: auto;
-		display: block;
-		width: 60%;
-		height: auto;
-	
-	  } */
-  
-	
-/*   
-	#description-landing {
-	  text-align: center;
-	  padding: 100px 25px;
-	} */
-  
-	
-	 
   }
   
   /*# sourceMappingURL=homepage.css.map */
