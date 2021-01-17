@@ -152,3 +152,33 @@ $(document).on("click", "#homePage", function() {
 	window.location.href ="../../pages/HomePage/index.html";
   });
 
+//navigatings for loging and registration
+$(document).on("click", "#link1", function() {
+	window.location.href ="../../pages/Log&Reg/login.html";
+  });
+  $(document).on("click", "#link2", function() {
+	window.location.href ="../../pages/Log&Reg/register.html";
+  });
+
+  //Navigations in myprofile
+  $(document).on("click", "#favouriteList", function() {
+	window.location.href ="../../pages/Favourites/index.html";
+  });
+  $(document).on("click", "#logut", function() {
+	window.location.href ="../../pages/HomePage/index.html";
+  });
+  $(document).on("click", "#favouriteList", function() {
+	window.location.href ="../../pages/Favourites/index.html";
+  });
+//Navigations in service
+$(document).on("click", "#petsitting", function() {
+	window.location.href ="../../pages/Petsitting/petsitting.html";
+  });
+  $(document).on("click", "#game-button-enter", function() {
+	window.location.href ="../../pages/Game/game1.html";
+  });
+
+  //Navigations in Game
+  $(document).on("click", "#go-back-btn1", function() {
+	window.location.href ="../../pages/Game/game1.html";
+  });

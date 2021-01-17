@@ -1,13 +1,13 @@
 $(function () {
 
-  $('#log').on('submit', function (ev) {
+  $('#log1').on('submit', function (ev) {
     if ($(this).valid()) {
       alert('Confirmed');
       ev.preventDefault();
 
       window.location.href = "../../pages/Log&Reg/login.html";
 
-    }
+    } 
   }).validate({
     errorClass: 'mbsc-err-msg',
     errorPlacement: function (error, element) {

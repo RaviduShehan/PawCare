@@ -44,10 +44,11 @@
 .ui-btn{
   margin-top: 20%;
   background-color: #2ab7b7;
-  color: #fafafb;
+  color: #2ab7b7;
   text-shadow: none;
   border-radius: 50px;
 }
+ 
 
 #other-link #link1,
 #other-link #link2{

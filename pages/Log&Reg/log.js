@@ -3,10 +3,10 @@ $(function () {
 
     $('#log').on('submit', function (ev) {
         if ($(this).valid()) {
-            alert('Confirmed');
+             
             ev.preventDefault();
                    
-          window.location.href = "../../pages/Game/game1.html";
+          window.location.href ="../../pages/HomePage/index.html";
             
         }
     }).validate({

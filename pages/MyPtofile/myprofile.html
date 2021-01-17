@@ -7,33 +7,96 @@
     <title>PawCare | My Profile</title>
 
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <link rel="stylesheet" href="../../style/main.css" />
-    <link rel="stylesheet" href="../../pages/MyPtofile/myprofile.css" />
-    <script src="../../js/main.js"></script>
+    
+   
+    <link rel="stylesheet" type="text/css" type="" href="../../css/style.css" />
+   
+    <link rel="stylesheet" type="text/css"  href="../../pages/MyPtofile/myprofile.css" />
+    <link rel="stylesheet" type="text/css"  href="../../components/header_footer.css" />
+
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
     <script src="../../pages/MyPtofile/myprofile.js"></script>
-
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../../js/script.js"></script>
   </head>
 
   <body>
 
     <div data-role="page" id="signup-page">
-      <!-- header -->
-        <div data-role="header" id="header">
-          <div>
-            <a class="logo-img" href="/pages/Homepage/home.html" data-role="none" data-ajax="false">
-              <img class="logo-img" src="../../assets/images/logo.png">
-            </a>
-          </div>
-
- 
+     
+        <!-- header -->
+    <div data-role="header" id="header">
+      <div class="ui-grid-a main-container">
+        <div class="ui-block-a head-avatar" style="width: 20%;">
+          <button class="header_button" id="btnNav" type="button" data-role="none">
+            <img class="menu-icon" src="../../assets/icons/menu.svg" />
+          </button>
 
         </div>
+        <div class="ui-block-b logo-container" style="width: 60%;">
+          <img class="logo-img" src="../../assets/logo/logo.png" />
+        </div>
+        <div class="ui-block-c head-avatar2" style="width: 20%;">
+          <img class="user-icon" src="../../assets/icons/user.png" />
+        </div>
+      </div>
+    </div>
 
-      <!--Register form-->
+    <nav class="nav">
+      <div class=" nav__links">
+        <div class="ui-block-a logo-container" style="width: 20%;">
+          <img class="user-icon" src="../../assets/icons/logo.png" />
+        </div>
+        <div class="ui-block-b " style="width: 80%;">
+
+          <a class="nav__link" id="nav-text1">
+            Home
+          </a>
+          <a class="nav__link" id="nav-text2">
+            About Us
+          </a>
+          <a class="nav__link" id="nav-text3">
+            Services
+          </a>
+
+          <a class="nav__link" id="nav-text4">
+            &emsp;&ensp;Pet Sitting
+          </a>
+          <a href="#" class="nav__link" id="nav-text5">
+            &emsp;&ensp;House Sitting
+          </a>
+          <a href="#" class="nav__link" id="nav-text6">
+            &emsp;&ensp;Home Visits
+          </a>
+          <a href="#" class="nav__link" id="nav-text7">
+            &emsp;&ensp;Dog Walking
+          </a>
+          <a class="nav__link" id="nav-text8">
+            &emsp;&ensp;Post a job
+          </a>
+
+          <a class="nav__link" id="nav-text9">
+            Rate us
+          </a>
+          <a class="nav__link" id="nav-text10">
+            Become a Sitter
+          </a>
+          <a class="nav__link" id="nav-text11">
+            My profile
+          </a>
+          <a class="nav__link" id="nav-text12">
+            Sign in
+          </a>
+        </div>
+
+      </div>
+      <div class="nav__overlay"></div>
+    </nav>
+
+    
       <div class="form-content">
         <div class="auth-form">
 
@@ -80,9 +143,9 @@
             <input mbsc-input id="password-input" required class="text-input"  type="password" name="password" data-role="none" value="FakePSW" />
           </div>
 
-          <button onclick="location.href = '../../pages/Log&Reg/login.html';" class="prime-btn"  > Favourite List </button>
-          <button onclick="location.href = '../../pages/Log&Reg/login.html';" class="prime-btn"  > Edit Profile </button>
-            <button onclick="location.href = '../../pages/Log&Reg/login.html';" class="prime-btn"  > Log Out</button>
+           <button id="favouriteList"  class="prime-btn" style="color: #ffff" > Favourite List </button>
+          <button id="editProfile" style="color: #ffff" class="prime-btn"  > Edit Profile </button>
+            <button id="logout"  style="color: #ffff" class="prime-btn"  > Log Out</button>
         
 
           <div class="load-ellipsis">
@@ -95,13 +158,76 @@
       </div>
 
       <!-- footer -->
-      <div data-role="footer" id="footer">
+      <div data-role="footer" id="footer-home">
+        <div class="nav-logo-container">
+          <img class="footer-logo" src="../../assets/logo/logo.png" />
+        </div>
+        <p class="nav-copyright">&copy; Copyright - Company</p>
+        <p class="nav-payment">Payment Methods</p>
+        <div class="nav-payment-container">
+          <img class="footer-payment4" />
+          <img class="footer-payment1" src="../../assets/icons/visa.png" />
+          <img class="footer-payment2" src="../../assets/icons/cc-stripe-brands.png" />
+          <img class="footer-payment3" src="../../assets/icons/mastercard.png" />
+        </div>
+        <div class="ui-grid-b">
+          <div class="ui-block-a" style="width: 50%;">
+            <ul class="navigation-list">
+              <li>
+                <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="../../pages/Service/servicehome.html" data-ajax="false" data-role="none">
+                  Services
+                </a>
+              </li><br>
+              <li>
+                <a href="../../pages/Petsitting/petsitting.html" data-ajax="false" data-role="none">
+                  Pet Sitting
+                </a>
+              </li>
+              <li>
+                <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
+                  House Sitting
+                </a>
+              </li>
+              <li>
+                <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
+                  Home Visits
+                </a>
+              </li>
+              <li>
+                <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
+                  Dog Walking
+                </a>
+              </li>
+            </ul>
+          </div>
 
-      <!-- Footer added through JS -->
+          <div class="ui-block-b" style="width: 50%;">
+            <ul class="navigation-list">
+              <li>Contact Us</li><br>
+              <li><img class="footer-contacts" src="../../assets/icons/phone.png" /> (+94)76 12345679</li>
+              <li><img class="footer-contacts" src="../../assets/icons/whatsapp.png" /> (+94)77 12345679</li>
+              <li><img class="footer-contacts" src="../../assets/icons/email.png" /> pawcare@gmail.com</li>
+            </ul>
+          </div>
+ 
+        </div>
+
+        <div class="ui-grid-a">
+          <div class="nav-payment-container">
+            <img class="footer-payment4" />
+            <img class="footer-payment1" src="../../assets/icons/facebook-.png" />
+            <img class="footer-payment2" src="../../assets/icons/twitter.png" />
+            <img class="footer-payment3" src="../../assets/icons/instagram.png" />
+          </div>
+        </div>
       </div>
 
-
-      </div>
     </div>
-  </body>
+</body>
+
 </html>
