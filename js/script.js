@@ -182,3 +182,11 @@ $(document).on("click", "#petsitting", function() {
   $(document).on("click", "#go-back-btn1", function() {
 	window.location.href ="../../pages/Game/game1.html";
   });
+
+  $(document).on("click", "#logoIcon", function() {
+	window.location.href ="../../pages/HomePage/index.html";
+  });
+
+  $(document).on("click", "#userIcon", function() {
+	window.location.href ="../../pages/Myptofile/myprofile.html";
+  });
