@@ -2,296 +2,295 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>PawCare| Service Details</title>
-  <!-- the three things that jQuery Mobile needs to work -->
-  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-  <link rel="stylesheet" type="text/css" href="../../css/style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="serviceDetails.css" />
-  <link rel="stylesheet" type="text/css" href="../../components/header_footer.css">
-  <link rel="stylesheet" type="text/css" href="../../style/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PawCare| Service Details</title>
+    <!-- the three things that jQuery Mobile needs to work -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="serviceDetails.css" />
+    <link rel="stylesheet" type="text/css" href="../../components/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="../../style/main.css">
 
-  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <script type="text/javascript" src="../../js/script.js"></script>
-  <script type="text/javascript" src="serviceDetails.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+    <script type="text/javascript" src="serviceDetails.js"></script>
 </head>
 
 <body>
-  <div data-role="page">
-    <!-- header -->
-    <div data-role="header" id="header">
-      <div class="ui-grid-a main-container">
-        <div class="ui-block-a head-avatar" style="width: 20%;">
-          <button class="header_button" id="btnNav" type="button" data-role="none">
+    <div data-role="page">
+        <!-- header -->
+        <div data-role="header" id="header">
+            <div class="ui-grid-a main-container">
+                <div class="ui-block-a head-avatar" style="width: 20%;">
+                    <button class="header_button" id="btnNav" type="button" data-role="none">
             <img class="menu-icon" src="../../assets/icons/menu.svg" />
           </button>
 
+                </div>
+                <div class="ui-block-b logo-container" style="width: 60%;">
+                    <img class="logo-img" src="../../assets/logo/logo.png" />
+                </div>
+                <div class="ui-block-c head-avatar2" style="width: 20%;">
+                    <img class="user-icon" src="../../assets/icons/user.png" />
+                </div>
+            </div>
         </div>
-        <div class="ui-block-b logo-container" style="width: 60%;">
-          <img class="logo-img" src="../../assets/logo/logo.png" />
-        </div>
-        <div class="ui-block-c head-avatar2" style="width: 20%;">
-          <img class="user-icon" src="../../assets/icons/user.png" />
-        </div>
-      </div>
-    </div>
 
-    <nav class="nav">
-      <div class=" nav__links">
-        <div class="ui-block-a logo-container" style="width: 20%;">
-          <img class="user-icon" src="../../assets/icons/logo.png" />
-        </div>
-        <div class="ui-block-b " style="width: 80%;">
-          <a class="nav__link" id="nav-text1">
+        <nav class="nav">
+            <div class=" nav__links">
+                <div class="ui-block-a logo-container" style="width: 20%;">
+                    <img class="user-icon" src="../../assets/icons/logo.png" />
+                </div>
+                <div class="ui-block-b " style="width: 80%;">
+                    <a class="nav__link" id="nav-text1">
             Home
           </a>
-          <a class="nav__link" id="nav-text2">
+                    <a class="nav__link" id="nav-text2">
             About Us
           </a>
-          <a class="nav__link" id="nav-text3">
+                    <a class="nav__link" id="nav-text3">
             Services
           </a>
 
-          <a class="nav__link" id="nav-text4">
+                    <a class="nav__link" id="nav-text4">
             &emsp;&ensp;Pet Sitting
           </a>
-          <a href="#" class="nav__link" id="nav-text5">
+                    <a href="#" class="nav__link" id="nav-text5">
             &emsp;&ensp;House Sitting
           </a>
-          <a href="#" class="nav__link" id="nav-text6">
+                    <a href="#" class="nav__link" id="nav-text6">
             &emsp;&ensp;Home Visits
           </a>
-          <a href="#" class="nav__link" id="nav-text7">
+                    <a href="#" class="nav__link" id="nav-text7">
             &emsp;&ensp;Dog Walking
           </a>
-          <a class="nav__link" id="nav-text8">
+                    <a class="nav__link" id="nav-text8">
             &emsp;&ensp;Post a job
           </a>
 
-          <a class="nav__link" id="nav-text9">
+                    <a class="nav__link" id="nav-text9">
             Rate us
           </a>
-          <a class="nav__link" id="nav-text10">
+                    <a class="nav__link" id="nav-text10">
             Become a Sitter
           </a>
-          <a class="nav__link" id="nav-text11">
+                    <a class="nav__link" id="nav-text11">
             My profile
           </a>
-          <a class="nav__link" id="nav-text12">
+                    <a class="nav__link" id="nav-text12">
             Sign in
           </a>
+                </div>
+            </div>
+            <div class="nav__overlay"></div>
+        </nav>
+
+        <!---intro face -->
+        <div class="ui-grid-content into-serviceD" id="into-serviceD">
+            <div class="text-containerService">
+                <ul class="breadcrumbsService">
+                    <li><a id="service2">Services</a></li>
+                    <li><a id="service3" href=>Pet Sitting</a></li>
+                    <li>Pet Sitter</li>
+                </ul>
+                <img class="intro-ServiceD" src="../../assets/images/serviceProvider1.jpeg">
+                <div class="ui-grid-a type-badge1">
+                    <p id="textName"><b>Issabela S </b>
+                        <a onclick="document.getElementById('myImage').src='../../assets/icons/heart-solid.png'"><img class="iconService" id="myImage" src="../../assets/icons/like (1).png"></a>
+
+
+                        <img class="socialMedia" src="../../assets/icons/orangeTweeter.svg" />
+                        <img class="socialMedia" src="../../assets/icons/emailOrange.svg" />
+                        <img class="socialMedia" src="../../assets/icons/Insta_orange.svg" />
+                        <img class="socialMedia" src="../../assets/icons/facebook_orange.svg" />
+
+
+                    </p>
+                    <p id="textsubName"><img class="locationPin" src="../../assets/icons/locationPin.svg"><b>Colombo | 0.2km</b>
+                    </p>
+                </div>
+                <div class="serviceIcons">
+                    <a href="#popupBasic1" data-rel="popup" data-transition="pop"><img src="../../assets/icons/gBadge.svg"></a>
+
+                    <div data-role="popup" id="popupBasic1">
+                        <p>100% Certified</p>
+                    </div>
+                    <a href="#popupBasic2" data-rel="popup" data-transition="pop"><img src="../../assets/icons/dogicon.svg"></a>
+                    <div data-role="popup" id="popupBasic2">
+                        <p>Sitter is a Pet owner</p>
+                    </div>
+                    <a href="#popupBasic3" data-rel="popup" data-transition="pop"> <img src="../../assets/icons/gate.svg"></a>
+                    <div data-role="popup" id="popupBasic3">
+                        <p>Safty Guranteed</p>
+                    </div>
+                    <a href="#popupBasic4" data-rel="popup" data-transition="pop"><img src="../../assets/icons/ambulance.svg"></a>
+                    <div data-role="popup" id="popupBasic4">
+                        <p>First Aid Access available</p>
+                    </div>
+                    <a href="#popupBasic5" data-rel="popup" data-transition="pop"><img src="../../assets/icons/caricon.svg"></a>
+                    <div data-role="popup" id="popupBasic5">
+                        <p>Transport Available</p>
+                    </div>
+
+                </div>
+                <div class="serviceD-textcontainer">
+                    <p id="serviceDetails-body">
+                        Situated in colombo 07. A clean room and an outdoor secure cat run filled with exciting things. Your cat will love including many scratchin posts.Comfortable cosy beds, toys, quality food and nutritious snacks included. your pets stay will be just like
+                        a home away from home as I have a quite household with a secure room and outdoor area provided for your pet stay. I also offer transport if needed!
+                    </p>
+
+                </div>
+
+            </div>
         </div>
-      </div>
-      <div class="nav__overlay"></div>
-    </nav>
+        <div class="rating-container">
+            <section class='rating-widget2'>
 
-    <!---intro face -->
-    <div class="ui-grid-content into-serviceD" id="into-serviceD">
-      <div class="text-containerService">
-        <ul class="breadcrumbsService">
-          <li><a id="service2" >Services</a></li>
-          <li><a id="service3" href=>Pet Sitting</a></li>
-          <li>Pet Sitter</li>
-        </ul>
-        <img class="intro-ServiceD" src="../../assets/images/serviceProvider1.jpeg">
-        <div class="ui-grid-a type-badge1">
-          <p id="textName"><b>Issabela S </b><a onclick="document.getElementById('myImage').src='../../assets/icons/heart-solid.png'"><img class="iconService" id="myImage" src="../../assets/icons/like (1).png"></a>
-            
-             
-              <img class="socialMedia" src="../../assets/icons/orangeTweeter.svg" />
-              <img class="socialMedia" src="../../assets/icons/emailOrange.svg" />
-              <img class="socialMedia" src="../../assets/icons/Insta_orange.svg" />
-              <img class="socialMedia" src="../../assets/icons/facebook_orange.svg" />
-         
-         
-          </p>
-          <p id="textsubName"><img class="locationPin" src="../../assets/icons/locationPin.svg"><b>Colombo | 0.2km</b>
-          </p>
-        </div>
-        <div class="serviceIcons">
-          <a href="#popupBasic1" data-rel="popup" data-transition="pop"><img src="../../assets/icons/gBadge.svg"></a>
-        
-          <div data-role="popup" id="popupBasic1">
-            <p>100% Certified</p>
-          </div>
-          <a href="#popupBasic2" data-rel="popup" data-transition="pop"><img src="../../assets/icons/dogicon.svg"></a>
-          <div data-role="popup" id="popupBasic2">
-            <p>Sitter is a Pet owner</p>
-          </div>
-          <a href="#popupBasic3" data-rel="popup" data-transition="pop"> <img src="../../assets/icons/gate.svg"></a>
-          <div data-role="popup" id="popupBasic3">
-            <p>Safty Guranteed</p>
-          </div>
-          <a href="#popupBasic4" data-rel="popup" data-transition="pop"><img src="../../assets/icons/ambulance.svg"></a>
-          <div data-role="popup" id="popupBasic4">
-            <p>First Aid Access available</p>
-          </div>
-          <a href="#popupBasic5" data-rel="popup" data-transition="pop"><img src="../../assets/icons/caricon.svg"></a>
-          <div data-role="popup" id="popupBasic5">
-            <p>Transport Available</p>
-          </div>
-        
-        </div>
-        <div class="serviceD-textcontainer">
-          <p id="serviceDetails-body">
-            Situated in colombo 07. A clean room and an outdoor secure cat run filled with
-            exciting things. Your cat will love including many scratchin posts.Comfortable cosy
-            beds, toys, quality food and nutritious snacks included.
-            your pets stay will be just like a home away from home as I have a quite household with
-            a secure room and outdoor area provided for your pet stay.
-            I also offer transport if needed!
-          </p>
-          
+                <!-- Rating Stars Box -->
+                <div class='rating-stars text-center'>
+                    <ul id='stars'>
+                        <li class='star' title='Poor' data-value='1'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='Fair' data-value='2'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='Good' data-value='3'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='Excellent' data-value='4'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='WOW!!!' data-value='5'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
 
-      </div>
-    </div>
-    <div class="rating-container">
-    <section class='rating-widget2'>
-       
-      <!-- Rating Stars Box -->
-      <div class='rating-stars text-center'>
-        <ul id='stars'>
-          <li class='star' title='Poor' data-value='1'>
-            <i class='fa fa-star fa-fw'></i>
-          </li>
-          <li class='star' title='Fair' data-value='2'>
-            <i class='fa fa-star fa-fw'></i>
-          </li>
-          <li class='star' title='Good' data-value='3'>
-            <i class='fa fa-star fa-fw'></i>
-          </li>
-          <li class='star' title='Excellent' data-value='4'>
-            <i class='fa fa-star fa-fw'></i>
-          </li>
-          <li class='star' title='WOW!!!' data-value='5'>
-            <i class='fa fa-star fa-fw'></i>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </div>
-
-    <!--Pricing details-->
-    <div class="ui-grid-content pricing-details">
-      <div class="ui-grid-content pricing-container" id="innerbox">
-        <div class="textArea">
-          <p id="pricing-heading">Pricing</p>
-          <p style="font-size:30px"><b>1000LKR</b>/per hour</p>
-          <ul data-role="listview" data-inset="true">
-            <li> <img src="../../assets/icons/checkicon.svg" class="ui-li-icon ui-corner-none">Meals for Pet</a></li>
-            <li><img src="../../assets/icons/checkicon.svg" class="ui-li-icon ui-corner-none">Daily photo updates</a>
-            </li>
-            <li><img src="../../assets/icons/checkicon.svg" class="ui-li-icon ui-corner-none">Liability Insurance</a>
-            </li>
-            <li><img src="../../assets/icons/checkicon.svg" class="ui-li-icon ui-corner-none">Customer support at
-              anytime</a></li>
-            <li><img src="../../assets/icons/checkicon.svg" class="ui-li-icon ui-corner-none">Refund available</a></li>
-          </ul>
+        <!--Pricing details-->
+        <div class="ui-grid-content pricing-details">
+            <div class="ui-grid-content pricing-container" id="innerbox">
+                <div class="textArea">
+                    <p id="pricing-heading">Pricing</p>
+                    <p style="font-size:30px"><b>1000LKR</b>/per hour</p>
+                    <ul data-role="listview" data-inset="true">
+                        <li> <img src="../../assets/icons/checkicon.svg" class="ui-li-icon ui-corner-none">Meals for Pet</a>
+                        </li>
+                        <li><img src="../../assets/icons/checkicon.svg" class="ui-li-icon ui-corner-none">Daily photo updates</a>
+                        </li>
+                        <li><img src="../../assets/icons/checkicon.svg" class="ui-li-icon ui-corner-none">Liability Insurance</a>
+                        </li>
+                        <li><img src="../../assets/icons/checkicon.svg" class="ui-li-icon ui-corner-none">Customer support at anytime
+                            </a>
+                        </li>
+                        <li><img src="../../assets/icons/checkicon.svg" class="ui-li-icon ui-corner-none">Refund available</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
 
-    <!-- booking form-->
-    <div class="ui-grid-contain booking-form" id="booking-form">
-      <div class="booking-form">
-        <h2 id="bookingHeading">Make a Booking</h2>
-        <div class="booking-form-content">
-          <label id="input-label">Date</label>
-          <input type="date" class="text-input" data-role="date" data-inline="true">
+        <!-- booking form-->
+        <div class="ui-grid-contain booking-form" id="booking-form">
+            <div class="booking-form">
+                <h2 id="bookingHeading">Make a Booking</h2>
+                <div class="booking-form-content">
+                    <label id="input-label">Date</label>
+                    <input type="date" class="text-input" data-role="date" data-inline="true">
 
-          <label id="input-label">In Time</label>
-          <input id="intime" class="text-input" type="time" name="intime" data-role="none" placeholder="In time" />
+                    <label id="input-label">In Time</label>
+                    <input id="intime" class="text-input" type="time" name="intime" data-role="none" placeholder="In time" />
 
-          <label id="input-label">Out Time</label>
-          <input id="outTime" class="text-input" type="time" name="outTime" data-role="none" placeholder="Out Time" />
-          <label id="input-label">Special Instruction</label>
-          <textarea id="message" style="height: auto;" class="text-input" type="textarea" rows="5" name="Instructions"
-            data-role="none" placeholder="Type your message">
+                    <label id="input-label">Out Time</label>
+                    <input id="outTime" class="text-input" type="time" name="outTime" data-role="none" placeholder="Out Time" />
+                    <label id="input-label">Special Instruction</label>
+                    <textarea id="message" style="height: auto;" class="text-input" type="textarea" rows="5" name="Instructions" data-role="none" placeholder="Type your message">
             </textarea>
-          <label id="input-labelB"><b>Total Value : Rs. 1000</b></label>
+                    <label id="input-labelB"><b>Total Value : Rs. 1000</b></label>
 
-        </div>
-        <button id="button" class="prime-btn" data-role="none" type="submit" onclick="location.href = '../../pages/Payment/paymentindex.html';">
+                </div>
+                <button id="button" class="prime-btn" data-role="none" type="submit" onclick="location.href = '../../pages/Payment/paymentindex.html';">
           Add Booking
         </button>
-      </div>
-      <!-- footer -->
-      <div data-role="footer" id="footer-home">
-        <div class="nav-logo-container">
-          <img class="footer-logo" src="../../assets/logo/logo.png" />
-        </div>
-        <p class="nav-copyright">&copy; Copyright - Company</p>
-        <p class="nav-payment">Payment Methods</p>
-        <div class="nav-payment-container">
-          <img class="footer-payment1" src="../../assets/icons/visa.png" />
-          <img class="footer-payment2" src="../../assets/icons/paypal.png" />
-          <img class="footer-payment3" src="../../assets/icons/mastercard.png" />
-        </div>
-        <div class="ui-grid-b">
-          <div class="ui-block-a" style="width: 50%;">
-            <ul class="navigation-list">
-              <li>
-                <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
+            </div>
+            <!-- footer -->
+            <div data-role="footer" id="footer-home">
+                <div class="nav-logo-container">
+                    <img class="footer-logo" src="../../assets/logo/logo.png" />
+                </div>
+                <p class="nav-copyright">&copy; Copyright - Company</p>
+                <p class="nav-payment">Payment Methods</p>
+                <div class="nav-payment-container">
+                    <img class="footer-payment1" src="../../assets/icons/visa.png" />
+                    <img class="footer-payment2" src="../../assets/icons/paypal.png" />
+                    <img class="footer-payment3" src="../../assets/icons/mastercard.png" />
+                </div>
+                <div class="ui-grid-b">
+                    <div class="ui-block-a" style="width: 50%;">
+                        <ul class="navigation-list">
+                            <li>
+                                <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
                   Home
                 </a>
-              </li>
-              <li>
-                <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
+                            </li>
+                            <li>
+                                <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
                   Services
                 </a>
-              </li><br>
-              <li>
-                <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
+                            </li><br>
+                            <li>
+                                <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
                   Pet Sitting
                 </a>
-              </li>
-              <li>
-                <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
+                            </li>
+                            <li>
+                                <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
                   House Sitting
                 </a>
-              </li>
-              <li>
-                <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
+                            </li>
+                            <li>
+                                <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
                   Home Visits
                 </a>
-              </li>
-              <li>
-                <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
+                            </li>
+                            <li>
+                                <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
                   Dog Walking
                 </a>
-              </li>
-            </ul>
-          </div>
+                            </li>
+                        </ul>
+                    </div>
 
-          <div class="ui-block-b" style="width: 50%;">
-            <ul class="navigation-list">
-              <li>Contact Us</li><br>
-              <li><img class="footer-contacts" src="../../assets/icons/phone.png" /> (+94)76 12345678</li>
-              <li><img class="footer-contacts" src="../../assets/icons/whatsapp.png" /> (+94)77 12345678</li>
-              <li><img class="footer-contacts" src="../../assets/icons/email.png" /> pawcare@gmail.com</li>
-            </ul>
-          </div>
+                    <div class="ui-block-b" style="width: 50%;">
+                        <ul class="navigation-list">
+                            <li>Contact Us</li><br>
+                            <li><img class="footer-contacts" src="../../assets/icons/phone.png" /> (+94)76 12345678</li>
+                            <li><img class="footer-contacts" src="../../assets/icons/whatsapp.png" /> (+94)77 12345678</li>
+                            <li><img class="footer-contacts" src="../../assets/icons/email.png" /> pawcare@gmail.com</li>
+                        </ul>
+                    </div>
 
+
+                </div>
+
+                <div class="ui-grid-a">
+                    <br>
+                    <div class="nav-payment-container">
+                        <img class="footer-payment1" src="../../assets/icons/facebook-.png" />
+                        <img class="footer-payment2" src="../../assets/icons/twitter.png" />
+                        <img class="footer-payment3" src="../../assets/icons/instagram.png" />
+                    </div>
+                </div>
+            </div>
 
         </div>
-
-        <div class="ui-grid-a">
-          <br>
-          <div class="nav-payment-container">
-            <img class="footer-payment1" src="../../assets/icons/facebook-.png" />
-            <img class="footer-payment2" src="../../assets/icons/twitter.png" />
-            <img class="footer-payment3" src="../../assets/icons/instagram.png" />
-          </div>
-        </div>
-      </div>
-
-    </div>
 </body>
 
 </html>
