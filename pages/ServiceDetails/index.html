@@ -10,8 +10,9 @@
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
   <link rel="stylesheet" type="text/css" href="../../css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="serviceDetails.css" />
-  <link rel="stylesheet" href="../../components/header_footer.css">
+  <link rel="stylesheet" type="text/css" href="serviceDetails.css" />
+  <link rel="stylesheet" type="text/css" href="../../components/header_footer.css">
+  <link rel="stylesheet" type="text/css" href="../../style/main.css">
 
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -91,36 +92,41 @@
     <!---intro face -->
     <div class="ui-grid-content into-serviceD" id="into-serviceD">
       <div class="text-containerService">
-        <ul class="breadcrumbs">
-          <li><a href="../../pages/Service/index.html">Services</a></li>
-          <li><a href="../../pages/Petsitting/petsitting.html">Pet Sitting</a></li>
+        <ul class="breadcrumbsService">
+          <li><a id="service2" >Services</a></li>
+          <li><a id="service3" href=>Pet Sitting</a></li>
           <li>Pet Sitter</li>
         </ul>
         <img class="intro-ServiceD" src="../../assets/images/serviceProvider1.jpeg">
         <div class="ui-grid-a type-badge">
-          <p id="textName"><b>Issabela S </b> <img type="button" class="iconService" src="../../assets/icons/like (1).png"></a></p>
+          <p id="textName"><b>Issabela S </b><a onclick="document.getElementById('myImage').src='../../assets/icons/heart-solid.png'"><img class="iconService" id="myImage" src="../../assets/icons/like (1).png"></a></p>
           <p id="textsubName"><img class="locationPin" src="../../assets/icons/locationPin.svg"><b>Colombo | 0.2km</b>
           </p>
         </div>
         <div class="serviceIcons">
-          <div class="row">
-            <div class="column">
-              <img src="../../assets/icons/gBadge.svg" style="height:50px;">
-            </div>
-            <div class="column">
-              <img src="../../assets/icons/dogicon.svg" style="height:50px;">
-            </div>
-            <div class="column">
-              <img src="../../assets/icons/gate.svg">
-            </div>
-            <div class="column">
-              <img src="../../assets/icons/ambulance.svg">
-            </div>
-            <div class="column">
-              <img src="../../assets/icons/caricon.svg">
-            </div>
+        
+          <a href="#popupBasic1" data-rel="popup" data-transition="pop"><img src="../../assets/icons/gBadge.svg"></a>
+        
+          <div data-role="popup" id="popupBasic1">
+            <p>100% Certified</p>
           </div>
-
+          <a href="#popupBasic2" data-rel="popup" data-transition="pop"><img src="../../assets/icons/dogicon.svg"></a>
+          <div data-role="popup" id="popupBasic2">
+            <p>Sitter is a Pet owner</p>
+          </div>
+          <a href="#popupBasic3" data-rel="popup" data-transition="pop"> <img src="../../assets/icons/gate.svg"></a>
+          <div data-role="popup" id="popupBasic3">
+            <p>Safty Guranteed</p>
+          </div>
+          <a href="#popupBasic4" data-rel="popup" data-transition="pop"><img src="../../assets/icons/ambulance.svg"></a>
+          <div data-role="popup" id="popupBasic4">
+            <p>First Aid Access available</p>
+          </div>
+          <a href="#popupBasic5" data-rel="popup" data-transition="pop"><img src="../../assets/icons/caricon.svg"></a>
+          <div data-role="popup" id="popupBasic5">
+            <p>Transport Available</p>
+          </div>
+        
         </div>
         <div class="serviceD-textcontainer">
           <p id="serviceDetails-body">
@@ -184,25 +190,24 @@
       <div class="booking-form">
         <h2 id="bookingHeading">Make a Booking</h2>
         <div class="booking-form-content">
-          <label id="input-labelB">Date</label>
-          <input type="date" data-role="date" data-inline="true">
+          <label id="input-label">Date</label>
+          <input type="date" class="text-input" data-role="date" data-inline="true">
 
-          <label id="input-labelB">In Time</label>
-          <input id="intime" class="text-inputB" type="time" name="intime" data-role="none" placeholder="In time" />
+          <label id="input-label">In Time</label>
+          <input id="intime" class="text-input" type="time" name="intime" data-role="none" placeholder="In time" />
 
-          <label id="input-labelB">Out Time</label>
-          <input id="outTime" class="text-inputB" type="time" name="outTime" data-role="none" placeholder="Out Time" />
-          <label id="input-labelB">Special Instruction</label>
-          <textarea id="message" style="height: auto;" class="text-inputB" type="textarea" rows="5" name="Instructions"
+          <label id="input-label">Out Time</label>
+          <input id="outTime" class="text-input" type="time" name="outTime" data-role="none" placeholder="Out Time" />
+          <label id="input-label">Special Instruction</label>
+          <textarea id="message" style="height: auto;" class="text-input" type="textarea" rows="5" name="Instructions"
             data-role="none" placeholder="Type your message">
             </textarea>
-          <label id="input-labelB">Total Value : Rs. 1000</label>
+          <label id="input-labelB"><b>Total Value : Rs. 1000</b></label>
 
         </div>
-        <a class="booking" href="../../pages/Payment/paymentindex.html" data-ajax="false" data-role="none">
+        <button id="button" class="prime-btn" data-role="none" type="submit" onclick="location.href = '../../pages/Payment/paymentindex.html';">
           Add Booking
-        </a>
-
+        </button>
       </div>
       <!-- footer -->
       <div data-role="footer" id="footer-home">

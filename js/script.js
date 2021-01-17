@@ -108,8 +108,24 @@ $(document).on("click", "#nav-text1", function() {
 	window.location.href ="../../pages/Log&Reg/login.html";
   });
 
+  //Bredcrumbs 
+  $(document).on("click", "#service2", function() {
+	window.location.href = "../../pages/Service/servicehome.html";
+  });
+  $(document).on("click", "#service3", function() {
+	window.location.href = "../../pages/Petsitting/petsitting.html";
+  });
   
+  //ServiceDetails
+  $(document).on("click", "#serviceProvider1", function() {
+	window.location.href ="../../pages/ServiceDetails/index.html";
+  });
+  $(document).on("click", "#serviceProvider2", function() {
+	window.location.href ="../../pages/ServiceDetails/index.html";
+  });
   
-  
-
+//ABoutus bredcrumbs
+$(document).on("click", "#homePage", function() {
+	window.location.href ="../../pages/HomePage/index.html";
+  });
 
