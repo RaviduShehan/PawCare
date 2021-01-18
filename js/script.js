@@ -107,20 +107,18 @@ $(document).on("click", "#nav-text1", function() {
 	window.location.href ="../../pages/Petsitting/petsitting.html";
   });
   $(document).on("click", "#nav-text5", function() {
-	window.location.href ="../../pages/Aboutus/about.html";
+	window.location.href ="#";
   });
   $(document).on("click", "#nav-text6", function() {
-	window.location.href ="../../pages/Aboutus/about.html";
+	window.location.href ="#";
   });
   $(document).on("click", "#nav-text7", function() {
-	window.location.href ="../../pages/Aboutus/about.html";
+	window.location.href ="#";
   });
   $(document).on("click", "#nav-text8", function() {
 	window.location.href ="../../pages/PostAJob/postajob.html";
   });
-  $(document).on("click", "#nav-text9", function() {
-	window.location.href ="#stars";
-  });
+   
   $(document).on("click", "#nav-text10", function() {
 	window.location.href ="../../pages/BecomeASitter/sitterLogin.html";
   });
@@ -146,9 +144,65 @@ $(document).on("click", "#nav-text1", function() {
   $(document).on("click", "#serviceProvider2", function() {
 	window.location.href ="../../pages/ServiceDetails/index.html";
   });
+  $(document).on("click", "#provider-img-tab", function() {
+	window.location.href ="../../pages/ServiceDetails/index.html";
+  });
   
 //ABoutus bredcrumbs
 $(document).on("click", "#homePage", function() {
 	window.location.href ="../../pages/HomePage/index.html";
   });
 
+//navigatings for loging and registration
+$(document).on("click", "#link1", function() {
+	window.location.href ="../../pages/Log&Reg/login.html";
+  });
+  $(document).on("click", "#link2", function() {
+	window.location.href ="../../pages/Log&Reg/register.html";
+  });
+
+  //Navigations in myprofile
+  $(document).on("click", "#favouriteList", function() {
+	window.location.href ="../../pages/Favourites/index.html";
+  });
+  $(document).on("click", "#logut", function() {
+	window.location.href ="../../pages/HomePage/index.html";
+  });
+  $(document).on("click", "#favouriteList", function() {
+	window.location.href ="../../pages/Favourites/index.html";
+  });
+//Navigations in service
+$(document).on("click", "#petsitting", function() {
+	window.location.href ="../../pages/Petsitting/petsitting.html";
+  });
+  $(document).on("click", "#game-button-enter", function() {
+	window.location.href ="../../pages/Game/game1.html";
+  });
+
+  //Navigations in Game
+  $(document).on("click", "#go-back-btn1", function() {
+	window.location.href ="../../pages/Game/game1.html";
+  });
+
+  $(document).on("click", "#logoIcon", function() {
+	window.location.href ="../../pages/HomePage/index.html";
+  });
+
+  $(document).on("click", "#userIcon", function() {
+	window.location.href ="../../pages/Myptofile/myprofile.html";
+  });
+
+  $(document).on("click", "#link5", function() {
+	window.location.href ="../../pages/BecomeASitter/sitterRegistration.html";
+  });
+  $(document).on("click", "#link6", function() {
+	window.location.href ="../../pages/BecomeASitter/sitterLogin.html";
+  });
+
+    $(document).on("click", "#postajob", function() {
+	window.location.href ="../../pages/Dashboard/dashboard.html";
+  });
+   
+  $(document).on("click", "#postingAjob", function() {
+	window.location.href ="../../pages/PostAJob/postajob.html";
+  });

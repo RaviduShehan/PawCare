@@ -30,178 +30,145 @@
 
 <body>
     <div data-role="page" id="favourites_page">
-        <!-- header -->
-        <div data-role="header" id="header">
-            <div class="ui-grid-a main-container">
-                <div class="ui-block-a head-avatar" style="width: 20%;">
-                    <button class="header_button" id="btnNav" type="button" data-role="none">
-            <img class="menu-icon" src="../../assets/icons/menu.svg" />
-          </button>
-
-                </div>
-                <div class="ui-block-b logo-container" style="width: 60%;">
-                    <img class="logo-img" src="../../assets/logo/logo.png" />
-                </div>
-                <div class="ui-block-c head-avatar2" style="width: 20%;">
-                    <img class="user-icon" src="../../assets/icons/user.png" />
-                </div>
-            </div>
+         <!-- header -->
+    <div data-role="header" id="header">
+        <div class="ui-grid-a main-container">
+          <div class="ui-block-a head-avatar" style="width: 20%;">
+            <button class="header_button" id="btnNav" type="button" data-role="none">
+              <img class="menu-icon" src="../../assets/icons/menu.svg" />
+            </button>
+  
+          </div>
+          <div class="ui-block-b logo-container" style="width: 60%;">
+            <img id="logoIcon" class="logo-img" src="../../assets/logo/logo.png" />
+          </div>
+         
         </div>
-        <nav class="nav">
-            <div class=" nav__links">
-                <div class="ui-block-a logo-container" style="width: 20%;">
-                    <img class="user-icon" src="../../assets/icons/logo.png" />
-                </div>
-                <div class="ui-block-b " style="width: 80%;">
-                    <a class="nav__link" id="nav-text1">
-            Home
-          </a>
-                    <a class="nav__link" id="nav-text2">
-            About Us
-          </a>
-                    <a class="nav__link" id="nav-text3">
-            Services
-          </a>
-
-                    <a class="nav__link" id="nav-text4">
-            &emsp;&ensp;Pet Sitting
-          </a>
-                    <a href="#" class="nav__link" id="nav-text5">
-            &emsp;&ensp;House Sitting
-          </a>
-                    <a href="#" class="nav__link" id="nav-text6">
-            &emsp;&ensp;Home Visits
-          </a>
-                    <a href="#" class="nav__link" id="nav-text7">
-            &emsp;&ensp;Dog Walking
-          </a>
-                    <a class="nav__link" id="nav-text8">
-            &emsp;&ensp;Post a job
-          </a>
-
-                    <a class="nav__link" id="nav-text9">
-            Rate us
-          </a>
-                    <a class="nav__link" id="nav-text10">
-            Become a Sitter
-          </a>
-                    <a class="nav__link" id="nav-text11">
-            My profile
-          </a>
-                    <a class="nav__link" id="nav-text12">
-            Sign in
-          </a>
-                </div>
-            </div>
-            <div class="nav__overlay"></div>
-        </nav>
-
-        <div class="search" id="search">
-            <input class="search-bar" id="search-bar" type="search" placeholder="Search here" data-role="none" />
-            <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <img src="../../assets/icons/filter.svg" class="filter-icon" />
+      </div>
+  
+      <nav class="nav">
+        <div class=" nav__links">
+          <div class="ui-block-a logo-container" style="width: 20%;">
+            <img class="user-icon" src="../../assets/icons/logo.png" />
+          </div>
+          <div class="ui-block-b " style="width: 80%;">
+  
+            <a class="nav__link" id="nav-text1">
+              Home
             </a>
+            <a class="nav__link" id="nav-text2">
+              About Us
+            </a>
+            <a class="nav__link" id="nav-text3">
+              Services
+            </a>
+  
+            <a class="nav__link" id="nav-text4">
+              &emsp;&ensp;Pet Sitting
+            </a>
+            <a class="nav__link" id="nav-text5">
+              &emsp;&ensp;House Sitting
+            </a>
+            <a class="nav__link" id="nav-text6">
+              &emsp;&ensp;Home Visits
+            </a>
+            <a class="nav__link" id="nav-text7">
+              &emsp;&ensp;Dog Walking
+            </a>
+            <a class="nav__link" id="nav-text8">
+              &emsp;&ensp;Post a job
+            </a>
+  
+            <a class="nav__link" id="nav-text10">
+              Become a Sitter
+            </a>
+            <a class="nav__link" id="nav-text11">
+              My profile
+            </a>
+            <a class="nav__link" id="nav-text12">
+              Sign in
+            </a>
+          </div>
+  
         </div>
-        <div class="filter-widget collapse" id="collapseExample">
-            <div class="range-slider">
-                <label class="input-label">Max Price (LKR)</label>
-                <input id="distance-range" class="distance-range" type="range" min="0" max="1000" step="5" value="200" data-thumbwidth="20" data-role="none" />
-                <output name="rangeVal">100</output>
-                <div class="ui-grid-b">
-                    <div class="ui-block-a">
-                        <p style="text-align: left;">0</p>
-                    </div>
-                    <div class="ui-block-b">
-                        <p id="range-val" style="text-align: center;">0</p>
-                    </div>
-                    <div class="ui-block-c">
-                        <p style="text-align: right;">10000</p>
-                    </div>
-                </div>
-            </div>
-            <hr />
-            <div class="ui-grid-a drop-downs">
-                <div class="ui-block-a">
-                    <label class="input-label">Order By</label>
-                    <select id="order-by" class="custom-select" name="order-by" data-role="none">
-            <option value="asce">Ascending</option>
-            <option value="desc">Descending</option>
-          </select>
-                </div>
-                <div class="ui-block-b">
-                    <label class="input-label">Sort By</label>
-                    <select id="sort-by" class="custom-select" name="sort-by" data-role="none">
-            <option value="name">Name</option>
-            <option value="author">Author</option>
-          </select>
-                </div>
-            </div>
+        <div class="nav__overlay"></div>
+      </nav>
+  
+        <div id="heading">
+            <p id="intro-heading">Favourites</p>
         </div>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
-        <div class="no-items">
-            <div class="ui-grid-a">
-                <img src="../../assets/icons/frown.svg" alt="sad" />
+        <div id="sortt">
+        
+        <div id="fav-items" class="fav-items" data-role="listview">
+            <br>
+            <div id="sortt1">
+                <table id="myTable">
+                    <tr>
+                        <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->
+                        <th class="fas fa-chevron-down" onclick="sortTable(0)"><i class="fas fa-chevron-down"></i>Name</th>
+                        <th onclick="sortTable(1)"><i class="fas fa-chevron-down"></i>City</th>
+                        <th onclick="sortTable(2)"><i class="fas fa-chevron-down"></i>Service</th>
+                    </tr>
+                    <tr>
+                        <td>Isabela S</td>
+                        <td>Colombo 1</td>
+                        <td>Pet Sitter</td>
+                    </tr>
+                    <tr>
+                        <td>Anne M</td>
+                        <td>Kaluthara</td>
+                        <td>Dog Walker</td>
+                    </tr>
+                    <tr>
+                        <td>Albert M</td>
+                        <td>Kadana</td>
+                        <td>Dog Walker</td>
+                    </tr>
+                    <tr>
+                        <td>Anne M</td>
+                        <td>Kaluthara</td>
+                        <td>Dog Walker</td>
+                    </tr>
+                    <tr>
+                        <td>Dnni M</td>
+                        <td>Mahara</td>
+                        <td>House visitor</td>
+                    </tr>
+                    <tr>
+                        <td>Jane L</td>
+                        <td>Kadana</td>
+                        <td>Dog Walker</td>
+                    </tr>
+                    <tr>
+                        <td>Alfreds F</td>
+                        <td>Panadura</td>
+                        <td>House Visiter</td>
+                    </tr>
+                    <tr>
+                        <td>Konig E</td>
+                        <td>Colombo 4</td>
+                        <td>Pet Sitter</td>
+                    </tr>
+                    <tr>
+                        <td>Magaz R</td>
+                        <td>Negombo</td>
+                        <td>Home Visiter</td>
+                    </tr>
+                    <tr>
+                        <td>Paris s</td>
+                        <td>Kottawa</td>
+                        <td>Pet Sitter</td>
+                    </tr>
+
+                </table>
             </div>
-            <div class="ui-grid-a">
-                <p class="no-items-txt">
-                    You have no faviourites yet!
-                </p>
-            </div>
+            <br>
+
         </div>
-
-        <!-- Faviourite Item List -->
-        <div id="fav-items" class="fav-items" data-role="listview" data-filter="true" data-input="#search-bar">
-            <div class="fav-item-loading" id="backImage">
-                <p class="service-txt ">Pet Sitting</p>
-                <div class="location">
-                    <p class="name ">Issabela S</p>
-                    <p class="place ">Colombo 07</p>
-                    <p class="user-owner ">LKR 1000</p>
-                </div>
-
-
-            </div>
-            <div class="fav-item-loading" id="backImage">
-                <p class="service-txt ">Dog walking</p>
-                <div class="location">
-                    <p class="name ">Angeline P</p>
-                    <p class="place ">Kirulapone</p>
-                    <p class="user-owner ">LKR 1500</p>
-                </div>
-
-
-            </div>
-            <div class="fav-item-loading" id="backImage">
-                <p class="service-txt ">Pet Sitting</p>
-                <div class="location">
-                    <p class="name ">Issabela S</p>
-                    <p class="place ">Colombo 07</p>
-                    <p class="user-owner ">LKR 1000</p>
-                </div>
-
-
-            </div>
-            <div class="fav-item-loading" id="backImage">
-                <p class="service-txt ">Pet Sitting</p>
-                <div class="location">
-                    <p class="name ">Issabela S</p>
-                    <p class="place ">Colombo 07</p>
-                    <p class="user-owner ">LKR 1000</p>
-                </div>
-
-
-            </div>
-            <div class="fav-item-loading" id="backImage">
-                <p class="service-txt ">Pet Sitting</p>
-                <div class="location">
-                    <p class="name ">Issabela S</p>
-                    <p class="place ">Colombo 07</p>
-                    <p class="user-owner ">LKR 1000</p>
-                </div>
-
-
-            </div>
-        </div>
+    </div>
+        
 
         <!-- Floating Btn -->
         <div class="floating-btn">
@@ -215,9 +182,6 @@
         Export list
       </button>
         </div>
-
-
-
 
 
         <!-- email dialog-->
@@ -243,8 +207,8 @@
                     </div>
                     <div id="main-body" class="modal-body">
                         <label for="receiver-mail" class="input-label">
-              RECEIVER'S MAIL
-            </label>
+                            RECEIVER'S MAIL
+                        </label>
                         <input class="text-input" type="email" name="receiver-mail" id="email-to" data-role="none" placeholder="Email" />
 
                         <label for="email-subject" class="input-label">SUBJECT</label>
@@ -253,11 +217,11 @@
                         <label for="email-msg" class="input-label"></label>
                         <textarea style="height: 100px;" class="text-input" id="email-body" name="email-msg" data-role="none" placeholder="You can tell something..."></textarea>
                         <button class="prime-btn submit-btn" id="submit" type="submit" data-role="none">
-              send email
-            </button>
+                            send email
+                        </button>
                         <button class="cancel-btn" data-dismiss="modal" type="submit" data-role="none">
-              CANCEL
-            </button>
+                            CANCEL
+                        </button>
                     </div>
                 </div>
             </div>
@@ -280,33 +244,33 @@
                     <ul class="navigation-list">
                         <li>
                             <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
-                Home
-              </a>
+                                Home
+                            </a>
                         </li>
                         <li>
                             <a href="../../pages/Service/servicehome.html" data-ajax="false" data-role="none">
-                Services
-              </a>
+                                Services
+                            </a>
                         </li><br>
                         <li>
                             <a href="../../pages/Petsitting/petsitting.html" data-ajax="false" data-role="none">
-                Pet Sitting
-              </a>
+                                Pet Sitting
+                            </a>
                         </li>
                         <li>
                             <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
-                House Sitting
-              </a>
+                                House Sitting
+                            </a>
                         </li>
                         <li>
                             <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
-                Home Visits
-              </a>
+                                Home Visits
+                            </a>
                         </li>
                         <li>
                             <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
-                Dog Walking
-              </a>
+                                Dog Walking
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -333,6 +297,67 @@
         </div>
 
     </div>
+
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+        function sortTable(n) {
+            var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+            table = document.getElementById("myTable");
+            switching = true;
+            dir = "asc";
+            while (switching) {
+                switching = false;
+                rows = table.rows;
+
+                for (i = 1; i < (rows.length - 1); i++) {
+                    shouldSwitch = false;
+                    x = rows[i].getElementsByTagName("TD")[n];
+                    y = rows[i + 1].getElementsByTagName("TD")[n];
+
+                    if (dir == "asc") {
+                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    } else if (dir == "desc") {
+                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                }
+                if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                    switchcount++;
+                } else {
+                    if (switchcount == 0 && dir == "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+            }
+        }
+    </script>
+
 </body>
 
 </html>

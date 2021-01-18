@@ -1,10 +1,10 @@
 .login-image{
   display: none
 }
-
-.mbsc-err-msg{
-  color: #EB5757; 
+.mbsc-err-msg {
+  color: #EB5757;
 }
+
 
 
 .login-box{
@@ -34,7 +34,7 @@
   font-weight: 300;
   font-size: 12px;
   letter-spacing: normal;
-  color: #1c1c1c;
+ 
 }
 
 .field-input {
@@ -44,10 +44,11 @@
 .ui-btn{
   margin-top: 20%;
   background-color: #2ab7b7;
-  color: #fafafb;
+  color: #2ab7b7;
   text-shadow: none;
   border-radius: 50px;
 }
+ 
 
 #other-link #link1,
 #other-link #link2{

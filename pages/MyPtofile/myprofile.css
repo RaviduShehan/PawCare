@@ -1,226 +1,215 @@
-.auth-form {
-  padding: 12px 16px;
-}
-
-.center{
-  display: block;
-  padding-left: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-
-}
-
-.ilabel{
-  padding-left: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-.lp{
-  padding-left: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  color: #EEA243;
-  font-weight: 500;
-}
-
-.inputlabel{
-
-  display: block;
-  padding-left: 70%;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-.points{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-.profile-section {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.link-container {
-  margin: 10px 0;
-}
-.link-container p {
-  text-align: center;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+.input-label1 {
+  font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-}
-
-.md-success{
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 550;
-  font-size: 14px;
-  letter-spacing: 0.15em;
-  width: 100%;
-  height: 46px;
-  margin: 5px 0;
-  padding: 13px 15px;
-  line-height: 16px;
-  color: #FBFBFA;
-  background: #2AB7B7;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 50px;
-  border: none;
-
-}
-
-.mbsc-err-msg{
-  color: #EB5757;
-}
-
-.div-lable{
-  padding-left: 12px;
-  padding-right: 35px;
-
-}
-
-h1{
-  font-family:  sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 1000 !important;
+  font-size: 16px !important;
   letter-spacing: 0.1em;
-  text-align: center;
-  text-shadow: none;
-
-}
-
-h3{
-  font-family:  sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  letter-spacing: 0.05em;
-  text-align: center;
-}
-
-.link-container a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-
-}
-
-.logo-display {
-  padding: 50px 50px;
-}
-.logo-display img {
-  max-width: 100%;
-  margin: auto;
-  display: block;
-  align-content: center;
-}
-
-.text-display {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  color: #0084E3;
-  padding: 14px 0px 10px 17px;
-}
-
-.email-container {
-  padding: 0px 20px 0px 17px;
-}
-
-#email-text {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  letter-spacing: 0.1em;
-  text-align: center;
+  text-transform: none;
+  color: #1c1c1c;
   text-shadow: none;
 }
-
-.btn-container {
-  padding: 10px 0px 183px 0px;
-}
-
-#verify-text {
-  font-family: Arial, Helvetica, sans-serif;
+#intro-heading2{
+  font-family: "Roboto";
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
+  font-weight: 1000 !important;
+  font-size: 40px !important;
   letter-spacing: 0.1em;
+  text-transform: none;
   text-align: center;
+  background: -webkit-linear-gradient(171.5deg, #eea243 40%, #1c1c1c 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-shadow: none;
-  color: #EB5757;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 30%;
+}
+.form-content{
+  width: 100%;
+	background-color: #d88973;
+	background-size: cover;
+	height: 450px;
+	 
+}
+.input-label2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 1000 !important;
+  font-size: 16px !important;
+  letter-spacing: 0.1em;
+  text-transform: none;
+  color: #2ab7b7;
+  text-shadow: none;
+}
+.secondContainer{
+  background-color: #FBFBFA ;
+	 margin: 10px 10px 10px 10px;
+	align-content: center;
 }
 
 @media screen and (min-width: 768px) {
-  .auth-form {
-    padding: 2% 20%;
-  }
-
-  h1{
-    font-family:  sans-serif;
+  .input-label1 {
+    font-family: "Roboto";
     font-style: normal;
-    font-weight: normal;
-    font-size: 52px;
+    font-weight: 1000 !important;
+    font-size: 16px !important;
     letter-spacing: 0.1em;
-    text-align: center;
+    text-transform: none;
+    color: #1c1c1c;
     text-shadow: none;
-  
   }
-  
-  .ilabel{
-    padding-left: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 40px;
-    width: 100%;
+  #intro-heading2{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 40px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    text-align: center;
+    background: -webkit-linear-gradient(171.5deg, #eea243 40%, #1c1c1c 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
   }
-  
-  .lp{
-    padding-left: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    font-size: 38px;
-    color: #EEA243;
-    font-weight: 500;
-  }
-
-  .inputlabel{
-
+  .center {
     display: block;
-    padding-left: 70%;
-    font-size: 52px;
     margin-left: auto;
     margin-right: auto;
-  
+    width: 30%;
+    height: 30%;
   }
-  
-}
-
-
-
-/*# sourceMappingURL=logreg.css.map */
+  .form-content{
+    width: 100%;
+    background-color: #d88973;
+    background-size: cover;
+    height: 450px;
+     
+  }
+  .input-label2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    color: #2ab7b7;
+    text-shadow: none;
+  }
+  .secondContainer{
+    background-color: #FBFBFA ;
+     margin: 10px 10px 10px 10px;
+    align-content: center;
+  }
+}  
+@media screen and (min-width: 667px) {
+  .input-label1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    color: #1c1c1c;
+    text-shadow: none;
+  }
+  #intro-heading2{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 40px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    text-align: center;
+    background: -webkit-linear-gradient(171.5deg, #eea243 40%, #1c1c1c 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+  }
+  .form-content{
+    width: 100%;
+    background-color: #d88973;
+    background-size: cover;
+    height: 450px;
+     
+  }
+  .input-label2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    color: #2ab7b7;
+    text-shadow: none;
+  }
+  .secondContainer{
+    background-color: #FBFBFA ;
+     margin: 10px 10px 10px 10px;
+    align-content: center;
+  }
+} 
+@media screen and (min-width: 1024px) {
+  .input-label1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    color: #1c1c1c;
+    text-shadow: none;
+  }
+  #intro-heading2{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 40px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    text-align: center;
+    background: -webkit-linear-gradient(171.5deg, #eea243 40%, #1c1c1c 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+  }
+  .form-content{
+    width: 100%;
+    background-color: #d88973;
+    background-size: cover;
+    height: 450px;
+     
+  }
+  .input-label2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    color: #2ab7b7;
+    text-shadow: none;
+  }
+  .secondContainer{
+    background-color: #FBFBFA ;
+     margin: 10px 10px 10px 10px;
+    align-content: center;
+  }
+} 

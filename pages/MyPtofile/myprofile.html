@@ -1,107 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>PawCare | My Profile</title>
+    <title>PawCare| About</title>
+    <!-- the three things that jQuery Mobile needs to work -->
+    <link rel="stylesheet" href="../../components/header_footer.css" />
+    <link rel="stylesheet" href="../../pages/Aboutus/about.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../components/header_footer.css" />
+    <link rel="stylesheet" type="text/css" href="myprofile.css" />
+   
 
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <link rel="stylesheet" href="../../style/main.css" />
-    <link rel="stylesheet" href="../../pages/MyPtofile/myprofile.css" />
-    <script src="../../js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
-    <script src="../../pages/MyPtofile/myprofile.js"></script>
 
-  </head>
+    <!--Script files-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/97327e6699.js" crossorigin="anonymous"></script>
 
-  <body>
+</head>
 
-    <div data-role="page" id="signup-page">
-      <!-- header -->
-        <div data-role="header" id="header">
-          <div>
-            <a class="logo-img" href="/pages/Homepage/home.html" data-role="none" data-ajax="false">
-              <img class="logo-img" src="../../assets/images/logo.png">
-            </a>
-          </div>
+<body>
 
- 
-
-        </div>
-
-      <!--Register form-->
-      <div class="form-content">
-        <div class="auth-form">
-
-          <h1 id="h1"> My Profile</h1>
-
-          <form  id="userprofile" >
-
-            <div class="profile-section">
-            <div class="ui-grid-a tot-points">
-              <div id="imgave" class="ui-block-a">
-                <div class="points">
-                  <img class="center" src="../../assets/images/user.svg" />
-
-                         <br>         
-        
-                </div>
-              </div>
-              </div>
-             
-            </div>
-            
-         
+    <div data-role="page">
+       <!-- header -->
+<div data-role="header" id="header">
+    <div class="ui-grid-a main-container">
+      <div class="ui-block-a head-avatar" style="width: 20%;">
+        <button class="header_button" id="btnNav" type="button" data-role="none">
+          <img class="menu-icon" src="../../assets/icons/menu.svg" />
+        </button>
+  
+      </div>
+      <div class="ui-block-b logo-container" style="width: 60%;">
+        <img id="logoIcon" class="logo-img" src="../../assets/logo/logo.png" />
+      </div>
      
-            
+    </div>
+  </div>
 
-          <label  class="input-label">Name</label>
-          <div class="div-lable">
-            <label mbsc-input id="full-name" required class="text-input" type="text" name="username" data-role="none" placeholder="qqq"> qqq </label>
-          </div>
+        <nav class="nav">
+            <div class=" nav__links">
+                <div class="ui-block-a logo-container" style="width: 20%;">
+                    <img class="user-icon" src="../../assets/icons/logo.png" />
+                </div>
+                <div class="ui-block-b " style="width: 80%;">
 
-          <label  class="input-label">Email </label>
-          <div class="div-lable">
-            <label mbsc-input id="email-input" required class="text-input"  type="email"   name="email"  data-role="none"  placeholder="qqq@gmail.com*"> qqq@gmail.com </label>
-          </div>
+                    <a class="nav__link" id="nav-text1">
+            Home
+          </a>
+                    <a class="nav__link" id="nav-text2">
+            About Us
+          </a>
+                    <a class="nav__link" id="nav-text3">
+            Services
+          </a>
 
-          <label  class="input-label">Mobile No </label>
-          <div class="div-lable">
-            <label mbsc-input id="mobile-input" required class="text-input"  type="mobile"   name="mobile" minlength="10" maxlength="10" data-role="none"  placeholder="1234567890" > 1234567890 </label>
-          </div>
+                    <a class="nav__link" id="nav-text4">
+            &emsp;&ensp;Pet Sitting
+          </a>
+                    <a  class="nav__link" id="nav-text5">
+            &emsp;&ensp;House Sitting
+          </a>
+                    <a class="nav__link" id="nav-text6">
+            &emsp;&ensp;Home Visits
+          </a>
+                    <a  class="nav__link" id="nav-text7">
+            &emsp;&ensp;Dog Walking
+          </a>
+                    <a class="nav__link" id="nav-text8">
+            &emsp;&ensp;Post a job
+          </a>
 
-                  
-          <label name="password" class="input-label">Password </label>
-          <div class="div-lable">
-            <input mbsc-input id="password-input" required class="text-input"  type="password" name="password" data-role="none" value="FakePSW" />
-          </div>
+                    <a class="nav__link" id="nav-text10">
+            Become a Sitter
+          </a>
+                    <a class="nav__link" id="nav-text11">
+            My profile
+          </a>
+                    <a class="nav__link" id="nav-text12">
+            Sign in
+          </a>
+                </div>
 
-          <button onclick="location.href = '../../pages/Log&Reg/login.html';" class="prime-btn"  > Favourite List </button>
-          <button onclick="location.href = '../../pages/Log&Reg/login.html';" class="prime-btn"  > Edit Profile </button>
-            <button onclick="location.href = '../../pages/Log&Reg/login.html';" class="prime-btn"  > Log Out</button>
-        
+            </div>
+            <div class="nav__overlay"></div>
+        </nav>
 
-          <div class="load-ellipsis">
+        <div id="heading2">
+          <p id="intro-heading2">My Profile</p>
+          <img class="center" id="headImage" src="../../assets/images/user.svg" />
+      </div>
 
-          </div>
+    <div class="form-content">
+      <div class="secondContainer">
+      <div class="auth-form2">
+         
+          <label for="first-name" class="input-label2">First Name :</label>
+          <label id="firstname" class="input-label1" type="text" name="firstname" data-role="none">Heshan </label>
+
+          <label for="last-name" class="input-label2">Last Name :</label>
+          <label id="last-name" class="input-label1" type="text" name="last-name" data-role="none">Perera </label>
+
+          <label id="email" class="input-label2" >Email: </label>
+          <label id="email" class="input-label1" type="text" name="email" data-role="none">heshan@gmail.com </label>
+
+          <label id="mobile" class="input-label2" >Mobile:  </label>
+          <label id="mobile" class="input-label1" type="text" name="mobile" data-role="none">0771234567 </label>
+
           
-
-        </form>
+          <button id="favouriteList" class="prime-btn"
+              data-role="none"
+            type="submit">
+           My Favourite
+          </button>
+          <button id="logut" class="prime-btn"
+              data-role="none"
+            type="submit">
+           Log out
+          </button>
         </div>
-      </div>
-
-      <!-- footer -->
-      <div data-role="footer" id="footer">
-
-      <!-- Footer added through JS -->
-      </div>
-
-
       </div>
     </div>
-  </body>
+    <!-- footer -->
+    <div data-role="footer" id="footer-home">
+      <div class="nav-logo-container">
+        <img class="footer-logo" src="../../assets/logo/logo.png" />
+      </div>
+      <p class="nav-copyright">&copy; Copyright - Company</p>
+      <p class="nav-payment">Payment Methods</p>
+      <div class="nav-payment-container">
+        <img class="footer-payment4" />
+        <img class="footer-payment1" src="../../assets/icons/visa.png" />
+        <img class="footer-payment2" src="../../assets/icons/paypal.png" />
+        <img class="footer-payment3" src="../../assets/icons/mastercard.png" />
+      </div>
+      <div class="ui-grid-b">
+        <div class="ui-block-a" style="width: 50%;">
+          <ul class="navigation-list">
+            <li>
+              <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="../../pages/Service/servicehome.html" data-ajax="false" data-role="none">
+                Services
+              </a>
+            </li><br>
+            <li>
+              <a href="../../pages/Petsitting/petsitting.html" data-ajax="false" data-role="none">
+                Pet Sitting
+              </a>
+            </li>
+            <li>
+              <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
+                House Sitting
+              </a>
+            </li>
+            <li>
+              <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
+                Home Visits
+              </a>
+            </li>
+            <li>
+              <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
+                Dog Walking
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="ui-block-b" style="width: 50%;">
+          <ul class="navigation-list">
+            <li>Contact Us</li><br>
+            <li><img class="footer-contacts" src="../../assets/icons/phone.png" /> (+94)76 12345679</li>
+            <li><img class="footer-contacts" src="../../assets/icons/whatsapp.png" /> (+94)77 12345679</li>
+            <li><img class="footer-contacts" src="../../assets/icons/email.png" /> pawcare@gmail.com</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="ui-grid-a">
+        <div class="nav-payment-container">
+          <img class="footer-payment4" />
+          <img class="footer-payment1" src="../../assets/icons/facebook-.png" />
+          <img class="footer-payment2" src="../../assets/icons/twitter.png" />
+          <img class="footer-payment3" src="../../assets/icons/instagram.png" />
+        </div>
+      </div>
+    </div>
+
+
+</body>
+
 </html>

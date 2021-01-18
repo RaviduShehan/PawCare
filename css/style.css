@@ -431,4 +431,13 @@
           position: sticky;
           margin-top: 250px;
       }
+      label {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 1000 !important;
+        font-size: 24px !important;
+        letter-spacing: 0.1em;
+        text-transform: none;
+        color: #2ab7b7;
+}
   }

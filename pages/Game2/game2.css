@@ -220,42 +220,9 @@ input [type=radio] {
     text-shadow: none;
 }
 
-#intro-video {
-    max-width: 100%;
-}
+ 
 
-.service-info {
-    text-align: center;
-    color: #F7FBFF;
-    padding: 80px 10px;
-}
-
-.info-heading {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    background: #2AB7B7;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
-    text-align: center;
-}
-
-.service-container {
-    margin: auto;
-    display: block;
-    width: 117px;
-    height: 117px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 100%;
-}
-
-.image-container {
-    margin: auto;
-    display: block;
-}
+ 
 
 #svg-image {
     fill: green;
@@ -279,100 +246,7 @@ input [type=radio] {
     color: #343434;
 }
 
-.service-heading {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    text-shadow: none;
-    text-align: center;
-    color: #0084E3;
-}
 
-.service-info {
-    text-align: center;
-    background-color: #F6FBFF;
-}
-
-.auth-form {
-    padding: 12px 16px;
-}
-
-.user-feedback {
-    padding: 70px 0;
-    border-top: 0.5px solid #3a3a3a75;
-}
-
-.team-members {
-    text-shadow: none;
-}
-
-.team-info {
-    border-top: 0.5px solid #0244503b;
-    padding: 70px 0;
-}
-
-.member {
-    width: 50% !important;
-    align-content: center;
-    margin: 45px 0;
-}
-
-.members-img {
-    margin: auto;
-    display: block;
-}
-
-.member-description {
-    text-align: center;
-    color: #343434;
-}
-
-.member-name {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    letter-spacing: 0.05em;
-    margin: 0;
-}
-
-.member-info {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    letter-spacing: 0.05em;
-}
-
-#footer-home {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 9px;
-    letter-spacing: 0.05em;
-    height: 160px;
-    width: 100%;
-    background-color: #193E58;
-    border: none;
-    padding: 20px 10px;
-    bottom: 0;
-    text-transform: uppercase;
-    color: #f2f2f2;
-    text-shadow: none;
-}
-
-#footer-home p {
-    text-align: center;
-    margin: 5px;
-}
-
-#footer-home ul {
-    text-decoration: none;
-    list-style: none;
-    padding: 0;
-}
 
 @media screen and (min-width: 768px) {
     #intro-body {

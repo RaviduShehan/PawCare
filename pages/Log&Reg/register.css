@@ -2,10 +2,9 @@
   display: none
 }
 
-.mbsc-err-msg{
-  color: #EB5757; 
+.mbsc-err-msg {
+  color: #EB5757;
 }
-
 
 .login-box{
   border-style: solid;
@@ -25,7 +24,7 @@
   text-align: center;
 }
 
-#log{
+#log1{
   margin: 20px 20px 20px 20px;
 }
 
@@ -34,7 +33,7 @@
   font-weight: 300;
   font-size: 12px;
   letter-spacing: normal;
-  color: #1c1c1c;
+ 
 }
 
 .field-input {

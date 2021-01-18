@@ -142,7 +142,9 @@
   -webkit-text-fill-color: transparent;
   text-shadow: none;
 }
- 
+ #thankyouPayment{
+   color: #2ab7b7;
+ }
  /* tablet portrait */
  @media screen and (min-width: 768px) {
   .payment-section {
