@@ -107,20 +107,18 @@ $(document).on("click", "#nav-text1", function() {
 	window.location.href ="../../pages/Petsitting/petsitting.html";
   });
   $(document).on("click", "#nav-text5", function() {
-	window.location.href ="../../pages/Housesitting/housesitting.html";
+	window.location.href ="#";
   });
   $(document).on("click", "#nav-text6", function() {
-	window.location.href ="../../pages/Aboutus/about.html";
+	window.location.href ="#";
   });
   $(document).on("click", "#nav-text7", function() {
-	window.location.href ="../../pages/Aboutus/about.html";
+	window.location.href ="#";
   });
   $(document).on("click", "#nav-text8", function() {
 	window.location.href ="../../pages/PostAJob/postajob.html";
   });
-  $(document).on("click", "#nav-text9", function() {
-	window.location.href ="#stars";
-  });
+   
   $(document).on("click", "#nav-text10", function() {
 	window.location.href ="../../pages/BecomeASitter/sitterLogin.html";
   });
@@ -201,4 +199,10 @@ $(document).on("click", "#petsitting", function() {
 	window.location.href ="../../pages/BecomeASitter/sitterLogin.html";
   });
 
- 
+    $(document).on("click", "#postajob", function() {
+	window.location.href ="../../pages/Dashboard/dashboard.html";
+  });
+   
+  $(document).on("click", "#postingAjob", function() {
+	window.location.href ="../../pages/PostAJob/postajob.html";
+  });

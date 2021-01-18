@@ -2,7 +2,7 @@ $(function () {
 
   $('#log1').on('submit', function (ev) {
     if ($(this).valid()) {
-      alert('Confirmed');
+  
       ev.preventDefault();
 
       window.location.href = "../../pages/Log&Reg/login.html";

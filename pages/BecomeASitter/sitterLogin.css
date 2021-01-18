@@ -3,7 +3,9 @@
 }
 
  
-
+.mbsc-err-msg {
+    color: #EB5757;
+}
 .login-box {
     border-style: solid;
     border-width: 0.2px;
@@ -31,7 +33,7 @@
     font-weight: 300;
     font-size: 12px;
     letter-spacing: normal;
-    color: #1c1c1c;
+     
 }
 
 .field-input {

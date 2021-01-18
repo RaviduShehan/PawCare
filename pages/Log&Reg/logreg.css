@@ -1,7 +1,9 @@
 .login-image{
   display: none
 }
-
+.mbsc-err-msg {
+  color: #EB5757;
+}
 
 
 
@@ -32,7 +34,7 @@
   font-weight: 300;
   font-size: 12px;
   letter-spacing: normal;
-  color: #1c1c1c;
+ 
 }
 
 .field-input {

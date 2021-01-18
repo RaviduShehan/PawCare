@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>PawCare| Dashboard</title>
+    
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../Dashboard/dashboard.css" />
+        <link rel="stylesheet" type="text/css" href="../../components/header_footer.css">
+       
+    
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="../../js/script.js"></script>
+        <script type="text/javascript" src="../Dashboard/dashboard.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+    </head>
+
+    <body>
+        <div data-role="page">
+           <!-- header -->
+<div data-role="header" id="header">
+    <div class="ui-grid-a main-container">
+      <div class="ui-block-a head-avatar" style="width: 20%;">
+        <button class="header_button" id="btnNav" type="button" data-role="none">
+          <img class="menu-icon" src="../../assets/icons/menu.svg" />
+        </button>
+  
+      </div>
+      <div class="ui-block-b logo-container" style="width: 60%;">
+        <img id="logoIcon" class="logo-img" src="../../assets/logo/logo.png" />
+      </div>
+     
+    </div>
+  </div>
+
+        <nav class="nav">
+            <div class=" nav__links">
+                <div class="ui-block-a logo-container" style="width: 20%;">
+                    <img class="user-icon" src="../../assets/icons/logo.png" />
+                </div>
+                <div class="ui-block-b " style="width: 80%;">
+
+                    <a class="nav__link" id="nav-text1">
+            Home
+          </a>
+                    <a class="nav__link" id="nav-text2">
+            About Us
+          </a>
+                    <a class="nav__link" id="nav-text3">
+            Services
+          </a>
+
+                    <a class="nav__link" id="nav-text4">
+            &emsp;&ensp;Pet Sitting
+          </a>
+                    <a  class="nav__link" id="nav-text5">
+            &emsp;&ensp;House Sitting
+          </a>
+                    <a class="nav__link" id="nav-text6">
+            &emsp;&ensp;Home Visits
+          </a>
+                    <a  class="nav__link" id="nav-text7">
+            &emsp;&ensp;Dog Walking
+          </a>
+                    <a class="nav__link" id="nav-text8">
+            &emsp;&ensp;Post a job
+          </a>
+
+                    <a class="nav__link" id="nav-text10">
+            Become a Sitter
+          </a>
+                    <a class="nav__link" id="nav-text11">
+            My profile
+          </a>
+                    <a class="nav__link" id="nav-text12">
+            Sign in
+          </a>
+                </div>
+
+            </div>
+            <div class="nav__overlay"></div>
+        </nav>
+
+            <div class="ui-grid-content description-landing">
+                <div class="ui-grid-content description-landing">
+                    <div class="description-container">
+                        <p id="intro-heading">My Dashboard</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="ui-grid-content pricing-details">
+                <div class="ui-grid-content pricing-container" id="innerbox">
+                    <div class="textArea">                    
+                        <ul data-role="listview" data-inset="true">
+                            <li><a> <img src="../../assets/icons/angle-right-solid.svg" class="ui-li-icon ui-corner-none">Profile</a>
+                            </li>
+                            <li><a> <img src="../../assets/icons/angle-right-solid.svg" class="ui-li-icon ui-corner-none">Booking Request</a>
+                            </li>
+                            <li><a> <img src="../../assets/icons/angle-right-solid.svg" class="ui-li-icon ui-corner-none">Accepted Requests</a>
+                            </li>
+                            <li><a> <img  id="postingAjob" src="../../assets/icons/angle-right-solid.svg" class="ui-li-icon ui-corner-none">Post a Job</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="auth-form4">
+                <h6 id="bookingHeading2">Booking Requests</h6>
+            </div>
+            <div class="ui-grid-contain booking-request" id="booking-request">
+                <div class="booking__request" id="booking__request">
+                    <div class="row" id="bookings5">
+                        <div class="ui-block-a logo-container2" style="width: 20%;">
+                            <img class="user-icon" src="../../assets/icons/calendar-alt-regular.svg" />
+                        </div>
+                        <div class="ui-block-b " style="width: 80%;">
+                            <div class="col">
+                                <h6 id="bookings">Booking 1 </h6>
+                                <p id="booking_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.
+                                </p>
+                                <button id="accept" class="accept-btn " data-role="none" type="submit">Accept</button>
+                                <button id="cancel" class="cancel2-btn " data-role="none" type="submit">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="bookings5">
+                        <div class="ui-block-a logo-container2" style="width: 20%;">
+                            <img class="user-icon" src="../../assets/icons/calendar-alt-regular.svg" />
+                        </div>
+                        <div class="ui-block-b " style="width: 80%;">
+                            <div class="col">
+                                <h6 id="bookings">Booking 2 </h6>
+                                <p id="booking_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.
+                                </p>
+                                <button id="accept" class="accept-btn " data-role="none" type="submit">Accept</button>
+                                <button id="cancel" class="cancel2-btn " data-role="none" type="submit">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="bookings5">
+                        <div class="ui-block-a logo-container2" style="width: 20%;">
+                            <img class="user-icon" src="../../assets/icons/calendar-alt-regular.svg" />
+                        </div>
+                        <div class="ui-block-b " style="width: 80%;">
+                            <div class="col">
+                                <h6 id="bookings">Booking 3 </h6>
+                                <p id="booking_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.
+                                </p>
+                                <button id="accept" class="accept-btn " data-role="none" type="submit">Accept</button>
+                                <button id="cancel" class="cancel2-btn " data-role="none" type="submit">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="bookings5">
+                        <div class="ui-block-a logo-container2" style="width: 20%;">
+                            <img class="user-icon" src="../../assets/icons/calendar-alt-regular.svg" />
+                        </div>
+                        <div class="ui-block-b " style="width: 80%;">
+                            <div class="col">
+                                <h6 id="bookings">Booking 4 </h6>
+                                <p id="booking_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.
+                                </p>
+                                <button id="accept" class="accept-btn " data-role="none" type="submit">Accept</button>
+                                <button id="cancel" class="cancel2-btn " data-role="none" type="submit">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="auth-form4">
+                <h6 id="bookingHeading2">Accepted Requests</h6>
+            </div>
+            <div class="ui-grid-contain booking-request" id="booking-request">
+                <div class="booking__request" id="booking__request">
+                    <div class="row" id="bookings5">
+                        <div class="ui-block-a logo-container2" style="width: 20%;">
+                            <img class="user-icon" src="../../assets/icons/calendar-alt-regular.svg" />
+                        </div>
+                        <div class="ui-block-b " style="width: 80%;">
+                            <div class="col">
+                                <h6 id="bookings">Booking 1 </h6>
+                                <p id="booking_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.
+                                </p>
+                                <button id="accept" class="accept-btn " data-role="none" type="submit">Accept</button>
+                                <button id="cancel" class="cancel2-btn " data-role="none" type="submit">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="bookings5">
+                        <div class="ui-block-a logo-container2" style="width: 20%;">
+                            <img class="user-icon" src="../../assets/icons/calendar-alt-regular.svg" />
+                        </div>
+                        <div class="ui-block-b " style="width: 80%;">
+                            <div class="col">
+                                <h6 id="bookings">Booking 2 </h6>
+                                <p id="booking_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.
+                                </p>
+                                <button id="accept" class="accept-btn " data-role="none" type="submit">Accept</button>
+                                <button id="cancel" class="cancel2-btn " data-role="none" type="submit">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="bookings5">
+                        <div class="ui-block-a logo-container2" style="width: 20%;">
+                            <img class="user-icon" src="../../assets/icons/calendar-alt-regular.svg" />
+                        </div>
+                        <div class="ui-block-b " style="width: 80%;">
+                            <div class="col">
+                                <h6 id="bookings">Booking 3 </h6>
+                                <p id="booking_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.
+                                </p>
+                                <button id="accept" class="accept-btn " data-role="none" type="submit">Accept</button>
+                                <button id="cancel" class="cancel2-btn " data-role="none" type="submit">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="bookings5">
+                        <div class="ui-block-a logo-container2" style="width: 20%;">
+                            <img class="user-icon" src="../../assets/icons/calendar-alt-regular.svg" />
+                        </div>
+                        <div class="ui-block-b " style="width: 80%;">
+                            <div class="col">
+                                <h6 id="bookings">Booking 4 </h6>
+                                <p id="booking_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas semper ex quis scelerisque. Nulla sit amet diam in justo scelerisque vestibulum nec in magna.
+                                </p>
+                                <button id="accept" class="accept-btn " data-role="none" type="submit">Accept</button>
+                                <button id="cancel" class="cancel2-btn " data-role="none" type="submit">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="auth-form3">
+                
+                    
+                
+            
+                <div class="form-content">
+                    <div class="auth-form8" id="authform8">
+                        <h6 id="refferal">Refferal</h6>
+            
+                        <label for="first-name" class="input-label">Name</label>
+                        <input id="firstname" class="text-input" type="text" name="firstname" data-role="none" required
+                            placeholder="Name" />
+            
+                        <label for="Email" class="input-label">Email</label>
+                        <input id="Email" class="text-input" type="text" name="Email" data-role="none" required
+                            placeholder="Email" />
+            
+            
+            
+                        <button id="submit" class="prime-btn" data-role="none" type="submit"> Send </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+           <!-- footer -->
+        <div data-role="footer" id="footer-home">
+            <div class="nav-logo-container">
+                <img class="footer-logo" src="../../assets/logo/logo.png" />
+            </div>
+            <p class="nav-copyright">&copy; Copyright - Company</p>
+            <p class="nav-payment">Payment Methods</p>
+            <div class="nav-payment-container">
+                <img class="footer-payment4" />
+                <img class="footer-payment1" src="../../assets/icons/visa.png" />
+                <img class="footer-payment2" src="../../assets/icons/paypal.png" />
+                <img class="footer-payment3" src="../../assets/icons/mastercard.png" />
+            </div>
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="width: 50%;">
+                    <ul class="navigation-list">
+                        <li>
+                            <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
+                  Home
+                </a>
+                        </li>
+                        <li>
+                            <a href="../../pages/Service/servicehome.html" data-ajax="false" data-role="none">
+                  Services
+                </a>
+                        </li><br>
+                        <li>
+                            <a href="../../pages/Petsitting/petsitting.html" data-ajax="false" data-role="none">
+                  Pet Sitting
+                </a>
+                        </li>
+                        <li>
+                            <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
+                  House Sitting
+                </a>
+                        </li>
+                        <li>
+                            <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
+                  Home Visits
+                </a>
+                        </li>
+                        <li>
+                            <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
+                  Dog Walking
+                </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="ui-block-b" style="width: 50%;">
+                    <ul class="navigation-list">
+                        <li>Contact Us</li><br>
+                        <li><img class="footer-contacts" src="../../assets/icons/phone.png" /> (+94)76 12345679</li>
+                        <li><img class="footer-contacts" src="../../assets/icons/whatsapp.png" /> (+94)77 12345679</li>
+                        <li><img class="footer-contacts" src="../../assets/icons/email.png" /> pawcare@gmail.com</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="ui-grid-a">
+                <div class="nav-payment-container">
+                    <img class="footer-payment4" />
+                    <img class="footer-payment1" src="../../assets/icons/facebook-.png" />
+                    <img class="footer-payment2" src="../../assets/icons/twitter.png" />
+                    <img class="footer-payment3" src="../../assets/icons/instagram.png" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

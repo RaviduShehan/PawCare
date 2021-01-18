@@ -2,11 +2,13 @@ $(function() {
 
     $('#log').on('submit', function(ev) {
         if ($(this).valid()) {
-            alert('Confirmed');
+           
             ev.preventDefault();
-
-            window.location.href = "../../pages/HomePage/index.html";
-
+             
+                window.location.href = "../../pages/Dashboard/dashboard.html";
+            
+            
+            
         }
     }).validate({
         errorClass: 'mbsc-err-msg',

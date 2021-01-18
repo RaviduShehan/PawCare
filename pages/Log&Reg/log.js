@@ -1,7 +1,7 @@
 
 $(function () {
 
-    $('#log').on('submit', function (ev) {
+    $('#logc').on('submit', function (ev) {
         if ($(this).valid()) {
              
             ev.preventDefault();
