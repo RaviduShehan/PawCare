@@ -107,7 +107,7 @@ $(document).on("click", "#nav-text1", function() {
 	window.location.href ="../../pages/Petsitting/petsitting.html";
   });
   $(document).on("click", "#nav-text5", function() {
-	window.location.href ="../../pages/Aboutus/about.html";
+	window.location.href ="../../pages/Housesitting/housesitting.html";
   });
   $(document).on("click", "#nav-text6", function() {
 	window.location.href ="../../pages/Aboutus/about.html";
@@ -144,6 +144,9 @@ $(document).on("click", "#nav-text1", function() {
 	window.location.href ="../../pages/ServiceDetails/index.html";
   });
   $(document).on("click", "#serviceProvider2", function() {
+	window.location.href ="../../pages/ServiceDetails/index.html";
+  });
+  $(document).on("click", "#provider-img-tab", function() {
 	window.location.href ="../../pages/ServiceDetails/index.html";
   });
   
@@ -190,3 +193,9 @@ $(document).on("click", "#petsitting", function() {
   $(document).on("click", "#userIcon", function() {
 	window.location.href ="../../pages/Myptofile/myprofile.html";
   });
+
+  $(document).on("click", "#link5", function() {
+	window.location.href ="../../pages/BecomeASitter/sitterRegistration.html";
+  });
+
+ 
