@@ -8,22 +8,23 @@
   <title>PawCare | User Login</title>
 
   <!-- the three things that jQuery Mobile needs to work -->
+  <link rel="stylesheet"  href="../../css/style.css">
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   
-  <link rel="stylesheet" type="text/css" href="../../components/header_footer.css" />
-  <link rel="stylesheet" type="text/css" href="../../pages/Log&Reg/logreg.css" />
 
+  <link rel="stylesheet"  href="../../components/header_footer.css" />
+  <link rel="stylesheet"   href="../../pages/Log&Reg/logreg.css" />
+  
 
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
@@ -39,21 +40,21 @@
 
   <div data-role="page" id="login-page">
 
-   <!-- header -->
-<div data-role="header" id="header">
-  <div class="ui-grid-a main-container">
-    <div class="ui-block-a head-avatar" style="width: 20%;">
-      <button class="header_button" id="btnNav" type="button" data-role="none">
-        <img class="menu-icon" src="../../assets/icons/menu.svg" />
-      </button>
+    <!-- header -->
+    <div data-role="header" id="header">
+      <div class="ui-grid-a main-container">
+        <div class="ui-block-a head-avatar" style="width: 20%;">
+          <button class="header_button" id="btnNav" type="button" data-role="none">
+            <img class="menu-icon" src="../../assets/icons/menu.svg" />
+          </button>
 
+        </div>
+        <div class="ui-block-b logo-container" style="width: 60%;">
+          <img id="logoIcon" class="logo-img" src="../../assets/logo/logo.png" />
+        </div>
+
+      </div>
     </div>
-    <div class="ui-block-b logo-container" style="width: 60%;">
-      <img id="logoIcon" class="logo-img" src="../../assets/logo/logo.png" />
-    </div>
-   
-  </div>
-</div>
 
     <nav class="nav">
       <div class=" nav__links">
@@ -75,7 +76,7 @@
           <a class="nav__link" id="nav-text4">
             &emsp;&ensp;Pet Sitting
           </a>
-          <a  class="nav__link" id="nav-text5">
+          <a class="nav__link" id="nav-text5">
             &emsp;&ensp;House Sitting
           </a>
           <a class="nav__link" id="nav-text6">
@@ -123,12 +124,14 @@
               </div>
 
               <div class="mbsc-form-group mbsc-btn-group-block">
-                <button mbsc-button id="#md-success" class="ui-btn" style="background-color: #2ab7b7; color: #ffff;" type="submit" onclick="document.getElementById('../../page/HomePage/index.html?userIcon').src='../../assets/images/senuri.png';">Login</button>
+                <button mbsc-button id="md-success" class="ui-btn md-success" style="background-color: #2ab7b7; color: #ffff;"
+                  type="submit"
+                 >Login</button>
               </div>
 
             </form>
             <p id="other-link">
-              <a id="link2" >Do not have an account?</a> <br>
+              <a id="link2">Do not have an account?</a> <br>
 
             </p>
           </div>
@@ -138,8 +141,8 @@
 
 
 
-     <!-- footer -->
-     <div data-role="footer" id="footer-home">
+    <!-- footer -->
+    <div data-role="footer" id="footer-home">
       <div class="nav-logo-container">
         <img class="footer-logo" src="../../assets/logo/logo.png" />
       </div>

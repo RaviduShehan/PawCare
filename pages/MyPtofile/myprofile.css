@@ -50,3 +50,166 @@
 	 margin: 10px 10px 10px 10px;
 	align-content: center;
 }
+
+@media screen and (min-width: 768px) {
+  .input-label1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    color: #1c1c1c;
+    text-shadow: none;
+  }
+  #intro-heading2{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 40px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    text-align: center;
+    background: -webkit-linear-gradient(171.5deg, #eea243 40%, #1c1c1c 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+  }
+  .form-content{
+    width: 100%;
+    background-color: #d88973;
+    background-size: cover;
+    height: 450px;
+     
+  }
+  .input-label2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    color: #2ab7b7;
+    text-shadow: none;
+  }
+  .secondContainer{
+    background-color: #FBFBFA ;
+     margin: 10px 10px 10px 10px;
+    align-content: center;
+  }
+}  
+@media screen and (min-width: 667px) {
+  .input-label1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    color: #1c1c1c;
+    text-shadow: none;
+  }
+  #intro-heading2{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 40px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    text-align: center;
+    background: -webkit-linear-gradient(171.5deg, #eea243 40%, #1c1c1c 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+  }
+  .form-content{
+    width: 100%;
+    background-color: #d88973;
+    background-size: cover;
+    height: 450px;
+     
+  }
+  .input-label2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    color: #2ab7b7;
+    text-shadow: none;
+  }
+  .secondContainer{
+    background-color: #FBFBFA ;
+     margin: 10px 10px 10px 10px;
+    align-content: center;
+  }
+} 
+@media screen and (min-width: 1024px) {
+  .input-label1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    color: #1c1c1c;
+    text-shadow: none;
+  }
+  #intro-heading2{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 40px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    text-align: center;
+    background: -webkit-linear-gradient(171.5deg, #eea243 40%, #1c1c1c 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+  }
+  .form-content{
+    width: 100%;
+    background-color: #d88973;
+    background-size: cover;
+    height: 450px;
+     
+  }
+  .input-label2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 1000 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    color: #2ab7b7;
+    text-shadow: none;
+  }
+  .secondContainer{
+    background-color: #FBFBFA ;
+     margin: 10px 10px 10px 10px;
+    align-content: center;
+  }
+} 

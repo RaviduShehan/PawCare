@@ -1,15 +1,17 @@
-.login-image{
+.login-image {
     display: none
 }
 
-.login-box{
+ 
+
+.login-box {
     border-style: solid;
     border-width: 0.2px;
     border-color: #b1b1b1;
     margin: 20px 20px 20px 20px;
 }
 
-#login-title{
+#login-title {
     font-family: Roboto;
     font-weight: 400;
     font-size: 25px;
@@ -20,11 +22,11 @@
     text-align: center;
 }
 
-#form-details{
+#log {
     margin: 20px 20px 20px 20px;
 }
 
-#form-details label{
+#log label {
     font-family: Roboto;
     font-weight: 300;
     font-size: 12px;
@@ -36,7 +38,7 @@
     margin-top: 10%;
 }
 
-#sitter-login-btn{
+.ui-btn {
     margin-top: 20%;
     background-color: #2ab7b7;
     color: #fafafb;
@@ -45,25 +47,27 @@
 }
 
 #other-link #link5,
-#other-link #link6{
+#other-link #link6 {
     margin-left: 10px;
     color: #2ab7b7;
     font-weight: 300;
 }
+
 
 /* .ui-focus {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
    } */
-  
+
+
 /* mobile landscape */
+
 @media screen and (min-width: 667px) {
     .field-input {
         margin-top: 5%;
     }
-
-    #sitter-login-btn{
+    .ui-btn {
         margin-top: 8%;
         background-color: #2ab7b7;
         color: #fafafb;
@@ -71,64 +75,58 @@
         border-radius: 50px;
     }
 }
-  
-  /* tablet portrait */
-  @media screen and (min-width: 768px) {
-    .login-image{
+
+
+/* tablet portrait */
+
+@media screen and (min-width: 768px) {
+    .login-image {
         display: block;
         width: 100%;
-        background-image:url("../../assets/images/provider_login.jpeg");
+        background-image: url("../../assets/images/logg.jpeg");
         background-size: cover;
         height: 670px;
     }
-
     .field-input {
         margin-top: 10%;
     }
-
-    .login-box{
+    .login-box {
         border-style: solid;
         border-width: 0.2px;
         border-color: #b1b1b1;
         margin: 80px 20px 20px 20px;
     }
-
-    #sitter-login-btn{
+    .ui-btn {
         margin-top: 10%;
         background-color: #2ab7b7;
         color: #fafafb;
         text-shadow: none;
         border-radius: 50px;
     }
+}
 
 
-  }
+/* tab landscape */
 
-
-  /* tab landscape */
-  @media screen and (min-width: 1024px) {
-    .login-image{
+@media screen and (min-width: 1024px) {
+    .login-image {
         display: block;
         width: 100%;
-        background-image:url("../../assets/images/provider_login.jpeg");
+        background-image: url("../../assets/images/provider_login.jpeg");
         background-size: cover;
         height: 550px;
     }
-
-    #sitter-login-btn{
+    .ui-btn {
         margin-top: 10%;
         background-color: #2ab7b7;
         color: #fafafb;
         text-shadow: none;
         border-radius: 50px;
     }
-
-    .login-box{
+    .login-box {
         border-style: solid;
         border-width: 0.2px;
         border-color: #b1b1b1;
         margin: 50px 20px 20px 20px;
     }
-
-
-  }
+}

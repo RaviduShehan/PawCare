@@ -197,5 +197,8 @@ $(document).on("click", "#petsitting", function() {
   $(document).on("click", "#link5", function() {
 	window.location.href ="../../pages/BecomeASitter/sitterRegistration.html";
   });
+  $(document).on("click", "#link6", function() {
+	window.location.href ="../../pages/BecomeASitter/sitterLogin.html";
+  });
 
  
