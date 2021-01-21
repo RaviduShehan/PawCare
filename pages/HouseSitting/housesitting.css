@@ -133,34 +133,6 @@
 	display: none;
 }
 
-.serviceIcons img{
-	margin: 4px 0px;
-	height: 30px;
-	object-fit: contain;
-
- }
-
- #popupBasic1{
-	background-color: #2ab7b7;
-	font-family: Roboto;
-}
-#popupBasic2{
-   background-color: #2ab7b7;
-   font-family: Roboto;
-}
-#popupBasic3{
-   background-color: #2ab7b7;
-   font-family: Roboto;
-}
-#popupBasic4{
-  background-color: #2ab7b7;
-  font-family: Roboto;
-}
-#popupBasic5{
-   background-color: #2ab7b7;
-   font-family: Roboto;
-}
-
 
     /* tablet portrait */
 	@media screen and (min-width: 768px) {
@@ -265,22 +237,6 @@
 			color:#eea243;
 			margin-left: 2px;
 		}
-
-		.serviceIcons img{
-			margin: 4px 5px;
-			height: 30px;
-			object-fit: contain;
-		
-		 }
 		
 
-	}
-
-	@media screen and (min-width: 1024px) {
-		.serviceIcons img{
-			margin: 4px 10px;
-			height: 30px;
-			object-fit: contain;
-		
-		 }
 	}

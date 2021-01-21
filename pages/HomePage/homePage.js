@@ -87,7 +87,6 @@ function postReply(commentId) {
 		$.post("comment-list.php",
 			function (data) {
 				var data = JSON.parse(data);
-	
 				var comments = "";
 				var replies = "";
 				var item = "";
