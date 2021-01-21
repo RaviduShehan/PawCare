@@ -107,7 +107,7 @@ $(document).on("click", "#nav-text1", function() {
 	window.location.href ="../../pages/Petsitting/petsitting.html";
   });
   $(document).on("click", "#nav-text5", function() {
-	window.location.href ="#";
+	window.location.href ="../../pages/HouseSitting/housesitting.html";
   });
   $(document).on("click", "#nav-text6", function() {
 	window.location.href ="#";

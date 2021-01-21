@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PawCare| House sitting</title>
+    <!-- the three things that jQuery Mobile needs to work -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../../components/header_footer.css" />
+    <link rel="stylesheet" href="../../pages/HouseSitting/housesitting.css" />
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgENiU3CrEdLe-TlSMK-QeU9zHKm71FuU&callback=initMap&libraries=&v=weekly"
+        defer></script>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="../../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/97327e6699.js" crossorigin="anonymous"></script>
+</head>
+
+<div data-role="panel" id="mypanel">
+    <!-- panel content goes here -->
+</div>
+
+<body>
+
+    <div data-role="page">
+
+        <!-- header -->
+        <div data-role="header" id="header">
+            <div class="ui-grid-a main-container">
+                <div class="ui-block-a head-avatar" style="width: 20%;">
+                    <button class="header_button" id="btnNav" type="button" data-role="none">
+                        <img class="menu-icon" src="../../assets/icons/menu.svg" />
+                    </button>
+
+                </div>
+                <div class="ui-block-b logo-container" style="width: 60%;">
+                    <img id="logoIcon" class="logo-img" src="../../assets/logo/logo.png" />
+                </div>
+
+            </div>
+        </div>
+
+        <nav class="nav">
+            <div class=" nav__links">
+                <div class="ui-block-a logo-container" style="width: 20%;">
+                    <img class="user-icon" src="../../assets/icons/logo.png" />
+                </div>
+                <div class="ui-block-b " style="width: 80%;">
+
+                    <a class="nav__link" id="nav-text1">
+                        Home
+                    </a>
+                    <a class="nav__link" id="nav-text2">
+                        About Us
+                    </a>
+                    <a class="nav__link" id="nav-text3">
+                        Services
+                    </a>
+
+                    <a class="nav__link" id="nav-text4">
+                        &emsp;&ensp;Pet Sitting
+                    </a>
+                    <a class="nav__link" id="nav-text5">
+                        &emsp;&ensp;House Sitting
+                    </a>
+                    <a class="nav__link" id="nav-text6">
+                        &emsp;&ensp;Home Visits
+                    </a>
+                    <a class="nav__link" id="nav-text7">
+                        &emsp;&ensp;Dog Walking
+                    </a>
+                    <a class="nav__link" id="nav-text8">
+                        &emsp;&ensp;Post a job
+                    </a>
+
+                    <a class="nav__link" id="nav-text10">
+                        Become a Sitter
+                    </a>
+                    <a class="nav__link" id="nav-text11">
+                        My profile
+                    </a>
+                    <a class="nav__link" id="nav-text12">
+                        Sign in
+                    </a>
+                </div>
+
+            </div>
+            <div class="nav__overlay"></div>
+        </nav>
+
+        <!-- petsitting image -->
+        <div id="service-head-image">
+            <ul class="breadcrumbs">
+                <li><a id="service2">Services</a></li>
+                <li>House Sitting</li>
+            </ul>
+            <div class="headimg-content">
+                <h2 class="headimg-content-title">House Sitting</h1>
+                    <div>
+                        <p class="headimg-content-content">On PawCare you can find house siters to care for your pet at your home.<br>
+                             Search our network for insured and accredited pet and house sitters in your neighbourhood.<br>
+                            Price Range : Rs.500 - Rs.3000 
+                        </p>
+                    </div>
+
+                    <div class="ui-field-contain" id="searchbar">
+                        <fieldset class="ui-grid-a">
+                            <div class="ui-block-a"><input type="text" id="searchinput" name="search"
+                                    placeholder="Enter your location"></div>
+                            <div class="ui-block-b"><button class="ui-btn ui-mini" type="submit"
+                                    id="searchbtn">Search</button></div>
+                        </fieldset>
+                    </div>
+
+            </div>
+        </div>
+
+        <!-- map -->
+        <div id="map"></div>
+
+        <!-- service providers -->
+        <div class="providers">
+            <div>
+                <h3 class="service-provider-title">Our team of House Sitters</h1>
+            </div>
+
+            <div id="service-providers">
+                <div class="row">
+                    <div class="col-5">
+                        <a id="serviceProvider1"><img id="provider-img" src="../../assets/images/sitter.jpg" /></a>
+                    </div>
+                    <div class="col">
+                        <div class="provider-content">
+                            <h4 id="provider-name">Isabella S <i class="far fa-heart"></i></h4>
+                            <p id="provider-location"><i class="fas fa-map-marker-alt fa-xs"></i> Colombo | 0.2km</p>
+                            <p><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="botton-icon"><i class="fas fa-dog fa-lg"></i><i class="fas fa-ambulance fa-lg"></i> <i
+                        class="fas fa-car-alt fa-lg"></i></p>
+
+
+                <div class="row">
+                    <div class="col-5">
+                        <a id="serviceProvider2"> <img id="provider-img" src="../../assets/images/sitter.jpg" /></a>
+                    </div>
+                    <div class="col">
+                        <div class="provider-content">
+                            <h4 id="provider-name">Isabella S <i class="far fa-heart"></i></h4>
+                            <p id="provider-location"><i class="fas fa-map-marker-alt fa-xs"></i> Colombo | 0.2km</p>
+                            <p><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="botton-icon"><i class="fas fa-dog fa-lg"></i><i class="fas fa-ambulance fa-lg"></i> <i
+                        class="fas fa-car-alt fa-lg"></i></p>
+            </div>
+
+            <!-- tab -->
+            <div id="service-providers-tab">
+                <div class="row">
+                    <div class="col">
+                        <img id="provider-img-tab" src="../../assets/images/sitter.jpg" />
+                        <h4 id="provider-name-tab">Isabella S <i class="far fa-heart"></i></h4>
+                        <p class="botton-icon"><i class="fas fa-dog fa-2x"></i><i class="fas fa-ambulance fa-2x"></i> <i
+                                class="fas fa-car-alt fa-2x"></i></p>
+                        <p id="provider-location-tab"><i class="fas fa-map-marker-alt fa-xs"></i> Colombo | 0.2km</p>
+                        <p id="rate"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i></p>
+
+                    </div>
+                    <div class="col">
+                        <img id="provider-img-tab" src="../../assets/images/sitter.jpg" />
+                        <h4 id="provider-name-tab">Isabella S <i class="far fa-heart"></i></h4>
+                        <p class="botton-icon"><i class="fas fa-dog fa-2x"></i> <i class="fas fa-ambulance fa-2x"></i><i
+                                class="fas fa-car-alt fa-2x"></i></p>
+                        <p id="provider-location-tab"><i class="fas fa-map-marker-alt fa-xs"></i> Colombo | 0.2km</p>
+                        <p id="rate"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i></p>
+                    </div>
+                    <div class="col">
+                        <img id="provider-img-tab" src="../../assets/images/sitter.jpg" />
+                        <h4 id="provider-name-tab">Isabella S <i class="far fa-heart"></i></h4>
+                        <p class="botton-icon"><i class="fas fa-dog fa-2x"></i> <i class="fas fa-ambulance fa-2x"></i><i
+                                class="fas fa-car-alt fa-2x"></i></p>
+                        <p id="provider-location-tab"><i class="fas fa-map-marker-alt fa-lg"></i> Colombo | 0.2km</p>
+                        <p id="rate"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <img id="provider-img-tab" src="../../assets/images/sitter.jpg" />
+                        <h4 id="provider-name-tab">Isabella S <i class="far fa-heart"></i></h4>
+                        <p class="botton-icon"><i class="fas fa-dog fa-2x"></i> <i class="fas fa-ambulance fa-2x"></i><i
+                                class="fas fa-car-alt fa-2x"></i></p>
+                        <p id="provider-location-tab"><i class="fas fa-map-marker-alt fa-xs"></i> Colombo | 0.2km</p>
+                        <p id="rate"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i></p>
+
+                    </div>
+                    <div class="col">
+                        <img id="provider-img-tab" src="../../assets/images/sitter.jpg" />
+                        <h4 id="provider-name-tab">Isabella S <i class="far fa-heart"></i></h4>
+                        <p class="botton-icon"><i class="fas fa-dog fa-2x"></i><i class="fas fa-ambulance fa-2x"></i> <i
+                                class="fas fa-car-alt fa-2x"></i></p>
+                        <p id="provider-location-tab"><i class="fas fa-map-marker-alt fa-xs"></i> Colombo | 0.2km</p>
+                        <p id="rate"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i></p>
+                    </div>
+                    <div class="col">
+                        <img id="provider-img-tab" src="../../assets/images/sitter.jpg" />
+                        <h4 id="provider-name-tab">Isabella S <i class="far fa-heart"></i></h4>
+                        <p class="botton-icon"><i class="fas fa-dog fa-2x"></i> <i class="fas fa-ambulance fa-2x"></i><i
+                                class="fas fa-car-alt fa-2x"></i></p>
+                        <p id="provider-location-tab"><i class="fas fa-map-marker-alt fa-lg"></i> Colombo | 0.2km</p>
+                        <p id="rate"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- footer -->
+        <div data-role="footer" id="footer-home">
+            <div class="nav-logo-container">
+                <img class="footer-logo" src="../../assets/logo/logo.png" />
+            </div>
+            <p class="nav-copyright">&copy; Copyright - Company</p>
+            <p class="nav-payment">Payment Methods</p>
+            <div class="nav-payment-container">
+                <img class="footer-payment4" />
+                <img class="footer-payment1" src="../../assets/icons/visa.png" />
+                <img class="footer-payment2" src="../../assets/icons/cc-stripe-brands.png" />
+                <img class="footer-payment3" src="../../assets/icons/mastercard.png" />
+            </div>
+            <div class="ui-grid-b">
+                <div class="ui-block-a" style="width: 50%;">
+                    <ul class="navigation-list">
+                        <li>
+                            <a href="../../pages/Homepage/index.html" data-ajax="false" data-role="none">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../pages/Service/servicehome.html" data-ajax="false" data-role="none">
+                                Services
+                            </a>
+                        </li><br>
+                        <li>
+                            <a href="../../pages/Petsitting/petsitting.html" data-ajax="false" data-role="none">
+                                Pet Sitting
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
+                                House Sitting
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
+                                Home Visits
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pages/Homepage/home.html" data-ajax="false" data-role="none">
+                                Dog Walking
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="ui-block-b" style="width: 50%;">
+                    <ul class="navigation-list">
+                        <li>Contact Us</li><br>
+                        <li><img class="footer-contacts" src="../../assets/icons/phone.png" /> (+94)76 12345679</li>
+                        <li><img class="footer-contacts" src="../../assets/icons/whatsapp.png" /> (+94)77 12345679</li>
+                        <li><img class="footer-contacts" src="../../assets/icons/email.png" /> pawcare@gmail.com</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="ui-grid-a">
+                <div class="nav-payment-container">
+                    <img class="footer-payment4" />
+                    <img class="footer-payment1" src="../../assets/icons/facebook-.png" />
+                    <img class="footer-payment2" src="../../assets/icons/twitter.png" />
+                    <img class="footer-payment3" src="../../assets/icons/instagram.png" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: 6.9124807, lng: 79.8559366 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: uluru,
+            });
+
+            const marker = new google.maps.Marker({
+                position: new google.maps.LatLng(6.9178114, 79.8564194),
+                map: map,
+            });
+            const marker2 = new google.maps.Marker({
+                position: new google.maps.LatLng(6.9129121, 79.8505936),
+                map: map,
+            });
+        }
+    </script>
+
+
+</body>
+
+
+
+
+</html>

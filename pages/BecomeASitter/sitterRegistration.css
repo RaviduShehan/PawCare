@@ -1,10 +1,10 @@
 .login-image {
     display: none
 }
+
 .mbsc-err-msg {
     color: #EB5757;
 }
-
 
 .login-box {
     border-style: solid;
@@ -33,7 +33,6 @@
     font-weight: 300;
     font-size: 12px;
     letter-spacing: normal;
-     
 }
 
 .field-input {
@@ -86,9 +85,8 @@
         padding: auto;
         display: block;
         width: 100%;
-        background-image: url("../../assets/images/logg2.jpeg");
+        background-image: url("../../assets/images/provider_reg.jpg");
         background-size: cover;
-        
     }
     .field-input {
         margin-top: 10%;
@@ -115,9 +113,8 @@
     .login-image {
         display: block;
         width: 100%;
-        background-image: url("../../assets/images/logg2.jpeg");
+        background-image: url("../../assets/images/provider_reg.jpg");
         background-size: cover;
-        
     }
     #md-success {
         margin-top: 10%;

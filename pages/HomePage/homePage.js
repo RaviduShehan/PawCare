@@ -78,7 +78,6 @@ function postReply(commentId) {
 	$('#id').val(id);
 	$("#comment").focus();
 }
-
 	$(document).ready(function () {
 		listComment();
 	});
@@ -87,7 +86,6 @@ function postReply(commentId) {
 		$.post("comment-list.php",
 			function (data) {
 				var data = JSON.parse(data);
-	
 				var comments = "";
 				var replies = "";
 				var item = "";
